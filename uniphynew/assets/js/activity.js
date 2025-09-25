@@ -173,9 +173,9 @@ if(indexHeroSection){
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: 2,
-    autoplay:false,
     autoplay: {
       delay: 1000,
+      disableOnInteraction: false,
     },
     coverflowEffect: {
       rotate: 0,

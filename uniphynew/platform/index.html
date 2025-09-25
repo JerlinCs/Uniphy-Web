@@ -60,6 +60,16 @@
          position: relative;
          z-index: 100;
          }
+         .challenges__section .content-image__content .content-item {
+            min-height: 235px; 
+            align-content: center;
+         }
+         .challenges__section .content-image__content {
+            min-height: 235px; 
+            align-content: center; 
+            padding-left: 10% !important;
+            padding-right: 3% !important;
+         }
          @media screen and (max-width:783px) {.heateor_sss_vertical_sharing{display:none!important}}@media screen and (max-width:783px) {.heateor_sss_floating_follow_icons_container{display:none!important}}
 		.footer__menu {
 		  display: flex;
@@ -108,13 +118,14 @@
       }
       
       .key__highlight ul {
-        --col-gap: 2rem;
-        --barH: 1rem;
+        --col-gap: 50px;
+        --barH: 22px;
         --roleH: 2rem;
         --flapH: 2rem;
       
-        width: min(80rem, 90%);
-        margin-inline: auto;
+        width: min(100rem, 100%);
+        /* margin-inline: 30px; */
+        margin: 0 30px;
       
         display: flex;
         flex-wrap: wrap;
@@ -122,7 +133,7 @@
         gap: var(--col-gap);
         padding-inline: calc(var(--col-gap) / 2);
       
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
         list-style: none;
       }
@@ -217,12 +228,78 @@
       .key__highlight .credits a {
         color: var(--color);
       }
-      .features__container .boxes__wrapper--columns-three .boxes__box-item {
+      /* .features__container .boxes__wrapper--columns-three .boxes__box-item {
          width: 30%;
          max-width: max-content;
+      } */
+      .boxes__wrapper--columns-four .boxes__box-item {
+         width: 100% !important;
+         max-width: 430px !important;
+      }
+      .features__container .boxes__box-item {
+         padding: 0;
+      }
+      .features__container .boxes__box-item__content h3 {
+         margin: 0;
+      }
+      .features__container .boxes__box-item__content {
+         padding: 0px 30px 30px 30px;
+      }
+      .features__container .boxes__box-item--style-shadow {
+         box-shadow: 0 12px 40px rgba(192, 174, 229, 1.15);
+      }
+      .features__container .boxes__box-item__image img {
+         max-width: 100%;
+         height: max-content;
+         max-height: 100%;
+         position: relative;
+         width: auto;
+         margin: auto;
+      }
+      .features__container .boxes__box-item__image {
+         height: max-content;
+      }
+      .section-block {
+         padding: 75px 0px !important;
+      }
+      .section-block-header {
+         padding: 150px 0px !important;
+      }
+      .transition-3d-hover {
+        transition: all 0.2s ease-in-out;
       }
 
-		
+      .transition-3d-hover:hover, .transition-3d-hover:focus {
+        -webkit-transform: translateY(-3px);
+                transform: translateY(-3px);
+      }
+
+.fade-in-element {
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 2s forwards; /* Apply 'fadeIn' animation for 2 seconds, retaining final state */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}		
+
+      .content-image__image .swiper {
+         padding-top: 30px;
+      }
+
+      .content-image__content .fade-in-element h2{
+         margin-bottom: 0.30em;
+      }
+
+      .content-image__content .fade-in-element p{
+         font-size: 20px;
+      }
+
 		/* Mobile styles */
 		@media (max-width: 768px) {
   			.footer__menu {
@@ -450,7 +527,7 @@
                <article id="post-4691" class="post-4691 page type-page status-publish hentry">
                   <div class="entry-content">
                      <div class="page-blocks">
-                        <section class="section-block  section-block--container-medium section-block--theme-big-purple-bg-square content-image content-image-1 platform--header">
+                        <section class="section-block section-block-header  section-block--container-medium section-block--theme-big-purple-bg-square content-image content-image-1 platform--header">
                            <div class="container">
                               <div class="content-image__inner content-image__inner--image-center content-image__inner--">
                                  <div class="content-image__content content-image__content--full-width    ">
@@ -473,7 +550,7 @@
                         <!-- .section -->
                         <section class="section-block  section-block--container-medium section-block--theme-light-purple section-block--theme-light-blue-wave-reverse content-image content-image-2 ">
                            <div class="container">
-							         <div class="section-block__header text-center boxes--columns-two" style="padding-bottom: 40px;">
+							         <div class="section-block__header text-right boxes--columns-two" style="padding-bottom: 30px;">
                                  <h2 class="section-block__title boxes__title">Evaluation Landscape</h2>
                               </div>
 							         <img src="../assets/images/Presentation2.jpg" class="attachment-full size-full evaluation-landing" alt="Evaluation Landscape" loading="lazy"/>
@@ -481,33 +558,33 @@
                            <!-- .container -->
                         </section>
                         <!-- .section -->
-                        <section class=" section-block--container-default content-image content-image-3 ">
+                        <section class=" section-block--container-default content-image content-image-3" style="margin-top: 75px; margin-bottom: 70px;">
                            <div class="container challenges__section">
-                              <div class="section-block__header text-center boxes--columns-two">
-                                 <h2 class="section-block__title boxes__title ">Challenges We Solve</h2>
+                              <div class="section-block__header text-left boxes--columns-two">
+                                 <h2 class="section-block__title boxes__title " style="padding-left: 28px;">Challenges We Solve</h2>
                               </div>
                               <div class="content-image__inner content-image__inner--image-left content-image__inner--">
-                                 <div class="content-image__content     ">
+                                 <div class="content-image__content">
                                     <div id="content-area">
-                                      <div class="content-item" data-id="0">
-                                        <h3>test 1</h3>
-                                        <p>test 1</p>
+                                      <div class="content-item fade-in-element" data-id="0">
+                                        <h2>Frequent Outages</h2>
+                                        <p>Manual deployments increase the risk of downtime</p>
                                       </div>
-                                      <div class="content-item" data-id="1" style="display:none">
-                                        <h3>test 2</h3>
-                                        <p>test 2</p>
+                                      <div class="content-item fade-in-element" data-id="1" style="display:none;">
+                                        <h2>Slow Time-to-Market</h2>
+                                        <p>Siloed teams delay product releases</p>
                                       </div>
-                                      <div class="content-item" data-id="2" style="display:none">
-                                        <h3>test 3</h3>
-                                        <p>test 3</p>
+                                      <div class="content-item fade-in-element" data-id="2" style="display:none;">
+                                        <h2>Increased Cloud Costs</h2>
+                                        <p>Underutilized infrastructure wastes budget</p>
                                       </div>
-                                      <div class="content-item" data-id="3" style="display:none">
-                                        <h3>test 4</h3>
-                                        <p>test 4</p>
+                                      <div class="content-item fade-in-element" data-id="3" style="display:none;">
+                                        <h2>Lack of Insights & Automation</h2>
+                                        <p>Limited visibility impedes transformation</p>
                                       </div>
-                                      <div class="content-item" data-id="4" style="display:none">
-                                        <h3>test 5</h3>
-                                        <p>test 5</p>
+                                      <div class="content-item fade-in-element" data-id="4" style="display:none;">
+                                        <h2>Dependency on Expert Engineers</h2>
+                                        <p>Specialist-only tools increase hiring costs and limit scalability</p>
                                       </div>
                                     </div>
                                  </div>
@@ -516,36 +593,36 @@
                                        <div class="swiper mySwiper">
                                          <div class="swiper-wrapper">
                                            <div class="swiper-slide" data-content="0">
-                                             <span>test 1</span>
+                                             <span>Frequent Outages</span>
                                                <p>
-                                                 test 1
+                                                 Manual deployments increase the risk of downtime
                                                </p>
                                            </div>
                                            <div class="swiper-slide" data-content="1">
-                                             <span>test 2</span>
+                                             <span>Slow Time-to-Market</span>
                                                <p>
-                                                 test 2
+                                                 Siloed teams delay product releases
                                                </p>
                                            </div>
                                         
                                            <div class="swiper-slide" data-content="2">
-                                             <span>test 3</span>
+                                             <span>Increased Cloud Costs</span>
                                                <p>
-                                                 test 3
+                                                 Underutilized infrastructure wastes budget
                                                </p>
                                            </div>
                                         
                                            <div class="swiper-slide" data-content="3">
-                                             <span>test 4</span>
+                                             <span>Lack of Insights & Automation</span>
                                                <p>
-                                                 test 4
+                                                 Limited visibility impedes transformation
                                                </p>
                                            </div>
                                         
                                            <div class="swiper-slide" data-content="4">
-                                             <span>test 5</span>
+                                             <span>Dependency on Expert Engineers</span>
                                                <p>
-                                                 test 5
+                                                 Specialist-only tools increase hiring costs and limit scalability
                                                </p>
                                            </div>
                                          </div>
@@ -557,73 +634,11 @@
                            </div>
                         </section>
                         <!-- .section -->
-                        <section class="section-block section-block--no-bottom-padding  section-block--theme-light-purple section-block--theme-default content-image content-image-4 section-block--theme-light-purple-wave">
+                        <section class="section-block section-block--theme-default content-image content-image-4 section-block--theme-light-purple-wave" style="background-color: #1d2087;">
                            <div class="container  key__highlight">
-                              <div class="section-block__header text-left" style="padding-left: 7%; padding-right: 30px;">
+                              <div class="section-block__header text-right" style="padding-left: 30px; padding-right: 30px;">
                                  <h2 class="section-block__title content-image__title">Key Highlights</h2>
                               </div>
-                              <!-- <div class="content-image__inner content-image__inner--image-right content-image__inner--">
-                                 <div class="content-image__content">
-                                    <div class="section-block__content text-left ">
-                                       <ul>
-                                          <li>
-                                             <h4>
-                                                AI-powered platform
-                                             </h4>
-                                             <span>
-                                                Augments every stage of the lifecycle.
-                                             </span>
-                                          </li>
-                                          <li>
-                                             <h4>
-                                                Delta Deployment feature
-                                             </h4>
-                                             <span>
-                                                A distinctive capability that competitors lack.
-                                             </span>
-                                          </li>
-                                          <li>
-                                             <h4>
-                                                Zero Business Impact Transition
-                                             </h4>
-                                             <span>
-                                                (16-week structured onboarding)
-                                             </span>
-                                          </li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                                 <div class="content-image__content content-image__image  content-image__image--align-default">
-                                    <div class="section-block__content text-left ">
-                                       <ul>
-                                          <li>
-                                             <h4>
-                                                Unified Architecture
-                                             </h4>
-                                             <span>
-                                                Consolidates tools, platforms, and cloud workflows.
-                                             </span>
-                                          </li>
-                                          <li>
-                                             <h4>
-                                                Built-in monitoring & alerts
-                                             </h4>
-                                             <span>
-                                                No external integrations needed as compared to other players.
-                                             </span>
-                                          </li>
-                                          <li>
-                                             <h4>
-                                                Flexible Commercial Models
-                                             </h4>
-                                             <span>
-                                                Offers adaptable licensing and service options.
-                                             </span>
-                                          </li>
-                                       </ul>
-                                    </div>
-                                 </div>
-                              </div> -->
                               <ul>
                                   <li style="--accent-color:#0B374D">
                                       <div class="title">AI-powered platform</div>
@@ -645,7 +660,7 @@
                                       <div class="title">Built-in monitoring & alerts</div>
                                       <div class="descr">No external integrations needed as compared to other players.</div>
                                   </li>
-                                    <li style="--accent-color:#AC2A1A">
+                                    <li style="--accent-color:#801bab">
                                       <div class="title">Flexible Commercial Models</div>
                                       <div class="descr">Offers adaptable licensing and service options.</div>
                                   </li>
@@ -655,44 +670,44 @@
                            <!-- .container -->
                         </section>
                         <!-- .section -->
-                        <section class="section-block section-block--no-top-padding  section-block--container-default section-block--theme-default boxes boxes-2 ">
+                        <section class="section-block section-block--container-default section-block--theme-default boxes boxes-2 ">
                            <div class="container features__container">
-                              <div class="boxes__wrapper boxes__wrapper--columns-three">
-                                 <div class="boxes__box-item boxes__box-item--align-left boxes__box-item--style-shadow">
-                                    <div class="boxes__box-item__image">
-                                       <a target="" href="https://docs.bridgecrew.io/docs/resource-inventory"><img width="85" height="85" src="../wp-content/uploads/bridgecrew-icon-40-e1622735384959.png" class="attachment-full size-full" alt="" loading="lazy" /></a>				
-                                    </div>
-                                    <div class="boxes__box-item__content">
-                                       <h3>Complete resource visibility</h3>
-                                       <p><span style="font-weight: 400;">Explore resources&#8217; dependencies, errors, and historical changes in one place.</span></p>
-                                       <div class="boxes__box-item__content__more">
-                                          <a class="ns-btn ns-btn--text" href="https://docs.bridgecrew.io/docs/resource-inventory" target="">Learn more</a>
+                              <div class="section-block__header text-center boxes--columns-two" style="padding-bottom: 40px;">
+                                 <h2 class="section-block__title boxes__title">Uniphy is one application for the entire DevOps lifecycle</h2>
+                              </div>
+                              <div class="boxes__wrapper boxes__wrapper--columns-four">
+                                 <div class="boxes__box-item boxes__box-item--align-left boxes__box-item--style-shadow transition-3d-hover">
+                                    <a target="" href="#">
+                                       <div class="boxes__box-item__image">
+                                          <h4 class="section-block__pre-title dynamic-pricing__pre-title" style="position: absolute; margin: 10px 15px 15px 15px;"><span>Manage</span></h4>
+                                          <img width="85" height="85" src="../assets/images/abstract-shapes-13.svg" class="attachment-full size-full" alt="" loading="lazy" />
                                        </div>
-                                    </div>
+                                       <div class="boxes__box-item__content">
+                                          <h3>Fast feedback loops, the ability to manage projects, software change</h3>
+                                       </div>
+                                    </a>
                                  </div>
-                                 <div class="boxes__box-item boxes__box-item--align-left boxes__box-item--style-shadow">
-                                    <div class="boxes__box-item__image">
-                                       <a target="" href="https://docs.bridgecrew.io/docs/policy-dashboard"><img width="85" height="85" src="../wp-content/uploads/2020/07/bridgecrew-icon-20-e1622735722378.png" class="attachment-full size-full" alt="" loading="lazy" /></a>				
-                                    </div>
-                                    <div class="boxes__box-item__content">
-                                       <h3>Cloud policy management</h3>
-                                       <p><span style="font-weight: 400;">Keep track of active policies by category, severity, type, benchmark, and more.</span></p>
-                                       <div class="boxes__box-item__content__more">
-                                          <a class="ns-btn ns-btn--text" href="https://docs.bridgecrew.io/docs/policy-dashboard" target="">Learn more</a>
+                                 <div class="boxes__box-item boxes__box-item--align-left boxes__box-item--style-shadow transition-3d-hover">
+                                    <a target="" href="#">
+                                       <div class="boxes__box-item__image">
+                                          <h4 class="section-block__pre-title dynamic-pricing__pre-title" style="position: absolute; margin: 10px 15px 15px 15px;"><span>Deploy</span></h4>
+                                          <img width="85" height="85" src="../assets/images/abstract-shapes-14.svg" class="attachment-full size-full" alt="" loading="lazy" />
                                        </div>
-                                    </div>
+                                       <div class="boxes__box-item__content">
+                                          <h3>Deploy to multiple environments like staging and production</h3>
+                                       </div>
+                                    </a>
                                  </div>
-                                 <div class="boxes__box-item boxes__box-item--align-left boxes__box-item--style-shadow">
-                                    <div class="boxes__box-item__image">
-                                       <a target="" href="https://docs.bridgecrew.io/docs/custom-policies"><img width="85" height="85" src="../wp-content/uploads/2020/07/bridgecrew-icon-37-e1622735477126.png" class="attachment-full size-full" alt="" loading="lazy" /></a>				
-                                    </div>
-                                    <div class="boxes__box-item__content">
-                                       <h3>Custom policies</h3>
-                                       <p><span style="font-weight: 400;">Define and enforce your own cloud policies with our no-code creator.</span></p>
-                                       <div class="boxes__box-item__content__more">
-                                          <a class="ns-btn ns-btn--text" href="https://docs.bridgecrew.io/docs/custom-policies" target="">Learn more</a>
+                                 <div class="boxes__box-item boxes__box-item--align-left boxes__box-item--style-shadow transition-3d-hover">
+                                    <a target="" href="#">
+                                       <div class="boxes__box-item__image">
+                                          <h4 class="section-block__pre-title dynamic-pricing__pre-title" style="position: absolute; margin: 10px 15px 15px 15px;"><span>Monitor</span></h4>
+                                          <img width="85" height="85" src="../assets/images/abstract-shapes-15.svg" class="attachment-full size-full" alt="" loading="lazy" />
                                        </div>
-                                    </div>
+                                       <div class="boxes__box-item__content">
+                                          <h3>Monitor, repair, remediate configuration drift and status of your application</h3>
+                                       </div>
+                                    </a>
                                  </div>
                               </div>
                            </div>
