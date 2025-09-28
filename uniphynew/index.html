@@ -10,142 +10,20 @@
       <link rel="profile" href="https://gmpg.org/xfn/11">
       <link href="wp-content/themes/bridgecrew/assets/images/favicon.png" rel="shortcut icon" type="image/x-icon">
       <link href="wp-content/themes/bridgecrew/assets/images/favicon.png" rel="apple-touch-icon">
-      <style>
-         .slideshow-container {
-         position: relative;
-         width: 100%;
-         max-width: 90%;
-         overflow: hidden;
-         border-radius: 10px;
-         background: #fff;
-         min-height: inherit;
-         padding: 20px;
-		 justify-self: center;
-         }
-		 .slide_carousel {
-			display: flex;
-		    height: 370px;
-		    padding: 15px 15px;
-		    align-items: center;
-		    justify-content: start;
-		    flex-direction: column;
-		 }
-         /* Text inside carousel */
-         .slideshow-container h2 {
-         font-size: 1.6rem;
-         margin-bottom: 10px;
-         }
-         .slideshow-container p, 
-         .slideshow-container li {
-         font-size: 1rem;
-         line-height: 1.5;
-         }
-         /* Dots navigation */
-         .dots {
-         text-align: center;
-         margin-top: 10px;
-         }
-         .dots span {
-         height: 10px;
-         width: 10px;
-         margin: 0 4px;
-         display: inline-block;
-         border-radius: 50%;
-         background-color: #bbb;
-         cursor: pointer;
-         }
-         .dots span.active {
-         background-color: #333;
-         }
-         /* Tablet view */
-         @media (max-width: 1024px) {
-         .slideshow-container h2 {
-         font-size: 1.4rem;
-         }
-         .slideshow-container p,
-         .slideshow-container li {
-         font-size: 0.95rem;
-         }
-         }
-         /* Mobile view */
-         @media (max-width: 768px) {
-         .responsive-container {
-         flex-direction: column;
-         text-align: left;
-         }
-         .responsive-container .left-img,
-         .responsive-container .right-carousel {
-         max-width: 100%;
-         }
-         .responsive-container .right-carousel {
-         margin-top: 20px;
-         }
-         .slideshow-container {
-         padding: 15px;
-         }
-         .slideshow-container h2 {
-         font-size: 1.2rem;
-         }
-         .slideshow-container p,
-         .slideshow-container li {
-         font-size: 0.9rem;
-         }
-         }
-         .mySlides {
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         width: 300px;
-         height: 400px;
-         transform: translate(-50%, -50%);
-         border-radius: 12px;
-         overflow: hidden;
-         box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-         opacity: 0;
-         transition: transform 0.8s ease, filter 0.8s ease, opacity 0.8s ease, z-index 0.8s;
-         }
-         /* Card positions */
-         .center {
-         transform: translate(-50%, -50%) scale(1);
-         z-index: 3;
-         filter: blur(0);
-         opacity: 1;
-         }
-         .left {
-         transform: translate(-136%, -50%) scale(0.65) rotateY(25deg);
-         z-index: 2;
-         filter: blur(2px);
-         opacity: 0.4;
-         }
-         .right {
-         transform: translate(36%, -50%) scale(0.65) rotateY(-25deg);
-         z-index: 2;
-         filter: blur(2px);
-         opacity: 0.5;
-         }
-         .hidden {
-         opacity: 0;
-         z-index: 1;
-         }
-         /* Dots */
-         .dots {
-         text-align: center;
-         margin-top: 20px;
-         }
-         .dot {
-         height: 15px;
-         width: 15px;
-         margin: 0 3px;
-         background-color: #bbb;
-         border-radius: 50%;
-         display: inline-block;
-         cursor: pointer;
-         transition: background-color 0.6s ease;
-         }
-         .dot.active {
-         background-color: #717171;
-         }
-      </style>
+
+      <!-- Font -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&amp;display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+      <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
+      <!-- CSS Implementing Plugins -->
+      <link rel="stylesheet" href="./assets/vendor/font-awesome/css/all.min.css">
+      <link rel="stylesheet" href="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
+      <link rel="stylesheet" href="./assets/vendor/slick-carousel/slick/slick.css">
+      <link rel="stylesheet" href="./assets/vendor/aos/dist/aos.css">
+      <!-- CSS  -->
+      <link rel="stylesheet" href="./assets/css/theme.css">
+      
       <style type="text/css">	
          .heateorSssInstagramBackground {
          background:radial-gradient(circle at 30% 107%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)
@@ -175,7 +53,13 @@
          border-color: transparent;
          }
          .section-spacing {
-         padding: 75px 0 !important;
+            padding: 75px 0 !important;
+         }
+         .section-spacing-top {
+         padding: 75px 0 0 0 !important;
+         }
+         .section-spacing-bottom {
+         padding: 0 0 75px  0 !important;
          }
          .boxes__background {
          background-color: #201f85;
@@ -254,6 +138,9 @@
 		.footer__menu .footer__first_childwidth {
 			width: 17% !important;
 		}
+      .swiper5 .swiper-wrapper .swiper-slide li {
+         list-style-type: disclosure-closed;
+      }
 		
 		/* Mobile styles */
 		@media (max-width: 768px) {
@@ -310,6 +197,22 @@
          .boxex__box__body {
          padding: 20px;
          }
+         }
+         @media (max-width: 425px) {
+            .unified-operation-section {
+               background-position: 100% 5.3% !important;
+            }
+            .unified-operation-section .section-block__header {
+               background-color: white !important;
+            }
+         }
+         @media (max-width: 768px) {
+            .unified-operation-section {
+               background-position: 100% 3.1% !important;
+            }
+            .unified-operation-section .section-block__header {
+               background-color: white !important;
+            }
          }
 		}
       </style>
@@ -378,6 +281,22 @@
          unicode-range: U+F004-F005,U+F007,U+F017,U+F022,U+F024,U+F02E,U+F03E,U+F044,U+F057-F059,U+F06E,U+F070,U+F075,U+F07B-F07C,U+F080,U+F086,U+F089,U+F094,U+F09D,U+F0A0,U+F0A4-F0A7,U+F0C5,U+F0C7-F0C8,U+F0E0,U+F0EB,U+F0F3,U+F0F8,U+F0FE,U+F111,U+F118-F11A,U+F11C,U+F133,U+F144,U+F146,U+F14A,U+F14D-F14E,U+F150-F152,U+F15B-F15C,U+F164-F165,U+F185-F186,U+F191-F192,U+F1AD,U+F1C1-F1C9,U+F1CD,U+F1D8,U+F1E3,U+F1EA,U+F1F6,U+F1F9,U+F20A,U+F247-F249,U+F24D,U+F254-F25B,U+F25D,U+F267,U+F271-F274,U+F279,U+F28B,U+F28D,U+F2B5-F2B6,U+F2B9,U+F2BB,U+F2BD,U+F2C1-F2C2,U+F2D0,U+F2D2,U+F2DC,U+F2ED,U+F328,U+F358-F35B,U+F3A5,U+F3D1,U+F410,U+F4AD;
          }
       </style>
+
+      <!-- JS Global Compulsory -->
+      <script src="./assets/vendor/jquery/dist/swiper.min.js"></script>
+      <script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+      <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js'></script>
+    
+      <!-- JS Implementing Plugins -->
+      <script src="./assets/vendor/hs-header/dist/hs-header.min.js"></script>
+      <script src="./assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+      <script src="./assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
+      <script src="./assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+      <script src="./assets/vendor/slick-carousel/slick/slick.js"></script>
+      <script src="./assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+      <script src="./assets/vendor/aos/dist/aos.js"></script>
+
       <script src='wp-includes/js/jquery/jquery.minaf6c.js?ver=3.6.0' id='jquery-core-js'></script>
       <script src='wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2' id='jquery-migrate-js'></script>
       <script id='cookie-law-info-js-extra'>
@@ -475,6 +394,7 @@
                   <div class="main-header__menu">
                      <nav>
                         <div class="menu-main-menu-container">
+                           <div class="clearfix"></div>
                            <ul id="header-menu" class="menu">
                               <li id="menu-item-5281" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5281"><a href="platform/index.html">Platform</a></li>
                               <li id="menu-item-6279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6279"><a href="pricing/index.html">Pricing</a></li>
@@ -504,7 +424,7 @@
                   <b></b>
                   </a>			
                </div>
-               <div class="clearfix"></div>
+               <!-- <div class="clearfix"></div> -->
             </div>
          </header>
          <div id="primary" class="content-area">
@@ -517,7 +437,7 @@
                               <div class="content-image__inner content-image__inner--image-right content-image__inner--">
                                  <div class="content-image__content   content-image__content--more-area  ">
                                     <div class="section-block__header text-left ">
-                                       <h1 class="section-block__title content-image__title ">Unified Operations and Application Lifecycle Management</h1>
+                                       <h1 class="section-block__title content-image__title">Unified Operations and Application Lifecycle Management</h1>
                                     </div>
                                     <div class="section-block__content text-left ">
                                        <p>All-in-one, no-code, AI powered platform that automates infrastructure, deployments, and operations — delivering faster releases, fewer incidents, and lower costs.</p>
@@ -533,9 +453,9 @@
                            </div>
                            <!-- .container -->
                         </section>
-                        <section class="section-spacing"></section>
+                        <section class="section-spacing-top"></section>
                         <!-- .section -->
-                        <section class="section-block section-spacing section-block--container-default section-block--theme-big-purple-bg-square content-image content-image-2 text-center">
+                        <section class="section-block section-spacing section-block--container-default section-block--theme-big-purple-bg-square content-image content-image-2 text-center" style="background: linear-gradient(45deg, #1d2087 0%, rgba(57, 120, 237, 0.5) 100%);">
                            <div class="container">
                               <video class="attachment-full size-full" autoplay muted loop>
                                  <source src="assets/videos/uniphy.mp4" type="video/mp4">
@@ -545,46 +465,42 @@
                            <!-- .container -->
                         </section>
                         <!-- .section -->
-                        <section class="section-block  section-block--container-medium section-block--theme-default testimonials-slider testimonials-slider-1 ">
+                        <section class="section-block section-spacing section-block--container-default section-block--theme-default testimonials-slider testimonials-slider-1 ">
                            <div class="section-block__header text-center boxes--columns-two">
                               <h2 class="section-block__title section-block__sub_title boxes__title ">AI-Powered Uniphy</h2>
                            </div>
-                           <div class="carousel__card" style="padding-top: 75px;">
-                              <div class="container margin__empty left__img">
-                                 <img src="./assets/images/AI_Powered_Uniphy.png" class="attachment-full size-full" alt="AI Powered Uniphy" loading="lazy"/>
-                              </div>
-                              <!-- .container -->
-                              <div class="container margin__empty right-carousel">
-                                 <div class="slideshow-container">
-                                    <div class="mySlides" style="background-image: url(./assets/images/Learn.jpg); background-position: center; color: white; text-align: center;">
-                                       <div class="slide_carousel" style="background: rgba(220, 38, 38, 0.8);">
+                           <div class="container" style="padding-top: 25px;">
+                              <div class="swiper swiper5 mySwiper">
+                                 <div class="swiper-wrapper">
+                                    <div class="swiper-slide" style="background: linear-gradient(rgba(18, 134, 168, 0.8)), url(./assets/images/Learn.jpg); background-position: center; color: white; text-align: center;">
+                                       <div>
                                           <div >
-                                             <h3 style="font-weight: 600;">
+                                             <h3 style="font-weight: 600; color: white;">
                                                 LEARN – Continuous Improvement
                                              </h3>
                                           </div>
                                           <div >
                                              <div>
-                                                <ul style="line-height: normal;  color: white; text-align: left; font-weight: 500;">
-								  					            <li>AI-powered customer enquiry assistant</li>
-								  					            <li>Usage, Team & Business Analytics</li>
-								  					            <li>Outcome-based Experimentation</li>
-								  					            <li>Feedback Loop into Strategy & Design</li>
+                                                <ul style="line-height: normal;  color: white; text-align: left; font-weight: 500; font-family: sofia-pro-soft, sans-serif;">
+								  			   	            <li>AI-powered customer enquiry assistant</li>
+								  			   	            <li>Usage, Team & Business Analytics</li>
+								  			   	            <li>Outcome-based Experimentation</li>
+								  			   	            <li>Feedback Loop into Strategy & Design</li>
                                                 </ul>
                                              </div>
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="mySlides" style="background-image: url(./assets/images/Think.jpg); background-position: center; color: white; text-align: center;">
-                                       <div class="slide_carousel" style="background: rgba(32, 31, 133, 0.8);">
+                                    <div class="swiper-slide" style="background: linear-gradient(rgba(210, 181, 59, 0.8)), url(./assets/images/Think.jpg); background-position: center; color: white; text-align: center;">
+                                       <div class="slide_carousel">
                                           <div >
-                                             <h3 style="font-weight: 600;">
+                                             <h3 style="font-weight: 600; color: white;">
                                                 THINK – Blueprint
                                              </h3>
                                           </div>
                                           <div >
                                              <div>
-                                                <ul style="line-height: normal;  color: white; text-align: left; font-weight: 500;">
+                                                <ul style="line-height: normal;  color: white; text-align: left; font-weight: 500; font-family: sofia-pro-soft, sans-serif;">
                                                    <li>AI-generated business & technical blueprints</li>
                                                    <li>AI-powered requirement gathering</li>
                                                    <li>Architecture and technical design</li>
@@ -595,16 +511,16 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="mySlides" style="background-image: url(./assets/images/Monitor.png); background-position: center; color: white; text-align: center;">
-                                       <div class="slide_carousel" style="background: rgba(37, 99, 235, 0.8);">
+                                    <div class="swiper-slide" style="background: linear-gradient(rgba(218, 97, 30, 0.8)), url(./assets/images/Monitor.png); background-position: center; color: white; text-align: center;">
+                                       <div class="slide_carousel">
                                           <div >
-                                             <h3 style="font-weight: 600;">
+                                             <h3 style="font-weight: 600; color: white;">
                                                 MANAGE – Monitor & Support
                                              </h3>
                                           </div>
                                           <div >
                                              <div>
-                                                <ul style="line-height: normal;  color: white; text-align: left; font-weight: 500;">
+                                                <ul style="line-height: normal;  color: white; text-align: left; font-weight: 500; font-family: sofia-pro-soft, sans-serif;">
                                                    <li>AI-powered anomaly detection & predictive alerts</li>
                                                    <li>Smart remediation & recovery</li>
                                                 </ul>
@@ -612,16 +528,16 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="mySlides" style="background-image: url(./assets/images/Run.png); background-position: center; color: white; text-align: center;">
-                                       <div class="slide_carousel" style="background: rgba(245, 158, 11, 0.8);">
+                                    <div class="swiper-slide" style="background: linear-gradient(rgba(172, 42, 26, 0.8)), url(./assets/images/Run.png); background-position: center; color: white; text-align: center;">
+                                       <div class="slide_carousel">
                                           <div >
-                                             <h3 style="font-weight: 600;">
+                                             <h3 style="font-weight: 600; color: white;">
                                                 RUN – Operate in Cloud
                                              </h3>
                                           </div>
                                           <div >
                                              <div>
-                                                <ul style="line-height: normal; color: white; text-align: left; font-weight: 500;">
+                                                <ul style="line-height: normal; color: white; text-align: left; font-weight: 500; font-family: sofia-pro-soft, sans-serif;">
                                                    <li>Builds and provisions missing features on-demand</li>
                                                    <li>Predicts workload spikes & optimizes runtime resources</li>
                                                    <li>Self-healing environments</li>
@@ -630,16 +546,16 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="mySlides" style="background-image: url(./assets/images/Deploy.jpg); background-position: center; color: white; text-align: center;">
-                                       <div class="slide_carousel" style="background: rgba(5, 150, 105, 0.8)">
+                                    <div class="swiper-slide" style="background: linear-gradient(rgba(128, 27, 171, 0.8)), url(./assets/images/Deploy.jpg); background-position: center; color: white; text-align: center;">
+                                       <div class="slide_carousel">
                                           <div >
-                                             <h3 style="font-weight: 600;">
+                                             <h3 style="font-weight: 600; color: white;">
                                                 DELIVER – Deploy & Release
                                              </h3>
                                           </div>
                                           <div >
                                              <div>
-                                                <ul style="line-height: normal;  color: white; text-align: left; font-weight: 500;">
+                                                <ul style="line-height: normal;  color: white; text-align: left; font-weight: 500; font-family: sofia-pro-soft, sans-serif;">
                                                    <li>Environment Provisioning (Azure, AWS, On-Prem)</li>
                                                    <li>Middleware & Security Tooling Configuration</li>
                                                    <li>Application Deployment & Orchestration</li>
@@ -649,16 +565,16 @@
                                           </div>
                                        </div>
                                     </div>
-                                    <div class="mySlides" style="background-image: url(./assets/images/Code.png); background-position: center; color: white; text-align: center;">
-                                       <div class="slide_carousel" style="background: rgba(124, 58, 237, 0.8);">
+                                    <div class="swiper-slide" style="background: linear-gradient(rgba(11, 55, 77, 0.8)), url(./assets/images/Code.png); background-position: center; color: white; text-align: center;">
+                                       <div class="slide_carousel">
                                           <div >
-                                             <h3 style="font-weight: 600;">
+                                             <h3 style="font-weight: 600; color: white;">
                                                 CODE – Build & Test
                                              </h3>
                                           </div>
                                           <div >
                                              <div>
-                                                <ul style="line-height: normal;  color: white; text-align: left; font-weight: 500;">
+                                                <ul style="line-height: normal;  color: white; text-align: left; font-weight: 500; font-family: sofia-pro-soft, sans-serif;">
                                                    <li>Source Code Management (3rd-party tools)</li>
                                                    <li>Continuous Integration & Build Automation</li>
                                                    <li>Artifact Management</li>
@@ -668,19 +584,20 @@
                                        </div>
                                     </div>
                                  </div>
-                                 <div class="dots"></div>
+                                 <div class="swiper-pagination"></div>
                               </div>
-                              <!-- .container -->
+                              <!-- <div class="swiper-pagination"></div> -->
                            </div>
+                           <!-- .container -->
                         </section>
                         <!-- .section -->
-                        <section class="section-block--no-bottom-padding  section-block--container-default section-block--theme-light-purple-wave boxes boxes-1 ">
+                        <section class="section-spacing-bottom  section-block--container-default section-block--theme-light-purple-wave boxes boxes-1 unified-operation-section" style="background-color: #1d2087;">
                            <div class="container">
                               <div class="section-block__header text-center boxes--columns-two">
                                  <h2 class="section-block__title boxes__title ">All-in-one Unified Operation</h2>
                               </div>
                               <div class="boxes__wrapper boxes__wrapper--columns-two">
-                                 <div class="boxes__box-item boxes__box-item--align-center boxes__box-item--style-shadow">
+                                 <div class="boxes__box-item boxes__box-item--align-center boxes__box-item--style-shadow" style="box-shadow: 0 12px 40px rgba(192, 174, 229, 1.15);">
                                     <div class="boxes__box-item__image">
                                        <img width="185" height="185" src="assets/images/TecOps.png" class="attachment-full size-full" alt="" loading="lazy" />
                                     </div>
@@ -691,7 +608,7 @@
                                        <p>From a DevOps pipeline perspective UNIPHY offers its own DevOps stack including provisioning and orchestration with an intuitive UI.</p>
                                     </div>
                                  </div>
-                                 <div class="boxes__box-item boxes__box-item--align-center boxes__box-item--style-shadow">
+                                 <div class="boxes__box-item boxes__box-item--align-center boxes__box-item--style-shadow" style="box-shadow: 0 12px 40px rgba(192, 174, 229, 1.15);">
                                     <div class="boxes__box-item__image">
                                        <img width="185" height="185" src="assets/images/DevOps.png" class="attachment-full size-full" alt="" loading="lazy" />
                                     </div>
@@ -702,7 +619,7 @@
                                        <p>From a DevOps pipeline perspective UNIPHY offers its own DevOps stack including provisioning and orchestration with an intuitive UI.</p>
                                     </div>
                                  </div>
-                                 <div class="boxes__box-item boxes__box-item--align-center boxes__box-item--style-shadow">
+                                 <div class="boxes__box-item boxes__box-item--align-center boxes__box-item--style-shadow" style="box-shadow: 0 12px 40px rgba(192, 174, 229, 1.15);">
                                     <div class="boxes__box-item__image">
                                        <img width="185" height="185" src="assets/images/SecOps.png" class="attachment-full size-full" alt="" loading="lazy" />
                                     </div>
@@ -720,9 +637,9 @@
                         <!-- .section -->
 
                         <!-- .section -->
-                        <section class="section-block  section-block--container-default section-block--theme-light-purple cta cta-1 ">
+                        <section class="section-block section-spacing section-block--container-default section-block--theme-light-purple cta cta-1">
                            <div class="container">
-                              <div class="cta__inner   cta__inner--default">
+                              <div class="cta__inner   cta__inner--default" style="background: linear-gradient(45deg, #ffca65, #3978ed, #43eada);">
                                  <div class="cta__content">
                                     <h2>Uniphy is free to get started</h2>
                                     <h3>Sign up to start automating your application lifecycle management</h3>
@@ -730,7 +647,7 @@
                                  <div class="cta__buttons">
                                     <div class="cta-row cta-row--horizontal cta-row--center">
                                        <a class="ns-btn ns-btn--white " href="" target="">Get Started For Free</a>
-									   <a class="ns-btn ns-btn--white-border " href="schedule-a-demo/index.html" target="">Watch Demo</a>
+									            <a class="ns-btn ns-btn--white-border " href="schedule-a-demo/index.html" target="">Watch Demo</a>
                                     </div>
                                  </div>
                               </div>
@@ -947,50 +864,13 @@
       <script src='wp-content/themes/bridgecrew/assets/js/vendor/jquery.magnific-popup.minf658.js?ver=5.8.1' id='magnific-popup-js'></script>
       <script src='wp-content/themes/bridgecrew/assets/js/vendor/jquery.basictable.minf658.js?ver=5.8.1' id='basictable-js'></script>
       <script type="text/javascript" src="wp-content/themes/bridgecrew/build/main-minf658.js?ver=5.8.1" defer="defer"></script><script src='https://bridgecrew.io/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script>
-      <script>
-         let slideIndex = 0;
-         const slides = document.getElementsByClassName("mySlides");
-         const dotsContainer = document.querySelector(".dots");
-         
-         // create dots dynamically
-         for (let i = 0; i < slides.length; i++) {
-           let dot = document.createElement("span");
-           dot.classList.add("dot");
-           dot.addEventListener("click", () => {
-             slideIndex = i;   // jump to clicked index
-             showSlides(true); // true = user clicked
-           });
-           dotsContainer.appendChild(dot);
-         }
-         const dots = document.getElementsByClassName("dot");
-         
-         function showSlides(userClick = false) {
-           // reset all
-           for (let i = 0; i < slides.length; i++) {
-             slides[i].className = "mySlides hidden";
-             dots[i].classList.remove("active");
-           }
-         
-           let center = slideIndex % slides.length;
-           let left = (slideIndex - 1 + slides.length) % slides.length;
-           let right = (slideIndex + 1) % slides.length;
-         
-           slides[center].className = "mySlides center";
-           slides[left].className = "mySlides left";
-           slides[right].className = "mySlides right";
-         
-           dots[center].classList.add("active");
-         
-           slideIndex++;
-         
-         //   if (!userClick) {
-         //     timer = setTimeout(showSlides, 3000);
-         //   }
-         }
-         
-         // start slideshow
-         let timer = setTimeout(showSlides, 0);
-      </script>
+
+      <!-- JS Front -->
+      <script src="./assets/js/hs.core.js"></script>
+      <script src="./assets/js/hs.slick-carousel.js"></script>
+      <script src="./assets/js/hs.validation.js"></script>
+      <script src="./assets/js/activity.js"></script>
+
    </body>
    <!-- Mirrored from bridgecrew.io/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Nov 2021 09:36:05 GMT -->
 </html>

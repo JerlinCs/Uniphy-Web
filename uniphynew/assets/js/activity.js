@@ -168,7 +168,7 @@ if(indexHeroSection){
       });
   });
 
-  var swiper = new Swiper(".swiper", {
+  var swiper = new Swiper(".swiper3", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
@@ -177,6 +177,7 @@ if(indexHeroSection){
       delay: 1000,
       disableOnInteraction: false,
     },
+    speed: 600, 
     coverflowEffect: {
       rotate: 0,
       stretch: 0,
@@ -224,6 +225,48 @@ if(indexHeroSection){
         if (activeContent) {
           activeContent.style.display = "block";
         }
+      }
+    }
+  });
+
+  var swiper = new Swiper(".swiper5", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 3,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    speed: 600, 
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 100,
+      modifier: 2,
+      slideShadows: true
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1, 
+        spaceBetween: 40
+      },
+      768: {
+        slidesPerView: 2, 
+        spaceBetween: 40
+      },
+      900: {
+        slidesPerView: 3,
+        spaceBetween: 60
+      },
+      1800: {
+        slidesPerView: 3,
+        spaceBetween: 60
       }
     }
   });

@@ -68,7 +68,7 @@
             min-height: 235px; 
             align-content: center; 
             padding-left: 10% !important;
-            padding-right: 3% !important;
+            padding-right: 30px !important;
          }
          @media screen and (max-width:783px) {.heateor_sss_vertical_sharing{display:none!important}}@media screen and (max-width:783px) {.heateor_sss_floating_follow_icons_container{display:none!important}}
 		.footer__menu {
@@ -311,6 +311,31 @@
 			width: 100% !important;
 			}
 		}
+
+      @media (max-width: 1024px) {
+         .challenges__section .content-image__content {
+            text-align: center !important;
+         }
+      }
+
+      @media (max-width: 1530px) {
+         .features__container .boxes__box-item {
+            min-height: 393px;
+         }
+      }
+
+      @media (max-width: 425px) {
+         .evaluation-section .section-block__header,
+         .challenges__section .section-block__header,
+         .key__highlight .section-block__header
+         {
+            text-align: center !important;
+         }
+         .key__highlight ul {
+            justify-content: center !important;
+            margin-left: 0 !important;
+         }
+      }
       </style>
       <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
       <!-- This site is optimized with the Yoast SEO plugin v17.2 - https://yoast.com/wordpress/plugins/seo/ -->
@@ -329,7 +354,106 @@
       <meta property="og:image:height" content="1012" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:image" content="https://bridgecrew.io/wp-content/uploads/Website-Feature-Image.jpg" />
-      <script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://bridgecrew.io/#organization","name":"Bridgecrew","url":"https://bridgecrew.io/","sameAs":[],"logo":{"@type":"ImageObject","@id":"https://bridgecrew.io/#logo","inLanguage":"en-US","url":"https://bridgecrew.io/wp-content/uploads/Website-Feature-Image-min.jpg","contentUrl":"https://bridgecrew.io/wp-content/uploads/Website-Feature-Image-min.jpg","width":1200,"height":600,"caption":"Bridgecrew"},"image":{"@id":"https://bridgecrew.io/#logo"}},{"@type":"WebSite","@id":"https://bridgecrew.io/#website","url":"https://bridgecrew.io/","name":"Bridgecrew","description":"Codified Cloud Security","publisher":{"@id":"https://bridgecrew.io/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://bridgecrew.io/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://bridgecrew.io/platform/#primaryimage","inLanguage":"en-US","url":"https://bridgecrew.io/wp-content/uploads/Website-Feature-Image.jpg","contentUrl":"https://bridgecrew.io/wp-content/uploads/Website-Feature-Image.jpg","width":2024,"height":1012,"caption":"Bridgecrew is the security-as-code platform for developers"},{"@type":"WebPage","@id":"https://bridgecrew.io/platform/#webpage","url":"https://bridgecrew.io/platform/","name":"Codified cloud security platform | Cloud security solution for DevOps - Bridgecrew","isPartOf":{"@id":"https://bridgecrew.io/#website"},"datePublished":"2021-01-19T02:10:08+00:00","dateModified":"2021-08-31T11:59:16+00:00","description":"Bridgecrew's codified platform automates cloud security for AWS, Terraform, Kubernetes, CloudFormation, Google Cloud and more.","breadcrumb":{"@id":"https://bridgecrew.io/platform/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://bridgecrew.io/platform/"]}]},{"@type":"BreadcrumbList","@id":"https://bridgecrew.io/platform/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://bridgecrew.io/"},{"@type":"ListItem","position":2,"name":"Platform"}]}]}</script>
+      <script type="application/ld+json" class="yoast-schema-graph">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://bridgecrew.io/#organization",
+            "name": "Bridgecrew",
+            "url": "https://bridgecrew.io/",
+            "sameAs": [],
+            "logo": {
+              "@type": "ImageObject",
+              "@id": "https://bridgecrew.io/#logo",
+              "inLanguage": "en-US",
+              "url": "https://bridgecrew.io/wp-content/uploads/Website-Feature-Image-min.jpg",
+              "contentUrl": "https://bridgecrew.io/wp-content/uploads/Website-Feature-Image-min.jpg",
+              "width": 1200,
+              "height": 600,
+              "caption": "Bridgecrew"
+            },
+            "image": {
+              "@id": "https://bridgecrew.io/#logo"
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://bridgecrew.io/#website",
+            "url": "https://bridgecrew.io/",
+            "name": "Bridgecrew",
+            "description": "Codified Cloud Security",
+            "publisher": {
+              "@id": "https://bridgecrew.io/#organization"
+            },
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://bridgecrew.io/?s={search_term_string}"
+                },
+                "query-input": "required name=search_term_string"
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://bridgecrew.io/platform/#primaryimage",
+            "inLanguage": "en-US",
+            "url": "https://bridgecrew.io/wp-content/uploads/Website-Feature-Image.jpg",
+            "contentUrl": "https://bridgecrew.io/wp-content/uploads/Website-Feature-Image.jpg",
+            "width": 2024,
+            "height": 1012,
+            "caption": "Bridgecrew is the security-as-code platform for developers"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://bridgecrew.io/platform/#webpage",
+            "url": "https://bridgecrew.io/platform/",
+            "name": "Codified cloud security platform | Cloud security solution for DevOps - Bridgecrew",
+            "isPartOf": {
+              "@id": "https://bridgecrew.io/#website"
+            },
+            "datePublished": "2021-01-19T02:10:08+00:00",
+            "dateModified": "2021-08-31T11:59:16+00:00",
+            "description": "Bridgecrew's codified platform automates cloud security for AWS, Terraform, Kubernetes, CloudFormation, Google Cloud and more.",
+            "breadcrumb": {
+              "@id": "https://bridgecrew.io/platform/#breadcrumb"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": [
+                  "https://bridgecrew.io/platform/"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://bridgecrew.io/platform/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://bridgecrew.io/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Platform"
+              }
+            ]
+          }
+        ]
+      }
+      </script>
+
       <!-- / Yoast SEO plugin. -->
       <link rel='dns-prefetch' href='http://use.fontawesome.com/' />
       <link rel='dns-prefetch' href='http://s.w.org/' />
@@ -540,7 +664,7 @@
                                     </div>
                                     <div class="cta-row cta-row--horizontal cta-row--center">
                                        <a class="ns-btn ns-btn--purple " href="" target="">Sign up for free</a>						
-									   <a class="ns-btn ns-btn--white " href="" target="">See a live demo</a>			
+									            <a class="ns-btn ns-btn--white " href="" target="">See a live demo</a>			
                                     </div>
                                  </div>
                               </div>
@@ -548,9 +672,9 @@
                            <!-- .container -->
                         </section>
                         <!-- .section -->
-                        <section class="section-block  section-block--container-medium section-block--theme-light-purple section-block--theme-light-blue-wave-reverse content-image content-image-2 ">
-                           <div class="container">
-							         <div class="section-block__header text-right boxes--columns-two" style="padding-bottom: 30px;">
+                        <section class="section-block  section-block--container-default section-block--theme-light-purple section-block--theme-light-blue-wave-reverse content-image content-image-2 ">
+                           <div class="container evaluation-section" style="padding-left: 30px; padding-right: 30px;">
+							         <div class="section-block__header text-left boxes--columns-two" style="padding-bottom: 30px;">
                                  <h2 class="section-block__title boxes__title">Evaluation Landscape</h2>
                               </div>
 							         <img src="../assets/images/Presentation2.jpg" class="attachment-full size-full evaluation-landing" alt="Evaluation Landscape" loading="lazy"/>
@@ -560,11 +684,11 @@
                         <!-- .section -->
                         <section class=" section-block--container-default content-image content-image-3" style="margin-top: 75px; margin-bottom: 70px;">
                            <div class="container challenges__section">
-                              <div class="section-block__header text-left boxes--columns-two">
-                                 <h2 class="section-block__title boxes__title " style="padding-left: 28px;">Challenges We Solve</h2>
+                              <div class="section-block__header text-right boxes--columns-two">
+                                 <h2 class="section-block__title boxes__title " style="padding-left: 30px; padding-right: 30px;">Challenges We Solve</h2>
                               </div>
                               <div class="content-image__inner content-image__inner--image-left content-image__inner--">
-                                 <div class="content-image__content">
+                                 <div class="content-image__content text-right">
                                     <div id="content-area">
                                       <div class="content-item fade-in-element" data-id="0">
                                         <h2>Frequent Outages</h2>
@@ -590,7 +714,7 @@
                                  </div>
                                  <div class="content-image__image  content-image__image--align-center">
                                     <div class="content-image__inner content-image__inner--image-right content-image__inner--">
-                                       <div class="swiper mySwiper">
+                                       <div class="swiper swiper3 mySwiper">
                                          <div class="swiper-wrapper">
                                            <div class="swiper-slide" data-content="0">
                                              <span>Frequent Outages</span>
@@ -636,8 +760,8 @@
                         <!-- .section -->
                         <section class="section-block section-block--theme-default content-image content-image-4 section-block--theme-light-purple-wave" style="background-color: #1d2087;">
                            <div class="container  key__highlight">
-                              <div class="section-block__header text-right" style="padding-left: 30px; padding-right: 30px;">
-                                 <h2 class="section-block__title content-image__title">Key Highlights</h2>
+                              <div class="section-block__header text-left" style="padding-left: 30px; padding-right: 30px;">
+                                 <h2 class="section-block__title content-image__title" style=" color: white; mix-blend-mode: difference;">Key Highlights</h2>
                               </div>
                               <ul>
                                   <li style="--accent-color:#0B374D">
@@ -664,7 +788,6 @@
                                       <div class="title">Flexible Commercial Models</div>
                                       <div class="descr">Offers adaptable licensing and service options.</div>
                                   </li>
-                               
                               </ul>
                            </div>
                            <!-- .container -->
@@ -714,162 +837,106 @@
                            <!-- .container -->
                         </section>
                         <!-- .section -->
-                        <section class="section-block section-block--no-bottom-padding  section-block--container-default section-block--theme-light-purple content-image content-image-5 ">
+                        <section class="section-block section-block--container-default section-block--theme-light-purple content-image content-image-5 ">
                            <div class="container">
+                              <div class="section-block__header text-center boxes--columns-two" style="padding-bottom: 40px;">
+                                 <h2 class="section-block__title boxes__title">Intelligent Automation through Tools and Accelerators</h2>
+                              </div>
                               <div class="content-image__inner content-image__inner--image-left content-image__inner--">
-                                 <div class="content-image__content     ">
-                                    <div class="section-block__header text-left ">
-                                       <h2 class="section-block__title content-image__title ">Embrace cloud DevSecOps</h2>
-                                    </div>
+                                 <div class="content-image__content" style="justify-items: center;">
                                     <div class="section-block__content text-left ">
                                        <ul>
-                                          <li><span style="font-weight: 400;">Embed cloud security directly into your </span><span style="font-weight: 400;">development workflows and tools.</span></li>
-                                          <li><span style="font-weight: 400;">Prevent errors from being deployed cloud security feedback on every code review.</span></li>
-                                          <li>Collaborate across teams with real-time notifications and seamless ticketing.</li>
+                                          <li>Source Code</li>
+                                          <li>Management Configuration/Construction</li>
+                                          <li>Build and Continuous Integration</li>
+                                          <li>Automated Testing Artifact/Asset Management</li>
                                        </ul>
                                     </div>
                                  </div>
                                  <div class="content-image__image  content-image__image--align-center">
-                                    <img width="1769" height="1252" src="../wp-content/uploads/codereviews-tf-versioning.png" class="attachment-full size-full" alt="" loading="lazy" srcset="https://bridgecrew.io/wp-content/uploads/codereviews-tf-versioning.png 1769w, https://bridgecrew.io/wp-content/uploads/codereviews-tf-versioning-300x212.png 300w, https://bridgecrew.io/wp-content/uploads/codereviews-tf-versioning-1024x725.png 1024w, https://bridgecrew.io/wp-content/uploads/codereviews-tf-versioning-768x544.png 768w, https://bridgecrew.io/wp-content/uploads/codereviews-tf-versioning-1536x1087.png 1536w" sizes="(max-width: 1769px) 100vw, 1769px" />	
+                                    <img width="1769" height="1252" src="../assets/images/Presentation2.jpg" alt="Code" sizes="(max-width: 1769px) 100vw, 1769px" />	
                                  </div>
                               </div>
                            </div>
                            <!-- .container -->
                         </section>
                         <!-- .section -->
-                        <section class="section-block section-block--no-top-padding  section-block--container-default section-block--theme-light-purple boxes boxes-3 ">
-                           <div class="container">
-                              <div class="boxes__wrapper boxes__wrapper--columns-four">
-                                 <div class="boxes__box-item boxes__box-item--align-left boxes__box-item--style-shadow">
-                                    <div class="boxes__box-item__image">
-                                       <a target="" href="https://docs.bridgecrew.io/docs/ingesting-scan-data"><img width="85" height="85" src="../wp-content/uploads/2020/07/bridgecrew-icon-16-e1622735493865.png" class="attachment-full size-full" alt="" loading="lazy" /></a>				
-                                    </div>
-                                    <div class="boxes__box-item__content">
-                                       <h3>CLI and IDE extensions</h3>
-                                       <p>Shift security as far left as possible as code is being written.</p>
-                                       <div class="boxes__box-item__content__more">
-                                          <a class="ns-btn ns-btn--text" href="https://docs.bridgecrew.io/docs/ingesting-scan-data" target="">Learn more</a>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="boxes__box-item boxes__box-item--align-left boxes__box-item--style-shadow">
-                                    <div class="boxes__box-item__image">
-                                       <a target="" href="https://docs.bridgecrew.io/docs/step-3-integrate-with-code-repository"><img width="200" height="200" src="../wp-content/uploads/2020/07/Frame-1.png" class="attachment-full size-full" alt="" loading="lazy" srcset="https://bridgecrew.io/wp-content/uploads/2020/07/Frame-1.png 200w, https://bridgecrew.io/wp-content/uploads/2020/07/Frame-1-150x150.png 150w, https://bridgecrew.io/wp-content/uploads/2020/07/Frame-1-24x24.png 24w, https://bridgecrew.io/wp-content/uploads/2020/07/Frame-1-48x48.png 48w, https://bridgecrew.io/wp-content/uploads/2020/07/Frame-1-96x96.png 96w" sizes="(max-width: 200px) 100vw, 200px" /></a>				
-                                    </div>
-                                    <div class="boxes__box-item__content">
-                                       <h3>Source control integrations</h3>
-                                       <p>Enable automated code reviews, pull request comments, and fixes.</p>
-                                       <div class="boxes__box-item__content__more">
-                                          <a class="ns-btn ns-btn--text" href="https://docs.bridgecrew.io/docs/step-3-integrate-with-code-repository" target="">Learn more</a>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="boxes__box-item boxes__box-item--align-left boxes__box-item--style-shadow">
-                                    <div class="boxes__box-item__image">
-                                       <a target="" href="https://docs.bridgecrew.io/docs/integrate-with-cicd"><img width="85" height="85" src="../wp-content/uploads/2020/07/bridgecrew-icon-39-e1622735980360.png" class="attachment-full size-full" alt="Automated icon" loading="lazy" /></a>				
-                                    </div>
-                                    <div class="boxes__box-item__content">
-                                       <h3>CI/CD integrations</h3>
-                                       <p>Get continuous security scanning before each deploy.</p>
-                                       <div class="boxes__box-item__content__more">
-                                          <a class="ns-btn ns-btn--text" href="https://docs.bridgecrew.io/docs/integrate-with-cicd" target="">Learn more</a>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="boxes__box-item boxes__box-item--align-left boxes__box-item--style-shadow">
-                                    <div class="boxes__box-item__image">
-                                       <a target="" href="https://docs.bridgecrew.io/docs/set-up-notifications"><img width="200" height="200" src="../wp-content/uploads/2020/07/bridgecrew-icon-31.png" class="attachment-full size-full" alt="" loading="lazy" srcset="https://bridgecrew.io/wp-content/uploads/2020/07/bridgecrew-icon-31.png 200w, https://bridgecrew.io/wp-content/uploads/2020/07/bridgecrew-icon-31-150x150.png 150w, https://bridgecrew.io/wp-content/uploads/2020/07/bridgecrew-icon-31-24x24.png 24w, https://bridgecrew.io/wp-content/uploads/2020/07/bridgecrew-icon-31-48x48.png 48w, https://bridgecrew.io/wp-content/uploads/2020/07/bridgecrew-icon-31-96x96.png 96w" sizes="(max-width: 200px) 100vw, 200px" /></a>				
-                                    </div>
-                                    <div class="boxes__box-item__content">
-                                       <h3>Notification integrations</h3>
-                                       <p>Create Jira issues, notify your team on Slack, and more.</p>
-                                       <div class="boxes__box-item__content__more">
-                                          <a class="ns-btn ns-btn--text" href="https://docs.bridgecrew.io/docs/set-up-notifications" target="">Learn more</a>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <!-- .container -->
-                        </section>
-                        <!-- .section -->
-                        <section class="section-block section-block--no-bottom-padding  section-block--container-default section-block--theme-default content-image content-image-6 ">
+                        <section class="section-block  section-block--container-default section-block--theme-default content-image content-image-6 ">
                            <div class="container">
                               <div class="content-image__inner content-image__inner--image-right content-image__inner--">
-                                 <div class="content-image__content     ">
-                                    <div class="section-block__header text-left ">
-                                       <h2 class="section-block__title content-image__title ">Continuous compliance from code to cloud</h2>
-                                    </div>
+                                 <div class="content-image__content" style="justify-items: center;">
                                     <div class="section-block__content text-left ">
                                        <ul>
-                                          <li>Get continuous auditing against Center for Internet Security (CIS) benchmarks.</li>
-                                          <li>Evaluate your security posture trends and identify areas of risk.</li>
-                                          <li>Download compliance reports across individual benchmarks.</li>
+                                          <li>Identify Recurring Data Issues</li>
+                                          <li>Monitoring and Metrics Runbook</li>
+                                          <li>Automation Deployment</li>
+                                          <li>Automation Predictive Operations</li>
                                        </ul>
                                     </div>
                                  </div>
                                  <div class="content-image__image  content-image__image--align-center">
-                                    <img width="2120" height="1354" src="../wp-content/uploads/platform-dashboard-popout.png" class="attachment-full size-full" alt="" loading="lazy" srcset="https://bridgecrew.io/wp-content/uploads/platform-dashboard-popout.png 2120w, https://bridgecrew.io/wp-content/uploads/platform-dashboard-popout-300x192.png 300w, https://bridgecrew.io/wp-content/uploads/platform-dashboard-popout-1024x654.png 1024w, https://bridgecrew.io/wp-content/uploads/platform-dashboard-popout-768x490.png 768w, https://bridgecrew.io/wp-content/uploads/platform-dashboard-popout-1536x981.png 1536w, https://bridgecrew.io/wp-content/uploads/platform-dashboard-popout-2048x1308.png 2048w" sizes="(max-width: 2120px) 100vw, 2120px" />	
+                                    <img width="2120" height="1354" src="../assets/images/Presentation2.jpg" class="attachment-full size-full" alt="Manage" loading="lazy" sizes="(max-width: 2120px) 100vw, 2120px" />	
                                  </div>
                               </div>
                            </div>
                            <!-- .container -->
                         </section>
                         <!-- .section -->
-                        <section class="section-block section-block--no-top-padding section-block--no-bottom-padding  section-block--container-default section-block--theme-default boxes boxes-4 ">
+                        <section class="section-block  section-block--container-default section-block--theme-light-purple content-image content-image-5 ">
                            <div class="container">
-                              <div class="boxes__wrapper boxes__wrapper--columns-three">
-                                 <div class="boxes__box-item boxes__box-item--align-left boxes__box-item--style-shadow">
-                                    <div class="boxes__box-item__image">
-                                       <a target="" href="https://docs.bridgecrew.io/docs/compliance-reports-new"><img width="200" height="200" src="../wp-content/uploads/2020/07/bridgecrew-icon-43.png" class="attachment-full size-full" alt="" loading="lazy" srcset="https://bridgecrew.io/wp-content/uploads/2020/07/bridgecrew-icon-43.png 200w, https://bridgecrew.io/wp-content/uploads/2020/07/bridgecrew-icon-43-150x150.png 150w, https://bridgecrew.io/wp-content/uploads/2020/07/bridgecrew-icon-43-24x24.png 24w, https://bridgecrew.io/wp-content/uploads/2020/07/bridgecrew-icon-43-48x48.png 48w, https://bridgecrew.io/wp-content/uploads/2020/07/bridgecrew-icon-43-96x96.png 96w" sizes="(max-width: 200px) 100vw, 200px" /></a>				
-                                    </div>
-                                    <div class="boxes__box-item__content">
-                                       <h3>Compliance auditing</h3>
-                                       <p><span style="font-weight: 400;">Benchmark against requirements for SOC2, HIPAA, PCI-DSS, and more.</span></p>
-                                       <div class="boxes__box-item__content__more">
-                                          <a class="ns-btn ns-btn--text" href="https://docs.bridgecrew.io/docs/compliance-reports-new" target="">Learn more</a>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="boxes__box-item boxes__box-item--align-left boxes__box-item--style-shadow">
-                                    <div class="boxes__box-item__image">
-                                       <a target="" href="https://docs.bridgecrew.io/docs/incident-dashboard-1"><img width="85" height="85" src="../wp-content/uploads/2020/07/bridgecrew-icon-19-e1622735573896.png" class="attachment-full size-full" alt="" loading="lazy" /></a>				
-                                    </div>
-                                    <div class="boxes__box-item__content">
-                                       <h3>Intuitive dashboard</h3>
-                                       <p><span style="font-weight: 400;">Get a snapshot of your cloud security posture and monitor it over time.</span></p>
-                                       <div class="boxes__box-item__content__more">
-                                          <a class="ns-btn ns-btn--text" href="https://docs.bridgecrew.io/docs/incident-dashboard-1" target="">Learn more</a>
-                                       </div>
+                              <div class="content-image__inner content-image__inner--image-left content-image__inner--">
+                                 <div class="content-image__content" style="justify-items: center;">
+                                    <div class="section-block__content text-left ">
+                                       <ul>
+                                          <li>Hybrid Connectivity</li>
+                                          <li>Hybrid Security</li>
+                                          <li>Autoscaling</li>
+                                          <li>Auto Healing</li>
+                                          <li>Canaries</li>
+                                       </ul>
                                     </div>
                                  </div>
-                                 <div class="boxes__box-item boxes__box-item--align-left boxes__box-item--style-shadow">
-                                    <div class="boxes__box-item__image">
-                                       <a target="" href="https://docs.bridgecrew.io/docs/compliance-reports-new"><img width="85" height="85" src="../wp-content/uploads/2020/07/bridgecrew-icon-6-e1622735430503.png" class="attachment-full size-full" alt="" loading="lazy" /></a>				
-                                    </div>
-                                    <div class="boxes__box-item__content">
-                                       <h3>Download-ready reports</h3>
-                                       <p><span style="font-weight: 400;">Export reports against individual CIS and compliance benchmarks.</span></p>
-                                       <div class="boxes__box-item__content__more">
-                                          <a class="ns-btn ns-btn--text" href="https://docs.bridgecrew.io/docs/compliance-reports-new" target="">Learn more</a>
-                                       </div>
-                                    </div>
+                                 <div class="content-image__image  content-image__image--align-center">
+                                    <img width="1769" height="1252" src="../assets/images/Presentation2.jpg" class="attachment-full size-full" alt="Run" loading="lazy" sizes="(max-width: 1769px) 100vw, 1769px" />	
                                  </div>
                               </div>
                            </div>
                            <!-- .container -->
                         </section>
                         <!-- .section -->
+                        <section class="section-block  section-block--container-default section-block--theme-default content-image content-image-6 ">
+                           <div class="container">
+                              <div class="content-image__inner content-image__inner--image-right content-image__inner--">
+                                 <div class="content-image__content" style="justify-items: center;">
+                                    <div class="section-block__content text-left ">
+                                       <ul>
+                                          <li>Ops tooling Integration</li>
+                                          <li>Security Tooling Integration</li>
+                                          <li>TTM</li>
+                                          <li>Release Management</li>
+                                          <li>A/B Deployments</li>
+                                          <li>Release Testing</li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="content-image__image  content-image__image--align-center">
+                                    <img width="2120" height="1354" src="../assets/images/Presentation2.jpg" class="attachment-full size-full" alt="Deliver" loading="lazy" sizes="(max-width: 2120px) 100vw, 2120px" />	
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- .container -->
+                        </section>
                         <section class="section-block  section-block--container-default section-block--theme-default cta cta-1 ">
                            <div class="container">
-                              <div class="cta__inner   cta__inner--default">
+                              <div class="cta__inner   cta__inner--default" style="background: linear-gradient(45deg, #ffca65, #3978ed, #43eada);">
                                  <div class="cta__content">
                                     <h2>Get started with Bridgecrew for free</h2>
                                     <h3>No credit card needed</h3>
                                  </div>
                                  <div class="cta__buttons">
                                     <div class="cta-row cta-row--horizontal cta-row--right">
-                                       <a class="ns-btn ns-btn--white " href="https://www.bridgecrew.cloud/login/signUp" target="">Get Started For Free</a>						<a class="ns-btn ns-btn--white-border " href="../pricing/index.html" target="">See a live demo</a>			
+                                       <a class="ns-btn ns-btn--white " href="#" target="">Get Started For Free</a>						
+                                       <a class="ns-btn ns-btn--white-border " href="../pricing/index.html" target="">See a live demo</a>			
                                     </div>
                                  </div>
                               </div>
