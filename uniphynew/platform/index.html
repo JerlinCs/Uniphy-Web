@@ -332,9 +332,22 @@
   			  justify-content: unset;
   			  gap: unset;
   			}
-			.footer__menu .footer__first_childwidth {
+         .main-footer__widgets .footer__menu .main-footer__widgets__column,
+         .main-footer__widgets .main-footer__widgets__column {
 			width: 100% !important;
+         text-align: center;
 			}
+         .boxes__box-item__image img {
+            min-height: fit-content !important;
+         }
+         .main-footer__widgets__column .social-footer {
+            padding-left: 0.8rem !important;
+            display: flex !important;
+            justify-content: center !important;
+         }
+         .main-footer__widgets__column {
+            text-align: center;
+         }
 		}
 
       @media (max-width: 1024px) {
