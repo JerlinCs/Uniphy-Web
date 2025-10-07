@@ -610,7 +610,7 @@
                                  <h1 class="section-block__title boxes__title ">All-in-one Unified Operation</h1>
                               </div>
                               <div class="boxes__wrapper boxes__wrapper--columns-two">
-                                 <div class="boxes__box-item boxes__box-item--align-center boxes__box-item--style-shadow" style="box-shadow: 0 12px 40px rgba(192, 174, 229, 1.15);">
+                                 <div class="boxes__box-item boxes__box-item--align-center boxes__box-item--style-shadow" style="box-shadow: 0 12px 40px rgba(192, 174, 229, 0.5);">
                                     <div class="boxes__box-item__image">
                                        <img width="185" height="185" src="assets/images/TecOps.png" class="attachment-full size-full" alt="" loading="lazy" />
                                     </div>
@@ -621,7 +621,7 @@
                                        <p>From a DevOps pipeline perspective UNIPHY offers its own DevOps stack including provisioning and orchestration with an intuitive UI.</p>
                                     </div>
                                  </div>
-                                 <div class="boxes__box-item boxes__box-item--align-center boxes__box-item--style-shadow" style="box-shadow: 0 12px 40px rgba(192, 174, 229, 1.15);">
+                                 <div class="boxes__box-item boxes__box-item--align-center boxes__box-item--style-shadow" style="box-shadow: 0 12px 40px rgba(192, 174, 229, 0.5);">
                                     <div class="boxes__box-item__image">
                                        <img width="185" height="185" src="assets/images/DevOps.png" class="attachment-full size-full" alt="" loading="lazy" />
                                     </div>
@@ -632,7 +632,7 @@
                                        <p>From a DevOps pipeline perspective UNIPHY offers its own DevOps stack including provisioning and orchestration with an intuitive UI.</p>
                                     </div>
                                  </div>
-                                 <div class="boxes__box-item boxes__box-item--align-center boxes__box-item--style-shadow" style="box-shadow: 0 12px 40px rgba(192, 174, 229, 1.15);">
+                                 <div class="boxes__box-item boxes__box-item--align-center boxes__box-item--style-shadow" style="box-shadow: 0 12px 40px rgba(192, 174, 229, 0.5);">
                                     <div class="boxes__box-item__image">
                                        <img width="185" height="185" src="assets/images/SecOps.png" class="attachment-full size-full" alt="" loading="lazy" />
                                     </div>
@@ -727,7 +727,7 @@
                <div class="clearfix"></div>
                <div class="main-footer__copy">
                   <div class="main-footer__copy__text">
-                     &copy; 2021 Uniphy inc. All Rights Reserved.
+                     &copy; <span id="year"></span> Uniphy Inc. All Rights Reserved.
                   </div>
                   <!-- <div class="main-footer__copy__menu">
                      <ul id="footer-menu" class="menu">
@@ -851,10 +851,7 @@
          window.intercomSettings = {
            app_id: "adquux25"
          };
-         // initialization of slick carousel
-         //   $('.js-slick-carousel').each(function() {
-         //     var slickCarousel = $.HSCore.components.HSSlickCarousel.init($(this));
-         //   });
+         document.getElementById("year").textContent = new Date().getFullYear();
       </script>
       <script>
          // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/adquux25'
