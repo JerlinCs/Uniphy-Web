@@ -90,9 +90,27 @@
 		.platform-section2 {
 			background-image: url(../assets/images/devops-2.jpg) !important;
 		}
-      .evaluation-landing {
+      .evolution-landing {
          border-radius: 20px;
          box-shadow: 0 20px 12px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      @media screen and (max-width:375px) {
+         .evolution-section {
+            justify-items: center;
+         }
+         .img-evolution-landing-wide {
+            display: none !important;
+         }
+         .img-evolution-landing-mobile {
+            display: block !important;
+         }
+      }
+      .img-evolution-landing-wide {
+         display: block;
+      }
+      .img-evolution-landing-mobile {
+         display: none;
       }
       *,
       *::before,
@@ -373,7 +391,7 @@
       }
 
       @media (max-width: 425px) {
-         .evaluation-section .section-block__header,
+         .evolution-section .section-block__header,
          .challenges__section .section-block__header,
          .key__highlight .section-block__header
          {
@@ -739,11 +757,12 @@
                         </section>
                         <!-- .section -->
                         <section class="section-block  section-block--container-default section-block--theme-light-purple section-block--theme-light-blue-wave-reverse content-image content-image-2 ">
-                           <div class="container evaluation-section">
+                           <div class="container evolution-section">
 							         <div class="section-block__header text-left boxes--columns-two" style="padding-bottom: 30px;">
-                                 <h1 class="section-block__title boxes__title">Evaluation Landscape</h1>
+                                 <h1 class="section-block__title boxes__title">Evolution Landscape</h1>
                               </div>
-							         <img src="../assets/images/UniphyEvaluationLandscape.png" class="attachment-full size-full evaluation-landing" alt="Evaluation Landscape" loading="lazy"/>
+							         <img src="../assets/images/UniphyEvolutionLandscape_lap.png" class="img-evolution-landing-wide attachment-full size-full evolution-landing" alt="Evolution Landscape" loading="lazy"/>
+                              <img src="../assets/images/UniphyEvolutionLandscape_mobile.png" class="img-evolution-landing-mobile attachment-full size-full evolution-landing" alt="Evolution Landscape" loading="lazy"/>
                            </div>
                            <!-- .container -->
                         </section>
