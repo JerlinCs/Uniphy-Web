@@ -173,10 +173,10 @@ if(indexHeroSection){
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: 2,
-    // autoplay: {
-    //   delay: 1000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 1000,
+      disableOnInteraction: false,
+    },
     speed: 600, 
     coverflowEffect: {
       rotate: 0,
@@ -234,10 +234,10 @@ if(indexHeroSection){
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: 3,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     speed: 600, 
     coverflowEffect: {
       rotate: 0,
