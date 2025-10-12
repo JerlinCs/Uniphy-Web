@@ -38,7 +38,38 @@
          .heateor_sss_vertical_sharing .heateorSssSharing:hover,.heateor_sss_floating_follow_icons_container .heateorSssSharing:hover{
          border-color: transparent;
          }
+		 .footer__menu {
+		   display: flex;
+		   justify-content: flex-end;
+		   gap: 2rem;
+		 }
+		 .footer__menu .footer__first_childwidth {
+		   width: 17% !important;
+		 }
          @media screen and (max-width:783px) {.heateor_sss_vertical_sharing{display:none!important}}@media screen and (max-width:783px) {.heateor_sss_floating_follow_icons_container{display:none!important}}
+		 @media (max-width: 768px) {
+  		 .footer__menu {
+  		   display: block;       /* default instead of flex */
+  		   justify-content: unset;
+  		   gap: unset;
+  		 }
+         .main-footer__widgets .footer__menu .main-footer__widgets__column,
+         .main-footer__widgets .main-footer__widgets__column {
+			width: 100% !important;
+         text-align: center;
+			}
+         .boxes__box-item__image img {
+            min-height: fit-content !important;
+         }
+         .main-footer__widgets__column .social-footer {
+            padding-left: 0.8rem !important;
+            display: flex !important;
+            justify-content: center !important;
+         }
+         .main-footer__widgets__column {
+            text-align: center;
+         }
+		 }
       </style>
       <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
       <!-- This site is optimized with the Yoast SEO plugin v17.2 - https://yoast.com/wordpress/plugins/seo/ -->
@@ -104,6 +135,30 @@
          unicode-range: U+F004-F005,U+F007,U+F017,U+F022,U+F024,U+F02E,U+F03E,U+F044,U+F057-F059,U+F06E,U+F070,U+F075,U+F07B-F07C,U+F080,U+F086,U+F089,U+F094,U+F09D,U+F0A0,U+F0A4-F0A7,U+F0C5,U+F0C7-F0C8,U+F0E0,U+F0EB,U+F0F3,U+F0F8,U+F0FE,U+F111,U+F118-F11A,U+F11C,U+F133,U+F144,U+F146,U+F14A,U+F14D-F14E,U+F150-F152,U+F15B-F15C,U+F164-F165,U+F185-F186,U+F191-F192,U+F1AD,U+F1C1-F1C9,U+F1CD,U+F1D8,U+F1E3,U+F1EA,U+F1F6,U+F1F9,U+F20A,U+F247-F249,U+F24D,U+F254-F25B,U+F25D,U+F267,U+F271-F274,U+F279,U+F28B,U+F28D,U+F2B5-F2B6,U+F2B9,U+F2BB,U+F2BD,U+F2C1-F2C2,U+F2D0,U+F2D2,U+F2DC,U+F2ED,U+F328,U+F358-F35B,U+F3A5,U+F3D1,U+F410,U+F4AD;
          }
       </style>
+
+  	  <!-- JS Global Compulsory -->
+	  <script src="../assets/vendor/jquery/dist/jquery.min.js"></script>
+  	  <script src="../assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  	  <script src="../assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	  
+  	  <!-- JS Implementing Plugins -->
+  	  <script src="../assets/vendor/hs-header/dist/hs-header.min.js"></script>
+  	  <script src="../assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
+  	  <script src="../assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
+  	  <script src="../assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
+  	  <script src="../assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+  	  <script src="../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  	  <script src="../assets/vendor/leaflet/dist/leaflet.js"></script>
+	  
+  	  <!-- JS Digital -->
+  	  <script src="../assets/js/hs.core.js"></script>
+  	  <script src="../assets/js/hs.validation.js"></script>
+  	  <script src="../assets/js/hs.leaflet.js"></script>
+  	  <script src="../assets/js/activity.js"></script>
+
+      <!-- CSS Digital Template -->
+  	  <link rel="stylesheet" href="../assets/css/theme.css">
+
       <script src='../wp-includes/js/jquery/jquery.minaf6c.js?ver=3.6.0' id='jquery-core-js'></script>
       <script src='../wp-includes/js/jquery/jquery-migrate.mind617.js?ver=3.3.2' id='jquery-migrate-js'></script>
       <script id='cookie-law-info-js-extra'>
@@ -257,35 +312,107 @@
                            <!-- .container -->
                         </section>
                         <!-- .section -->
-                        <section class="section-block section-block--no-top-padding  section-block--container-small section-block--theme-default content-image content-image-2 ">
-                           <div class="container">
-                              <div class="content-image__inner content-image__inner--image-right content-image__inner--">
-                                 <div class="content-image__content content-image__content--full-width    ">
-                                    <div class="section-block__header text-center ">
-                                       <h3 class="section-block__title content-image__title section-block__title--with-subtitle content-image__title--with-subtitle"><br><br>Want to learn more about our all-in-one DevSecOps solution?</h3>
-                                       <h4 class="section-block__subtitle content-image__subtitle"><br>Fill out the form below to schedule a personalized demo with one of our cloud security experts, or <a href="../webinar/getting-started-with-bridgecrew-demo-with-live-qa/index7ebe.html?utm_medium=directtraffic&amp;utm_source=https://bridgecrew.io/schedule-a-demo/&amp;utm_content=monthly-demo">join our monthly demo with live Q&A</a>.<br><br></h4>
-                                    </div>
-                                    <div class="section-block__content text-left ">
-                                       <div style="padding: 0px 30px 30px 30px; border-radius: 10px; background: #f4f7fe; margin-top: -20px;">
-                                          <!-- [if lte IE 8]>
-                                             <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
-                                             <![endif]--><br />
-                                          <script charset="utf-8" type="text/javascript" src="http://js.hsforms.net/forms/v2.js"></script><br />
-                                          <script>
-                                             hbspt.forms.create({
-                                             portalId: "7203144",
-                                             formId: "1d176e04-8e35-4f58-a122-87e835e2a1e4"
-                                             });
-                                          </script>
-                                       </div>
-                                    </div>
-                                 </div>
-                                 <div class="content-image__image  content-image__image--image-default">
-                                 </div>
-                              </div>
-                           </div>
-                           <!-- .container -->
-                        </section>
+						<section class="section-block section-block--no-top-padding  section-block--container-small section-block--theme-default content-image content-image-2 ">
+						   <div class="container">
+						   <div class="content-image__inner content-image__inner--image-right content-image__inner--">
+						      <div class="content-image__content content-image__content--full-width    ">
+						         <div class="section-block__header text-center ">
+						            <h3 class="section-block__title content-image__title section-block__title--with-subtitle content-image__title--with-subtitle"><br><br>Want to learn more about our all-in-one DevSecOps solution?</h3>
+						            <h4 class="section-block__subtitle content-image__subtitle"><br>Fill out the form below to schedule a personalized demo with one of our cloud security experts, or <a href="../webinar/getting-started-with-bridgecrew-demo-with-live-qa/index7ebe.html?utm_medium=directtraffic&amp;utm_source=https://bridgecrew.io/schedule-a-demo/&amp;utm_content=monthly-demo">join our monthly demo with live Q&A</a>.<br><br></h4>
+						         </div>
+						         <div class="section-block__content text-left ">
+						            <div style="padding: 0px 30px 30px 30px; border-radius: 10px; background: #f4f7fe; margin-top: -20px;">
+						               <script charset="utf-8" type="text/javascript" src="http://js.hsforms.net/forms/v2.js"></script><br />
+						               <script>
+						                  hbspt.forms.create({
+						                  portalId: "7203144",
+						                  formId: "1d176e04-8e35-4f58-a122-87e835e2a1e4"
+						                  });
+						               </script>
+						            </div>
+						         </div>
+						         <!-- Form -->
+						         <form class="js-validate card shadow-lg mb-4 contact-form"  action="javascript:submitform();">
+						            <div class="card-body p-4 p-md-6" style="background: #f4f7fe;">
+						               <div class="row">
+						                     <div class="col-sm-6">
+						                        <!-- Form Group -->
+						                        <div class="js-form-message form-group">
+						                           <label for="Fname" class="input-label">First name</label>
+						                           <input type="text" class="form-control" name="Fname" id="Fname" placeholder="Nataly" aria-label="Nataly" required
+						                              data-msg="Please enter first your name">
+						                        </div>
+						                        <!-- End Form Group -->
+						                     </div>
+						                     <div class="col-sm-6">
+						                        <!-- Form Group -->
+						                        <div class="js-form-message form-group">
+						                           <label for="Lname" class="input-label">Last name</label>
+						                           <input type="text" class="form-control" name="Lname" id="Lname" placeholder="Gaga" aria-label="Gaga" required
+						                              data-msg="Please enter last your name">
+						                        </div>
+						                        <!-- End Form Group -->
+						                     </div>
+						                     <div class="col-sm-12">
+						                        <!-- Form Group -->
+						                        <div class="js-form-message form-group">
+						                           <label for="email" class="input-label">Email address</label>
+						                           <input type="email" class="form-control" name="email" id="emailAddress" placeholder="nayagaga@pixeel.com" aria-label="alex@pixeel.com" required
+						                              data-msg="Please enter a valid email address">
+						                        </div>
+						                        <!-- End Form Group -->
+						                     </div>
+						                     <div class="col-sm-6">
+						                        <!-- Form Group -->
+						                        <div class="js-form-message form-group">
+						                           <label for="org" class="input-label">Organisation</label>
+						                           <input type="text" class="form-control" name="org" id="org" placeholder="Digital software inc"  aria-label="DSI" required
+						                              data-msg="Please enter a organisation name">
+						                        </div>
+						                        <!-- End Form Group -->
+						                     </div>
+						                     <div class="col-sm-6">
+						                        <!-- Form Group -->
+						                        <div class="js-form-message form-group">
+						                           <label for="phone-no" class="input-label">Phone number</label>
+						                           <input type="tel" class="form-control" id="pno" name="phone-no" placeholder="044 42815625" pattern="[0-9]" minlength="10" maxlength="12" title="Please enter only numbers and between 10 to 12 digits" oninput="this.value = this.value.replace(/[^0-9]/g, '')" 
+						                              >
+						                        </div>
+						                        <!-- End Form Group -->
+						                     </div>
+						                     <div class="col-sm-12">
+						                        <!-- Form Group -->
+						                        <div class="js-form-message form-group">
+						                           <label for="country" class="input-label">Country</label>
+						                           <select class="form-control" name="country" id="country" required
+						                              data-msg="Please select your country">
+						                           </select>
+						                        </div>
+						                        <!-- End Form Group -->
+						                     </div>
+						                     <div class="col-sm-12">
+						                        <!-- Form Group -->
+						                        <div class="js-form-message form-group">
+						                           <label for="message" class="input-label">Message</label>
+						                           <div class="input-group">
+						                              <textarea class="form-control" rows="4" name="message" id="message" placeholder="Hi there, I would like to ..." aria-label="Hi there, I would like to ..." required
+						                                 data-msg="Please enter a reason."></textarea>
+						                           </div>
+						                        </div>
+						                        <!-- End Form Group -->
+						                     </div>
+						                  <span id="mailstatus" class=""></span>
+						                  <button id="submitbtn" type="submit" class="btn btn-block btn-primary transition-3d-hover">Submit</button>
+						               </div>
+						         </form>
+						         <!-- End Form -->
+						         </div>
+						         <div class="content-image__image  content-image__image--image-default">
+						         </div>
+						      </div>
+						   </div>
+						   <!-- .container -->
+						</section>
                         <!-- .section -->
                      </div>
                      <!-- /.page-blocks -->
@@ -297,97 +424,64 @@
             <!-- .site-main -->
          </div>
          <!-- .content-area -->
-         <footer class="main-footer">
+		<footer class="main-footer">
             <div class="container">
                <div class="main-footer__widgets">
                   <div class="main-footer__widgets__column">
-                     <section id="media_image-2" class="widget-odd widget-first widget-1 footer-widget widget_media_image"><a href="../index.html"><img src="../wp-content/themes/bridgecrew/assets/images/uniphy.svg" class="image wp-image-5578  attachment-medium size-medium" alt="Bridgecrew by Prisma Cloud white logo" loading="lazy" style="max-width: 100%; height: auto;" height="37.21" width="148.94" /></a></section>
+                     <section id="media_image-2" class="widget-odd widget-first widget-1 footer-widget widget_media_image">
+						<a href="index.html">
+							<img src="../assets/images/uniphy.svg" class="image wp-image-5578  attachment-medium size-medium" alt="Uniphy logo" loading="lazy" style="max-width: 100%; height: auto;" height="37.21" width="148.94" />
+						</a>
+					</section>
                      <section id="text-2" class="widget-even widget-last widget-2 footer-widget widget_text">
                         <div class="textwidget">
-                           <ul class="social-footer">
-                              <li class="social-footer__item social-footer__item--linkedin"><a href="https://www.linkedin.com/company/bridgecrew/" target="_blank" rel="noopener"></a></li>
-                              <li class="social-footer__item social-footer__item--facebook"><a href="https://www.facebook.com/bridgecrewio/" target="_blank" rel="noopener"></a></li>
-                              <li class="social-footer__item social-footer__item--twitter"><a href="https://twitter.com/bridgecrewio" target="_blank" rel="noopener"></a></li>
-                              <li class="social-footer__item social-footer__item--github"><a href="https://github.com/bridgecrewio" target="_blank" rel="noopener"></a></li>
+                           <ul class="social-footer" style="padding-left: 2.9rem;">
+                              <li class="social-footer__item social-footer__item--linkedin"><a href="" target="_blank" rel="noopener"></a></li>
+                              <li class="social-footer__item social-footer__item--twitter"><a href="" target="_blank" rel="noopener"></a></li>
                            </ul>
                            <div class="clearfix"></div>
                            <p><a href="mailto: support@uniphy.com"><strong>support@uniphy.com</strong></a></p>
                         </div>
                      </section>
                   </div>
-                  <div class="main-footer__widgets__column">
+				  <div class="footer__menu">
+                  <div class="main-footer__widgets__column footer__first_childwidth">
                      <section id="nav_menu-2" class="widget-odd widget-last widget-first widget-1 footer-widget widget_nav_menu">
                         <h4 class="footer-widget__title">Platform</h4>
                         <div class="menu-platform-container">
                            <ul id="menu-platform" class="menu">
-                              <li id="menu-item-5284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5284"><a href="../platform/index.html">Features</a></li>
-                              <li id="menu-item-4793" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4793"><a href="../platform/integrations/index.html">Integrations</a></li>
-                              <li id="menu-item-6280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6280"><a href="../pricing/index.html">Pricing</a></li>
-                              <li id="menu-item-6488" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6488"><a href="../open-source/index.html">Open Source</a></li>
+                              <li id="menu-item-5284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5284"><a href="platform/index.html">Features</a></li>
+                              <li id="menu-item-6280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6280"><a href="pricing/index.html">Pricing</a></li>
                            </ul>
                         </div>
                      </section>
                   </div>
                   <div class="main-footer__widgets__column">
                      <section id="nav_menu-6" class="widget-odd widget-last widget-first widget-1 footer-widget widget_nav_menu">
-                        <h4 class="footer-widget__title">Frameworks and Providers</h4>
-                        <div class="menu-frameworks-and-providers-container">
-                           <ul id="menu-frameworks-and-providers" class="menu">
-                              <li id="menu-item-7262" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7262"><a href="../infrastructure-as-code-security/terraform/index.html">Terraform</a></li>
-                              <li id="menu-item-7263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7263"><a href="../infrastructure-as-code-security/cloudformation/index.html">CloudFormation</a></li>
-                              <li id="menu-item-7264" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7264"><a href="../cloud-security/aws/index.html">AWS</a></li>
-                              <li id="menu-item-7265" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7265"><a href="https://docs.bridgecrew.io/docs/integrate-with-google-cloud">Google Cloud</a></li>
-                              <li id="menu-item-7266" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7266"><a href="https://docs.bridgecrew.io/docs/integrate-with-microsoft-azure">Azure</a></li>
-                              <li id="menu-item-7605" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7605"><a href="../kubernetes/index.html">Kubernetes</a></li>
-                              <li id="menu-item-7270" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7270"><a href="../platform/integrations/index.html">See all</a></li>
-                           </ul>
-                        </div>
-                     </section>
-                  </div>
-                  <div class="main-footer__widgets__column">
-                     <section id="nav_menu-3" class="widget-odd widget-last widget-first widget-1 footer-widget widget_nav_menu">
-                        <h4 class="footer-widget__title">Use cases</h4>
-                        <div class="menu-use-case-container">
-                           <ul id="menu-use-case" class="menu">
-                              <li id="menu-item-7256" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7256"><a href="../infrastructure-as-code-security/index.html">IaC Security</a></li>
-                              <li id="menu-item-7258" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7258"><a href="../cloud-security/index.html">Codified Cloud Security</a></li>
-                              <li id="menu-item-7259" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7259"><a href="../cloud-devsecops/index.html">Cloud DevSecOps</a></li>
-                              <li id="menu-item-7257" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7257"><a href="../multi-cloud-drift-detection/index.html">Multi-Cloud Drift Detection</a></li>
-                              <li id="menu-item-7261" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7261"><a href="../iam-least-privilege-automation/index.html">IAM Right-Sizing</a></li>
-                              <li id="menu-item-7260" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7260"><a href="../secrets-scanning/index.html">Secrets Scanning</a></li>
-                           </ul>
-                        </div>
-                     </section>
-                  </div>
-                  <div class="main-footer__widgets__column">
-                     <section id="nav_menu-4" class="widget-odd widget-last widget-first widget-1 footer-widget widget_nav_menu">
                         <h4 class="footer-widget__title">Resources</h4>
                         <div class="menu-resource-container">
                            <ul id="menu-resource" class="menu">
-                              <li id="menu-item-7252" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7252"><a href="../blog/index.html">Blog</a></li>
-                              <li id="menu-item-7254" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7254"><a href="https://docs.bridgecrew.io/docs">Documentation</a></li>
-                              <li id="menu-item-7253" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7253"><a href="https://docs.bridgecrew.io/changelog">Changelog</a></li>
-                              <li id="menu-item-1843" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1843"><a href="../about/index.html">About Us</a></li>
-                              <li id="menu-item-7255" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7255"><a href="../customers/index.html">Customers</a></li>
-                              <li id="menu-item-4643" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4643"><a href="../partners/index.html">Partners</a></li>
-                              <li id="menu-item-3823" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-1363 current_page_item menu-item-3823"><a href="index.html" aria-current="page">Schedule a demo</a></li>
+                              <li id="menu-item-7254" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7254"><a href="">Documentation</a></li>
+                              <li id="menu-item-1843" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1843"><a href="about/index.html">About Us</a></li>
+                              <li id="menu-item-3823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3823"><a href="schedule-a-demo/index.html">Schedule a demo</a></li>
                            </ul>
                         </div>
                      </section>
                   </div>
+				  </div>
                </div>
                <div class="clearfix"></div>
                <div class="main-footer__copy">
                   <div class="main-footer__copy__text">
-                     &copy; 2021 Uniphy inc. All Rights Reserved.
+                     &copy; <span id="year"></span> Uniphy Inc. All Rights Reserved.
                   </div>
-                  <div class="main-footer__copy__menu">
+                  <!-- <div class="main-footer__copy__menu">
                      <ul id="footer-menu" class="menu">
                         <li id="menu-item-5779" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5779"><a href="https://www.paloaltonetworks.com/legal-notices/privacy">Privacy Statement</a></li>
                         <li id="menu-item-5780" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5780"><a href="https://www.paloaltonetworks.com/legal-notices/terms-of-use">Terms of Use</a></li>
                         <li id="menu-item-5577" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-5577"><a target="_blank" rel="noopener" href="https://www.paloaltonetworks.com/content/dam/pan/en_US/assets/pdf/legal/palo-alto-networks-end-user-license-agreement-eula.pdf">End User License Agreement</a></li>
                      </ul>
-                  </div>
+                  </div> -->
                   <div class="clearfix"></div>
                </div>
             </div>
@@ -403,17 +497,11 @@
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1832"><a href="../customers/index.html">Customers</a></li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1833">
                <a href="../resources/index.html">Resources</a>
-               <ul class="sub-menu">
-                  <li class="icon-blog menu-item menu-item-type-post_type menu-item-object-page menu-item-2239"><a href="../blog/index.html">Blog</a></li>
-                  <li class="icon-docs menu-item menu-item-type-custom menu-item-object-custom menu-item-2240"><a href="https://docs.bridgecrew.io/docs">Docs</a></li>
-                  <li class="icon-changelog menu-item menu-item-type-custom menu-item-object-custom menu-item-4189"><a href="https://docs.bridgecrew.io/changelog">Changelog</a></li>
-                  <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7654"><a href="../webinar/2111-dev-day-cloudformation-devsecops-aws/index4ac1.html?sponsor=bridgecrew">CloudFormation workshop</a></li>
-               </ul>
             </li>
          </ul>
          <div class="ns-mobile-menu__cta">
-            <a href="https://www.bridgecrew.cloud/login/signUp" target="_blank" class="ns-btn ns-btn--purple">Sign up</a><br>
-            <a href="https://www.bridgecrew.cloud/login/signIn" target="_blank" class="ns-btn ns-btn--underline">Sign in</a>
+            <a href="" target="_blank" class="ns-btn ns-btn--purple">Sign up</a><br>
+            <a href="" target="_blank" class="ns-btn ns-btn--underline">Sign in</a>
          </div>
       </div>
       <!--googleoff: all-->
@@ -524,7 +612,75 @@
       <script src='../wp-content/themes/bridgecrew/assets/js/vendor/mmenuf658.js?ver=5.8.1' id='mmenu-js'></script>
       <script src='../wp-content/themes/bridgecrew/assets/js/vendor/jquery.magnific-popup.minf658.js?ver=5.8.1' id='magnific-popup-js'></script>
       <script src='../wp-content/themes/bridgecrew/assets/js/vendor/jquery.basictable.minf658.js?ver=5.8.1' id='basictable-js'></script>
-      <script type="text/javascript" src="../wp-content/themes/bridgecrew/build/main-minf658.js?ver=5.8.1" defer="defer">\n<script src='https://bridgecrew.io/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script>
+      <script type="text/javascript" src="../wp-content/themes/bridgecrew/build/main-minf658.js?ver=5.8.1" defer="defer"></script>
+	  <script src='https://bridgecrew.io/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script>
+  <!-- JS Plugins Init. -->
+  <script>
+
+    $(document).on('ready', function () {
+       
+
+      fetch('https://restcountries.com/v3.1/all')
+  .then(response => response.json())
+  .then(data => {
+    const countrySelect = document.getElementById('country');
+    const sortedData = data.sort((a, b) => a.name.common.localeCompare(b.name.common));
+    sortedData.forEach(country => {
+      const option = document.createElement('option');
+      option.value = country.name.common;
+      option.text = country.name.common;
+      countrySelect.appendChild(option);
+    });
+  }).catch(error => console.error('Error fetching data:', error));
+      
+    });
+
+  </script>
+  <script>
+
+
+    function submitform() {
+        var f = document.getElementsByTagName('form')[0], e = $('#mailstatus'), s = $('#submitbtn');
+          e.text('');
+          s.attr('disabled','disabled');
+          fetch('php/contact-form.php', {
+          method: 'POST', 
+          body: new FormData(f)
+          })
+          .then((rsp) => rsp.json())
+          .then((obj) =>     {
+            var m = obj['message'];
+            f.reset();
+            $(".form-control").each(function(){ 
+              $(this).removeClass('is-invalid').removeClass('is-valid')
+            });
+            s.removeAttr('disabled');
+            if(obj['success']){
+              //show mail sent message
+              e.addClass('text-success');
+			        e.text("We have received your request. We will get in touch with you soon.");
+            }
+            else{
+              //message sending failed
+              e.addClass('text-danger');
+			        e.text("Error sending email. Please drop us an email.");
+            }
+			      if (obj['debug']) {
+              console.log(obj['debug']); // Log debug output to the console
+            }
+            //e.text(m);
+           }).catch((err) => {
+            s.removeAttr('disabled');
+            e.addClass('text-warning');
+            e.text("Error sending email. Please drop us an email.");
+            console.error(err.stack);
+          })
+    }
+</script>
+  <!-- IE Support -->
+  <script>
+    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="assets/vendor/polifills.js"><\/script>');
+  </script>
    </body>
    <!-- Mirrored from bridgecrew.io/schedule-a-demo/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Nov 2021 09:39:06 GMT -->
 </html>
