@@ -650,7 +650,7 @@ body.webinar-template-default .site-container {
 .section-block--theme-purple .ns-btn--underline {
   color: white; }
 
-form label {
+/* form label {
   font-weight: 400;
   margin-bottom: 10px;
   text-align: left; }
@@ -713,7 +713,7 @@ form.hs-form .hs-error-msgs {
   form.hs-form .hs-error-msgs li {
     margin: 3px 0px; }
     form.hs-form .hs-error-msgs li label {
-      margin-bottom: 0px; }
+      margin-bottom: 0px; } */
 
 .wpcf7-form br {
   display: none; }

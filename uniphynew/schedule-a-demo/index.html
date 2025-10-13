@@ -8,8 +8,8 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="profile" href="https://gmpg.org/xfn/11">
-      <link href="../wp-content/themes/bridgecrew/assets/images/favicon.png" rel="shortcut icon" type="image/x-icon">
-      <link href="../wp-content/themes/bridgecrew/assets/images/webclip.png" rel="apple-touch-icon">
+      <link href="../assets/images/favicon.png" rel="shortcut icon" type="image/x-icon">
+      <link href="../assets/images/favicon.png" rel="apple-touch-icon">
       <style type="text/css">			
 	  	 .heateorSssInstagramBackground {
 			background:radial-gradient(circle at 30% 107%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)
@@ -146,7 +146,7 @@
   	  <script src="../assets/vendor/hs-go-to/dist/hs-go-to.min.js"></script>
   	  <script src="../assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.js"></script>
   	  <script src="../assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
-  	  <script src="../assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script>
+  	  <!-- <script src="../assets/vendor/hs-show-animation/dist/hs-show-animation.min.js"></script> -->
   	  <script src="../assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
   	  <script src="../assets/vendor/leaflet/dist/leaflet.js"></script>
 	  
@@ -167,10 +167,10 @@
          var log_object = {"ajax_url":"https:\/\/bridgecrew.io\/wp-admin\/admin-ajax.php"};
       </script>
       <script src='../wp-content/plugins/cookie-law-info/public/js/cookie-law-info-publicc1b4.js?ver=2.0.5' id='cookie-law-info-js'></script>
-      <script id='icwp-wpsf-shield-notbot-js-extra'>
+      <!-- <script id='icwp-wpsf-shield-notbot-js-extra'>
          var shield_vars_notbotjs = {"ajax":{"not_bot":"action=icwp-wpsf&exec=not_bot&exec_nonce=0186765d50&mod_slug=icwp-wpsf-ips"},"hrefs":{"ajax":"https:\/\/bridgecrew.io\/wp-admin\/admin-ajax.php"},"flags":{"run":true}};
-      </script>
-      <script src='../wp-content/plugins/wp-simple-firewall/resources/js/shield/notbot0a6f.js?ver=12.0.13&amp;mtime=1634112619' id='icwp-wpsf-shield-notbot-js'></script>
+      </script> -->
+      <!-- <script src='../wp-content/plugins/wp-simple-firewall/resources/js/shield/notbot0a6f.js?ver=12.0.13&amp;mtime=1634112619' id='icwp-wpsf-shield-notbot-js'></script> -->
       <link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.html?rsd" />
       <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" />
       <meta name="generator" content="WordPress 5.8.1" />
@@ -184,8 +184,8 @@
              analytics.page();
              analytics.ready(function () {
                  console.log("we got here segment")
-                 ga('require', 'linker');
-                 ga('linker:autoLink', ['bridgecrew.cloud']);
+               //   ga('require', 'linker');
+               //   ga('linker:autoLink', ['bridgecrew.cloud']);
              });
          }}();
       </script>
@@ -203,10 +203,10 @@
          <img src="https://ws.zoominfo.com/pixel/gUlfw6UVEvt5dRgDRKGv" width="1" height="1" style="display: none;" />
       </noscript>
       <!--END: https://wordpress.org/plugins/tracking-code-manager IN HEAD//-->
-      <link rel="icon" href="../wp-content/uploads/cropped-favicon-32x32.png" sizes="32x32" />
-      <link rel="icon" href="../wp-content/uploads/cropped-favicon-192x192.png" sizes="192x192" />
-      <link rel="apple-touch-icon" href="../wp-content/uploads/cropped-favicon-180x180.png" />
-      <meta name="msapplication-TileImage" content="../wp-content/uploads/cropped-favicon-270x270.png" />
+      <link rel="icon" href="../assets/images/favicon.png" sizes="32x32" />
+      <link rel="icon" href="../assets/images/favicon.png" sizes="192x192" />
+      <link rel="apple-touch-icon" href="../assets/images/favicon.png" />
+      <meta name="msapplication-TileImage" content="../assets/images/favicon.png" />
       <style id="wp-custom-css">
          .page-id-460 .site-container--bg-blue{
          background-size: 100% 1200px;
@@ -250,8 +250,8 @@
                <div class="main-header__container">
                   <div class="main-header__logo">
                      <a href="../index.html" rel="home">
-                     <img src="../wp-content/themes/bridgecrew/assets/images/uniphy2.svg" class="main-header__logo__regular">
-                     <img src="../wp-content/themes/bridgecrew/assets/images/uniphy.svg" class="main-header__logo__white">
+                     <img src="../assets/images/uniphy2.svg" alt="Uniphy Logo" class="main-header__logo__regular">
+                     <img src="../assets/images/uniphy.svg" alt="Uniphy Logo" class="main-header__logo__white">
                      </a>
                   </div>
                   <div class="main-header__menu">
@@ -263,20 +263,14 @@
                               <li id="menu-item-1832" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1832"><a href="../customers/index.html">Customers</a></li>
                               <li id="menu-item-1833" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1833">
                                  <a href="../resources/index.html">Resources</a>
-                                 <ul class="sub-menu">
-                                    <li id="menu-item-2239" class="icon-blog menu-item menu-item-type-post_type menu-item-object-page menu-item-2239"><a href="../blog/index.html">Blog</a></li>
-                                    <li id="menu-item-2240" class="icon-docs menu-item menu-item-type-custom menu-item-object-custom menu-item-2240"><a href="https://docs.bridgecrew.io/docs">Docs</a></li>
-                                    <li id="menu-item-4189" class="icon-changelog menu-item menu-item-type-custom menu-item-object-custom menu-item-4189"><a href="https://docs.bridgecrew.io/changelog">Changelog</a></li>
-                                    <li id="menu-item-7654" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7654"><a href="../webinar/2111-dev-day-cloudformation-devsecops-aws/index4ac1.html?sponsor=bridgecrew">CloudFormation workshop</a></li>
-                                 </ul>
                               </li>
                            </ul>
                         </div>
                      </nav>
                   </div>
                   <div class="main-header__cta">
-                     <a href="https://www.bridgecrew.cloud/login/signIn" target="_blank" class="ns-btn ns-btn--text">Sign in</a>
-                     <a href="https://www.bridgecrew.cloud/login/signUp" target="_blank" class="ns-btn ns-btn--white">Sign up</a>
+                     <a href="" target="_blank" class="ns-btn ns-btn--text">Sign in</a>
+                     <a href="" target="_blank" class="ns-btn ns-btn--white">Sign up</a>
                   </div>
                </div>
                <div class="main-header__menu-mobile">
@@ -320,26 +314,18 @@
 						            <h3 class="section-block__title content-image__title section-block__title--with-subtitle content-image__title--with-subtitle"><br><br>Want to learn more about our all-in-one DevSecOps solution?</h3>
 						            <h4 class="section-block__subtitle content-image__subtitle"><br>Fill out the form below to schedule a personalized demo with one of our cloud security experts, or <a href="../webinar/getting-started-with-bridgecrew-demo-with-live-qa/index7ebe.html?utm_medium=directtraffic&amp;utm_source=https://bridgecrew.io/schedule-a-demo/&amp;utm_content=monthly-demo">join our monthly demo with live Q&A</a>.<br><br></h4>
 						         </div>
-						         <div class="section-block__content text-left ">
-						            <div style="padding: 0px 30px 30px 30px; border-radius: 10px; background: #f4f7fe; margin-top: -20px;">
-						               <script charset="utf-8" type="text/javascript" src="http://js.hsforms.net/forms/v2.js"></script><br />
-						               <script>
-						                  hbspt.forms.create({
-						                  portalId: "7203144",
-						                  formId: "1d176e04-8e35-4f58-a122-87e835e2a1e4"
-						                  });
-						               </script>
-						            </div>
-						         </div>
 						         <!-- Form -->
-						         <form class="js-validate card shadow-lg mb-4 contact-form"  action="javascript:submitform();">
-						            <div class="card-body p-4 p-md-6" style="background: #f4f7fe;">
+						         <form class="js-validate card shadow-lg mb-4 contact-form"  action="javascript:submitform();" style="background: #f4f7fe; border-radius: 10px">
+						            <div class="card-body p-4 p-md-6">
 						               <div class="row">
 						                     <div class="col-sm-6">
 						                        <!-- Form Group -->
 						                        <div class="js-form-message form-group">
-						                           <label for="Fname" class="input-label">First name</label>
-						                           <input type="text" class="form-control" name="Fname" id="Fname" placeholder="Nataly" aria-label="Nataly" required
+						                           <label for="Fname" class="input-label">
+                                                <span>First name</span>
+                                                <span class="form-required">*</span>
+                                                </label>
+						                           <input type="text" class="form-control" name="Fname" id="Fname" placeholder="" aria-label="Nataly" required
 						                              data-msg="Please enter first your name">
 						                        </div>
 						                        <!-- End Form Group -->
@@ -347,8 +333,11 @@
 						                     <div class="col-sm-6">
 						                        <!-- Form Group -->
 						                        <div class="js-form-message form-group">
-						                           <label for="Lname" class="input-label">Last name</label>
-						                           <input type="text" class="form-control" name="Lname" id="Lname" placeholder="Gaga" aria-label="Gaga" required
+						                           <label for="Lname" class="input-label">
+                                                <span>Last name</span>
+                                                <span class="form-required">*</span>
+                                             </label>
+						                           <input type="text" class="form-control" name="Lname" id="Lname" placeholder="" aria-label="Gaga" required
 						                              data-msg="Please enter last your name">
 						                        </div>
 						                        <!-- End Form Group -->
@@ -356,8 +345,11 @@
 						                     <div class="col-sm-12">
 						                        <!-- Form Group -->
 						                        <div class="js-form-message form-group">
-						                           <label for="email" class="input-label">Email address</label>
-						                           <input type="email" class="form-control" name="email" id="emailAddress" placeholder="nayagaga@pixeel.com" aria-label="alex@pixeel.com" required
+						                           <label for="email" class="input-label">
+                                                <span>Email address</span>
+                                                <span class="form-required">*</span>
+                                             </label>
+						                           <input type="email" class="form-control" name="email" id="emailAddress" placeholder="" aria-label="alex@pixeel.com" required
 						                              data-msg="Please enter a valid email address">
 						                        </div>
 						                        <!-- End Form Group -->
@@ -365,8 +357,11 @@
 						                     <div class="col-sm-6">
 						                        <!-- Form Group -->
 						                        <div class="js-form-message form-group">
-						                           <label for="org" class="input-label">Organisation</label>
-						                           <input type="text" class="form-control" name="org" id="org" placeholder="Digital software inc"  aria-label="DSI" required
+						                           <label for="org" class="input-label">
+                                                <span>Organisation</span>
+                                                <span class="form-required">*</span>                                                
+                                             </label>
+						                           <input type="text" class="form-control" name="org" id="org" placeholder=""  aria-label="DSI" required
 						                              data-msg="Please enter a organisation name">
 						                        </div>
 						                        <!-- End Form Group -->
@@ -374,8 +369,10 @@
 						                     <div class="col-sm-6">
 						                        <!-- Form Group -->
 						                        <div class="js-form-message form-group">
-						                           <label for="phone-no" class="input-label">Phone number</label>
-						                           <input type="tel" class="form-control" id="pno" name="phone-no" placeholder="044 42815625" pattern="[0-9]" minlength="10" maxlength="12" title="Please enter only numbers and between 10 to 12 digits" oninput="this.value = this.value.replace(/[^0-9]/g, '')" 
+						                           <label for="phone-no" class="input-label">
+                                                <span>Phone number</span>
+                                             </label>
+						                           <input type="tel" class="form-control" id="pno" name="phone-no" placeholder="" pattern="[0-9]" minlength="10" maxlength="12" title="Please enter only numbers and between 10 to 12 digits" oninput="this.value = this.value.replace(/[^0-9]/g, '')" 
 						                              >
 						                        </div>
 						                        <!-- End Form Group -->
@@ -383,7 +380,10 @@
 						                     <div class="col-sm-12">
 						                        <!-- Form Group -->
 						                        <div class="js-form-message form-group">
-						                           <label for="country" class="input-label">Country</label>
+						                           <label for="country" class="input-label">
+                                                <span>Country</span>
+                                                <span class="form-required">*</span>
+                                             </label>
 						                           <select class="form-control" name="country" id="country" required
 						                              data-msg="Please select your country">
 						                           </select>
@@ -393,7 +393,10 @@
 						                     <div class="col-sm-12">
 						                        <!-- Form Group -->
 						                        <div class="js-form-message form-group">
-						                           <label for="message" class="input-label">Message</label>
+						                           <label for="message" class="input-label">
+                                                <span>Message</span>
+                                                <span class="form-required">*</span>
+                                             </label>
 						                           <div class="input-group">
 						                              <textarea class="form-control" rows="4" name="message" id="message" placeholder="Hi there, I would like to ..." aria-label="Hi there, I would like to ..." required
 						                                 data-msg="Please enter a reason."></textarea>
@@ -588,19 +591,19 @@
       <!--googleon: all-->
       <!--BEGIN: TRACKING CODE MANAGER BY INTELLYWP.COM IN FOOTER//-->
       <script>
-         window.intercomSettings = {
-           app_id: "adquux25"
-         };
+         // window.intercomSettings = {
+         //   app_id: "adquux25"
+         // };
       </script>
       <script>
          // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/adquux25'
-         (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/adquux25';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
+         // (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/adquux25';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
       </script>
       <!--END: https://wordpress.org/plugins/tracking-code-manager IN FOOTER//--><script src='../wp-content/plugins/metronet-profile-picture/js/mpp-frontendd315.js?ver=2.6.0' id='mpp_gutenberg_tabs-js'></script>
       <script src='../wp-includes/js/dist/vendor/regenerator-runtime.minb36a.js?ver=0.13.7' id='regenerator-runtime-js'></script>
       <script src='../wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js?ver=3.15.0' id='wp-polyfill-js'></script>
       <script id='contact-form-7-js-extra'>
-         var wpcf7 = {"api":{"root":"https:\/\/bridgecrew.io\/wp-json\/","namespace":"contact-form-7\/v1"}};
+         var wpcf7 = {"api":{"root":"","namespace":"contact-form-7\/v1"}};
       </script>
       <script src='../wp-content/plugins/contact-form-7/includes/js/index4245.js?ver=5.5.2' id='contact-form-7-js'></script>
       <script id='heateor_sss_sharing_js-js-before'>
@@ -613,28 +616,31 @@
       <script src='../wp-content/themes/bridgecrew/assets/js/vendor/jquery.magnific-popup.minf658.js?ver=5.8.1' id='magnific-popup-js'></script>
       <script src='../wp-content/themes/bridgecrew/assets/js/vendor/jquery.basictable.minf658.js?ver=5.8.1' id='basictable-js'></script>
       <script type="text/javascript" src="../wp-content/themes/bridgecrew/build/main-minf658.js?ver=5.8.1" defer="defer"></script>
-	  <script src='https://bridgecrew.io/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script>
+	   <!-- <script src='https://bridgecrew.io/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script> -->
   <!-- JS Plugins Init. -->
   <script>
-
     $(document).on('ready', function () {
-       
-
-      fetch('https://restcountries.com/v3.1/all')
-  .then(response => response.json())
-  .then(data => {
-    const countrySelect = document.getElementById('country');
-    const sortedData = data.sort((a, b) => a.name.common.localeCompare(b.name.common));
-    sortedData.forEach(country => {
-      const option = document.createElement('option');
-      option.value = country.name.common;
-      option.text = country.name.common;
-      countrySelect.appendChild(option);
+      const csvPath = '../assets/csv/countries.csv'; 
+      fetch(csvPath)
+        .then(response => {
+          if (!response.ok) throw new Error('Failed to load CSV file');
+          return response.text();
+        })
+        .then(csvText => {
+          const lines = csvText.split("\n").filter(line => line.trim() !== "");
+          const countrySelect = document.getElementById('country');
+          lines.slice(1).forEach(line => {
+            const cols = line.split(",");
+            if (cols.length >= 4) {
+              const option = document.createElement('option'); 
+              option.value = cols[3].replace(/"/g, '').trim();
+              option.text = cols[3].replace(/"/g, '').trim();
+              countrySelect.appendChild(option); 
+            }
+          });
+        })
+        .catch(error => console.error('Error fetching countries:', error));
     });
-  }).catch(error => console.error('Error fetching data:', error));
-      
-    });
-
   </script>
   <script>
 
@@ -643,7 +649,7 @@
         var f = document.getElementsByTagName('form')[0], e = $('#mailstatus'), s = $('#submitbtn');
           e.text('');
           s.attr('disabled','disabled');
-          fetch('php/contact-form.php', {
+          fetch('../assets/php/contact-form.php', {
           method: 'POST', 
           body: new FormData(f)
           })
