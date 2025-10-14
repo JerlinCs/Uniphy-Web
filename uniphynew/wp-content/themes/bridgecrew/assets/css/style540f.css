@@ -976,7 +976,7 @@ form.hs-form .hs-error-msgs {
     width: 17%;
     margin-bottom: 25px; }
     .main-footer__widgets__column:first-child {
-      width: 32%; }
+      width: 100%; }
       @media (max-width: 1024px) {
         .main-footer__widgets__column:first-child {
           width: 50%; } }
@@ -1103,13 +1103,9 @@ form.hs-form .hs-error-msgs {
   width: 100%;
   margin-bottom: 40px; }
   .social-footer__item {
-    display: inline-block;
-    float: left;
+    /* display: inline;
+    float: initial; */
     margin: 0px 14px; }
-    .social-footer__item:first-child {
-      margin-left: 0px; }
-    .social-footer__item:last-child {
-      margin-right: 0px; }
     .social-footer__item--facebook a:before {
       content: "\f09a"; }
     .social-footer__item--twitter a:before {
