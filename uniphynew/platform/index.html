@@ -120,7 +120,7 @@
         box-sizing: border-box;
       }
       
-      .key__highlight body {
+      /* .key__highlight body {
         --color: rgba(30, 30, 30);
         --bgColor: rgba(245, 245, 245);
         min-height: 100vh;
@@ -133,8 +133,8 @@
         font-family: "Jura", sans-serif;
         color: var(--color);
         background: var(--bgColor);
-      }
-      
+      } */
+
       .key__highlight h1 {
         text-align: left;
       }
@@ -187,6 +187,7 @@
           50% 100%,
           calc(var(--col-gap) / -2 - 5px) calc(100% - var(--flapH))
         );
+        line-height: 1.55em;
       }
       
       /* bar */
@@ -253,25 +254,32 @@
       .key__highlight .credits a {
         color: var(--color);
       }
-      /* .features__container .boxes__wrapper--columns-three .boxes__box-item {
+      @media screen and (max-width: 1024px) {
+         .features__container .boxes__wrapper--columns-four .boxes__box-item {
+            width: 28% !important;
+            justify-items: center;
+            margin: 15px 15px 25px 15px !important;
+         }
+      }
+      @media screen and (max-width: 768px) {
+         .features__container .boxes__wrapper--columns-four .boxes__box-item {
+            width: 100% !important;
+            max-width: none !important;
+            margin: 15px 15px 25px 15px !important;
+            text-align: center;
+         }
+      }
+      .features__container .boxes__wrapper--columns-four .boxes__box-item {
          width: 30%;
          max-width: max-content;
-      } */
-      .boxes__wrapper--columns-four .boxes__box-item {
-         width: 100% !important;
-         max-width: 460px !important;
+         background: none;
+         min-height: max-content !important;
       }
       .features__container .boxes__box-item {
          padding: 0;
       }
       .features__container .boxes__box-item__content h3 {
          margin: 0;
-      }
-      .features__container .boxes__box-item__content {
-         padding: 0px 30px 30px 30px;
-      }
-      .features__container .boxes__box-item--style-shadow {
-         box-shadow: 0 12px 40px rgba(192, 174, 229, 1.15);
       }
       .features__container .boxes__box-item__image img {
          max-width: 100%;
@@ -282,7 +290,13 @@
          margin: auto;
       }
       .features__container .boxes__box-item__image {
-         height: max-content;
+         content: "";
+         height: 75px;
+         background-size: 500px;
+         width: 75px;
+         display: block;
+         background-position: -185px 0px;
+         margin: 0px 0px 20px;
       }
       .section-block {
          padding: 75px 0px !important;
@@ -860,23 +874,23 @@
                               </div>
                               <ul>
                                   <li style="--accent-color:#0B374D">
-                                      <div class="title">AI-powered platform</div>
+                                      <div class="title">AI-Powered Platform</div>
                                       <div class="descr">Augments every stage of the lifecycle.</div>
                                   </li>
                                   <li style="--accent-color:#1286A8">
-                                      <div class="title">Delta Deployment feature</div>
+                                      <div class="title">Delta Deployment Feature</div>
                                       <div class="descr">A distinctive capability that competitors lack.</div>
                                   </li>
                                   <li style="--accent-color:#D2B53B">
                                       <div class="title">Zero Business Impact Transition</div>
-                                      <div class="descr">(16-week structured onboarding)</div>
+                                      <div class="descr">(16-Week structured onboarding)</div>
                                   </li>
                                   <li style="--accent-color:#DA611E">
                                       <div class="title">Unified Architecture</div>
                                       <div class="descr">Consolidates tools, platforms, and cloud workflows.</div>
                                   </li>
                                   <li style="--accent-color:#AC2A1A">
-                                      <div class="title">Built-in monitoring & alerts</div>
+                                      <div class="title">Built-in Monitoring & Alerts</div>
                                       <div class="descr">No external integrations needed as compared to other players.</div>
                                   </li>
                                     <li style="--accent-color:#801bab">
@@ -962,42 +976,33 @@
                         </section>
                         <section class="section-block section-block--container-default section-block--theme-default section-block--theme-light-purple-wave boxes boxes-2 ">
                            <div class="container features__container">
-                              <div class="section-block__header text-center boxes--columns-two" style="padding-bottom: 40px;">
+                              <div class="section-block__header text-center boxes--columns-two">
                                  <h1 class="section-block__title boxes__title">Uniphy is one application for the entire DevOps lifecycle</h1>
                               </div>
                               <div class="boxes__wrapper boxes__wrapper--columns-four">
-                                 <div class="boxes__box-item boxes__box-item--align-left boxes__box-item--style-shadow transition-3d-hover" style="margin-left: 0px; height: -webkit-fill-available !important;">
-                                    <a target="" href="#">
-                                       <!-- <div class="boxes__box-item__image">
-                                          <h4 class="section-block__pre-title dynamic-pricing__pre-title" style="position: absolute; margin: 10px 15px 15px 15px;"><span>Manage</span></h4>
-                                          <img width="85" height="85" src="../assets/images/abstract-shapes-13.svg" class="attachment-full size-full" alt="" loading="lazy" />
-                                       </div> -->
-                                       <div class="boxes__box-item__content">
-                                          <h3>Fast feedback loops, the ability to manage projects, software change</h3>
-                                       </div>
-                                    </a>
+                                 <div class="boxes__box-item boxes__box-item--align-left" style="min-height: max-content !important;">
+                                    <div class="boxes__box-item__image">
+                                       <img width="85" height="85" src="../assets/images/system.png" class="attachment-full size-full" alt="" loading="lazy" />
+                                    </div>
+                                    <div class="boxes__box-item__content">
+                                       <h3>Fast feedback loops, the ability to manage projects, software change</h3>
+                                    </div>
                                  </div>
-                                 <div class="boxes__box-item boxes__box-item--align-left boxes__box-item--style-shadow transition-3d-hover" style="height: -webkit-fill-available !important;">
-                                    <a target="" href="#">
-                                       <!-- <div class="boxes__box-item__image">
-                                          <h4 class="section-block__pre-title dynamic-pricing__pre-title" style="position: absolute; margin: 10px 15px 15px 15px;"><span>Deploy</span></h4>
-                                          <img width="85" height="85" src="../assets/images/abstract-shapes-14.svg" class="attachment-full size-full" alt="" loading="lazy" />
-                                       </div> -->
-                                       <div class="boxes__box-item__content">
-                                          <h3>Deploy to multiple environments like staging and production</h3>
-                                       </div>
-                                    </a>
+                                 <div class="boxes__box-item boxes__box-item--align-left" style="min-height: max-content !important;">
+                                    <div class="boxes__box-item__image">
+                                       <img width="85" height="85" src="../assets/images/startup.png" class="attachment-full size-full" alt="" loading="lazy" />
+                                    </div>
+                                    <div class="boxes__box-item__content">
+                                       <h3>Deploy to multiple environments like staging and production</h3>
+                                    </div>
                                  </div>
-                                 <div class="boxes__box-item boxes__box-item--align-left boxes__box-item--style-shadow transition-3d-hover" style="margin-right: 0px; height: -webkit-fill-available !important;">
-                                    <a target="" href="#">
-                                       <!-- <div class="boxes__box-item__image">
-                                          <h4 class="section-block__pre-title dynamic-pricing__pre-title" style="position: absolute; margin: 10px 15px 15px 15px;"><span>Monitor</span></h4>
-                                          <img width="85" height="85" src="../assets/images/abstract-shapes-15.svg" class="attachment-full size-full" alt="" loading="lazy" />
-                                       </div> -->
-                                       <div class="boxes__box-item__content">
-                                          <h3>Monitor, repair, remediate configuration drift and status of your application</h3>
-                                       </div>
-                                    </a>
+                                 <div class="boxes__box-item boxes__box-item--align-left" style="min-height: max-content !important;">
+                                    <div class="boxes__box-item__image">
+                                       <img width="85" height="85" src="../assets/images/remidiate.png" class="attachment-full size-full" alt="" loading="lazy" />
+                                    </div>
+                                    <div class="boxes__box-item__content">
+                                       <h3>Monitor, repair, remediate configuration drift and status of your application</h3>
+                                    </div>
                                  </div>
                               </div>
                            </div>
@@ -1007,7 +1012,7 @@
                            <div class="container">
                               <div class="cta__inner   cta__inner--default" style="background: linear-gradient(to right, #2c339b, #dd4196, #4c327b);">
                                  <div class="cta__content">
-                                    <h2>Uniphy is free to get started</h2>
+                                    <h2 style="font-weight: 500 !important;">Uniphy is free to get started</h2>
                                     <h3>Sign up to start automating your application lifecycle management</h3>
                                  </div>
                                  <div class="cta__buttons">
