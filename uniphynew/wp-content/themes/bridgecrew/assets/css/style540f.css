@@ -979,7 +979,7 @@ form.hs-form .hs-error-msgs {
       width: 100%; }
       @media (max-width: 1024px) {
         .main-footer__widgets__column:first-child {
-          width: 50%; } }
+          width: 100%; } }
       @media (max-width: 600px) {
         .main-footer__widgets__column:first-child {
           width: 100%; } }
@@ -1003,6 +1003,10 @@ form.hs-form .hs-error-msgs {
       float: left;
       width: 30%; }
       @media (max-width: 1024px) {
+        .main-footer__copy__text {
+          width: 100%;
+          text-align: left; } }
+        @media (max-width: 768px) {
         .main-footer__copy__text {
           width: 100%;
           text-align: center; } }

@@ -25678,7 +25678,7 @@ text-align: center;
 
 .swiper-slide {
   width: 300px;
-  height: 320px;
+  height: auto;
   filter: blur(1px);
   padding: 40px;
   border-radius: 10px;

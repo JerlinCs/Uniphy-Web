@@ -78,10 +78,6 @@
             margin-bottom: 0;
          }
 
-         .boxes__box-item {
-            min-height: 443.34px !important;
-         }
-
          .boxes__box-item__image {
             height: 180px !important;
          }
@@ -116,8 +112,9 @@
          /* Mobile styles */
          @media (max-width: 768px) {
             .main-footer__widgets .main-footer__widgets__column {
+               display: block !important;
                width: 100% !important;
-               text-align: center;
+               justify-items: center;
             }
          
             .boxes__box-item__image img {
@@ -134,6 +131,13 @@
                text-align: center;
             }
          }
+         /* .boxes__box-item__subtitle {
+            font-size: 1.1em;
+            margin-bottom: 0.5em !important;
+            color: #052882;
+            letter-spacing: -0.10px;
+            font-family: sofia-pro-soft, sans-serif  !important;
+         } */
 
          /* Mobile responsiveness */
          @media screen and (max-width:783px) {
@@ -635,10 +639,13 @@
                                        <img width="185" height="185" src="assets/images/TecOps.png" class="attachment-full size-full" alt="" loading="lazy" />
                                     </div>
                                     <h3 class="boxes__box-item__title ">
-                                       TecOps
+                                       Reliable Technology Operations
                                     </h3>
+                                    <!-- <h2 class="boxes__box-item__subtitle">
+                                       Reliable Technology Operations
+                                    </h2> -->
                                     <div class="boxes__box-item__content">
-                                       <p>From a DevOps pipeline perspective UNIPHY offers its own DevOps stack including provisioning and orchestration with an intuitive UI.</p>
+                                       <p>Uniphy ensures platform stability with proactive monitoring, automated maintenance, and real-time insights — keeping your services resilient and always available.</p>
                                     </div>
                                  </div>
                                  <div class="boxes__box-item boxes__box-item--align-center boxes__box-item--style-shadow" style="box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); filter: brightness(99%);">
@@ -646,10 +653,13 @@
                                        <img width="185" height="185" src="assets/images/DevOps.png" class="attachment-full size-full" alt="" loading="lazy" />
                                     </div>
                                     <h3 class="boxes__box-item__title ">
-                                       DevOps
+                                       Uniphy DevOps Stack
                                     </h3>
+                                    <!-- <h2 class="boxes__box-item__subtitle">
+                                       Uniphy DevOps Stack
+                                    </h2> -->
                                     <div class="boxes__box-item__content">
-                                       <p>From a DevOps pipeline perspective UNIPHY offers its own DevOps stack including provisioning and orchestration with an intuitive UI.</p>
+                                       <p>From pipeline to production, Uniphy provides a complete DevOps stack — including provisioning, orchestration, and an intuitive UI — for faster, reliable, and automated software delivery.</p>
                                     </div>
                                  </div>
                                  <div class="boxes__box-item boxes__box-item--align-center boxes__box-item--style-shadow" style="box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); filter: brightness(99%);">
@@ -657,10 +667,13 @@
                                        <img width="185" height="185" src="assets/images/SecOps.png" class="attachment-full size-full" alt="" loading="lazy" />
                                     </div>
                                     <h3 class="boxes__box-item__title ">
-                                       SecOps
+                                       Enterprise-Grade Security
                                     </h3>
+                                    <!-- <h2 class="boxes__box-item__subtitle">
+                                       Enterprise-Grade Security
+                                    </h2> -->
                                     <div class="boxes__box-item__content">
-                                       <p>To meet the needs of the data-secure enterprise, UNIPHY’s policies and workflows are built into the platform to provide transparent, configurable, role-based, auditable access controls.</p>
+                                       <p>Uniphy embeds security into every workflow. Transparent, configurable, role-based, and auditable access controls meet the needs of the data-secure enterprise.</p>
                                     </div>
                                  </div>
                               </div>
@@ -701,18 +714,26 @@
             <div class="container">
                <div class="main-footer__widgets">
                   <div class="main-footer__widgets__column" style="display: flex; justify-content: space-between;">
-                     <section id="media_image-2" class="widget-odd widget-first widget-1 footer-widget widget_media_image">
-                        <a href="index.html">
-                        <img src="assets/images/uniphy.svg" class="image wp-image-5578  attachment-medium size-medium" alt="Uniphy logo" loading="lazy" style="max-width: 100%; height: auto;" height="44.21" width="148.94" />
-                        </a>
-                        <div class="clearfix"></div>
-                        <p><a href="mailto: support@uniphy.com"><strong>support@uniphy.com</strong></a></p>
+                     <section id="media_image-2" class="widget-odd widget-last widget-first widget-1 footer-widget widget_nav_menu">
+                        <div class="menu-resource-container">
+                           <ul id="menu-resource" class="menu" style="margin-top: 0;">
+                              <li id="menu-item-1843" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1843" style="align-content: center; margin-bottom: 10px; height: 45px !important;">
+                                 <a href="index.html">
+                                    <img src="assets/images/uniphy.svg" class="image wp-image-5578  attachment-medium size-medium" alt="Uniphy logo" loading="lazy" style="max-width: 100%; height: auto;" height="44.21" width="148.94" />
+                                 </a>
+                              </li>
+                              <li id="menu-item-3823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3823" style="align-content: center; height: 45px !important;">
+                                 <p><a href="mailto: support@uniphy.com"><strong>support@uniphy.com</strong></a></p>
+                              </li>
+                           </ul>
+                        </div>
                      </section>
                      <section id="text-2" class="widget-odd widget-last widget-first widget-1 footer-widget widget_nav_menu">
+                        <h4 class="footer-widget__title">Social Media</h4>
                         <div class="menu-resource-container">
-                           <ul class="social-footer">
-                              <li class="social-footer__item social-footer__item--linkedin"><a href="" target="_blank" rel="noopener" style="height: 44.21px; align-content: center; padding-bottom: 10px;"></a></li>
-                              <li class="social-footer__item social-footer__item--twitter"><a href="" target="_blank" rel="noopener" style="height: 45.21px; align-content: center; padding-top: 10px;"></a></li>
+                           <ul id="menu-resource" class="menu" style="margin-top: 0;">
+                              <li id="menu-item-1843" class="social-footer__item social-footer__item--linkedin menu-item menu-item-type-post_type menu-item-object-page menu-item-1843" style="display: flex; align-items: center; height: 45px !important;"><a href="" target="_blank" rel="noopener"><span style="font-size: medium; padding-left: 10px;">LinkedIn</span></a></li>
+                              <li id="menu-item-3823" class="social-footer__item social-footer__item--twitter menu-item menu-item-type-post_type menu-item-object-page menu-item-3823" style="display: flex; align-items: center; height: 45px !important;"><a href="" target="_blank" rel="noopener"><span style="font-size: medium; padding-left: 10px;">Twitter</span></a></li>
                            </ul>
                         </div>
                      </section>
@@ -737,7 +758,7 @@
                         <h4 class="footer-widget__title">Contact Us</h4>
                         <div class="menu-resource-container">
                            <ul id="menu-resource" class="menu">
-                              <li id="menu-item-1843" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1843"><a href="about/index.html">About Us</a></li>
+                              <li id="menu-item-1843" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1843"><a href="">About Us</a></li>
                               <li id="menu-item-3823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3823"><a href="schedule-a-demo/index.html">Schedule a demo</a></li>
                            </ul>
                         </div>
@@ -769,12 +790,12 @@
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5281"><a href="platform/index.html">Platform</a></li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6279"><a href="pricing/index.html">Pricing</a></li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1833">
-               <a href="resources/index.html">Resources</a>
+               <a href="">Resources</a>
             </li>
          </ul>
          <div class="ns-mobile-menu__cta">
-            <a href="" target="_blank" class="ns-btn ns-btn--purple">Sign up</a><br>
-            <a href="" target="_blank" class="ns-btn ns-btn--underline">Sign in</a>
+            <a href="https://uniphyops.com/" target="_blank" class="ns-btn ns-btn--purple" rel="noopener noreferrer">Sign up</a><br>
+            <a href="https://uniphyops.com/" target="_blank" class="ns-btn ns-btn--underline" rel="noopener noreferrer">Sign in</a>
          </div>
       </div>
       <!--googleoff: all-->
