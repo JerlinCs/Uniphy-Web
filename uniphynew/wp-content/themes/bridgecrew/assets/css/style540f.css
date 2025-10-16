@@ -1113,21 +1113,27 @@ form.hs-form .hs-error-msgs {
     .social-footer__item--facebook a:before {
       content: "\f09a"; }
     .social-footer__item--twitter a:before {
-      content: "\f099"; }
+      content: "\e61b"; }
     .social-footer__item--linkedin a:before {
       content: "\f0e1"; }
     .social-footer__item--github a:before {
       content: "\f09b"; }
+    .social-footer__item--location a:before {
+      content: "\f3c5"; }
+    .social-footer__item--email a:before {
+      content: "\f0e0"; }
+    .social-footer__item--phone a:before {
+      content: "\f095"; }
     .social-footer__item a {
       display: block;
-      width: 20px;
-      height: 20px;
+      /* width: 100%; */
+      /* height: 20px; */
       line-height: 20px;
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: contain;
       font-size: 20px;
-      text-align: center; }
+      text-align: left; }
       .social-footer__item a:before {
         font-family: "FontAwesome"; }
 
@@ -2075,7 +2081,7 @@ form.hs-form .hs-error-msgs {
 .content-image__inner {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   flex-wrap: wrap; }
   .content-image__inner--image-left .content-image__content {
     padding-left: 30px;
@@ -3010,7 +3016,7 @@ form.hs-form .hs-error-msgs {
   box-sizing: border-box;
   border-radius: 10px;
   background-color: #ffffff;
-  padding: 40px 30px 40px 30px;
+  padding: 30px 30px 30px 30px;
   margin: 0px 15px 25px;
   text-decoration: none;
   overflow: hidden; }

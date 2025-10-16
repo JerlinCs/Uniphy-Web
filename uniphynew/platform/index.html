@@ -18,6 +18,7 @@
       <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css'>
       <!-- CSS Implementing Plugins -->
       <link rel="stylesheet" href="../assets/vendor/font-awesome/css/all.min.css">
+      <link rel="stylesheet" href="../assets/vendor/fontawesome-free-7.1.0-web/css/all.min.css">
       <link rel="stylesheet" href="../assets/vendor/hs-mega-menu/dist/hs-mega-menu.min.css">
       <link rel="stylesheet" href="../assets/vendor/slick-carousel/slick/slick.css">
       <link rel="stylesheet" href="../assets/vendor/aos/dist/aos.css">
@@ -74,15 +75,17 @@
          .challenges__section .section-block__content h3 {
             text-align: left;
          }
+         footer .main-footer__widgets section a,
+         footer .main-footer__widgets section p,
+         footer .main-footer__widgets section span 
+         {
+            font-size: 16px;
+         }
+         footer .main-footer__widgets section h4 {
+            font-size: 21.99px;
+         }
          @media screen and (max-width:783px) {.heateor_sss_vertical_sharing{display:none!important}}@media screen and (max-width:783px) {.heateor_sss_floating_follow_icons_container{display:none!important}}
-		.footer__menu {
-		  display: flex;
-		  justify-content: flex-end;
-		  gap: 2rem;
-		}
-		.footer__menu .footer__first_childwidth {
-		  width: 17% !important;
-		}
+
 		.platform--header {
 			background-image: url(../assets/images/devops-2.jpg) !important;
 			background-position: center !important;
@@ -358,12 +361,6 @@
 
 		/* Mobile styles */
 		@media (max-width: 768px) {
-  			.footer__menu {
-  			  display: block;       /* default instead of flex */
-  			  justify-content: unset;
-  			  gap: unset;
-  			}
-         .main-footer__widgets .footer__menu .main-footer__widgets__column,
          .main-footer__widgets .main-footer__widgets__column {
             display: block !important;
             width: 100% !important;
@@ -371,11 +368,6 @@
 			}
          .boxes__box-item__image img {
             min-height: fit-content !important;
-         }
-         .main-footer__widgets__column .social-footer {
-            padding-left: 0.8rem !important;
-            display: flex !important;
-            justify-content: center !important;
          }
          .main-footer__widgets__column {
             text-align: center;
@@ -713,7 +705,7 @@
                      <nav>
                         <div class="menu-main-menu-container">
                            <ul id="header-menu" class="menu">
-                              <li id="menu-item-5281" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4691 current_page_item menu-item-5281"><a href="index.html" aria-current="page">Platform</a></li>
+                              <li id="menu-item-5281" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4691 current_page_item menu-item-5281"><a href="index.html" aria-current="page">Features</a></li>
                               <li id="menu-item-6279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6279"><a href="../pricing/index.html">Pricing</a></li>
                               <li id="menu-item-1833" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1833">
                                  <a href="">Resources</a>
@@ -754,8 +746,8 @@
                                     <div class="section-block__content text-center ">
                                     </div>
                                     <div class="cta-row cta-row--horizontal cta-row--center">
-                                       <a class="ns-btn ns-btn--purple " href="" target="">Sign up for free</a>						
-									            <a class="ns-btn ns-btn--white " href="" target="">See a live demo</a>			
+                                       <a class="ns-btn ns-btn--purple " href="../schedule-a-demo/index.html" target="">Sign up for free</a>						
+									            <a class="ns-btn ns-btn--white " href="../schedule-a-demo/index.html" target="">See a live demo</a>			
                                     </div>
                                  </div>
                               </div>
@@ -916,13 +908,14 @@
                                              <li>Monitoring and Metrics Runbook</li>
                                              <li>Automation Deployment</li>
                                              <li>Automation Predictive Operations</li>
+                                             <li>Incident reduction 6-8%</li>
                                           </ul>
                                        </div>
                                     </div>
-                                    <img width="2120" height="1354" src="../assets/images/coin.png" class="attachment-full size-full" alt="Manage" loading="lazy" sizes="(max-width: 2120px) 100vw, 2120px" />	
+                                    <img width="2120" height="1354" src="../assets/images/Manage_img.png" class="attachment-full size-full" alt="Manage" loading="lazy" sizes="(max-width: 2120px) 100vw, 2120px" />	
                                  </div>
                                  <div class="content-image__image  content-image__image--align-center" style="display: flex; flex-direction: row; align-items: center; padding-left: 0px;">
-                                    <img width="2120" height="1354" src="../assets/images/handshake.png" class="attachment-full size-full" alt="Manage" loading="lazy" sizes="(max-width: 2120px) 100vw, 2120px" />	
+                                    <img width="2120" height="1354" src="../assets/images/Code_img.png" class="attachment-full size-full" alt="Manage" loading="lazy" sizes="(max-width: 2120px) 100vw, 2120px" />	
                                     <div class="content-image__content">
                                        <div class="section-block__content text-left ">
                                           <ul>
@@ -930,6 +923,7 @@
                                              <li>Management Configuration / Construction</li>
                                              <li>Build and Continuous Integration</li>
                                              <li>Automated Testing Artifact/Asset Management</li>
+                                             <li>Incident reduction by 12-13%</li>
                                           </ul>
                                        </div>
                                     </div>
@@ -951,13 +945,14 @@
                                              <li>Release Management</li>
                                              <li>A/B Deployments</li>
                                              <li>Release Testing</li>
+                                             <li>Incident reduction 6-8%</li>
                                           </ul>
                                        </div>
                                     </div>
-                                    <img width="2120" height="1354" src="../assets/images/foler.png" class="attachment-full size-full" alt="Manage" loading="lazy" sizes="(max-width: 2120px) 100vw, 2120px" />	
+                                    <img width="2120" height="1354" src="../assets/images/Deliver_img.png" class="attachment-full size-full" alt="Manage" loading="lazy" sizes="(max-width: 2120px) 100vw, 2120px" />	
                                  </div>
                                  <div class="content-image__image  content-image__image--align-center section-block--theme-light-purple" style="display: flex; flex-direction: row; align-items: center; padding-left: 0px;">
-                                    <img width="2120" height="1354" src="../assets/images/bag.png" class="attachment-full size-full" alt="Manage" loading="lazy" sizes="(max-width: 2120px) 100vw, 2120px" />	
+                                    <img width="2120" height="1354" src="../assets/images/Run_img.png" class="attachment-full size-full" alt="Manage" loading="lazy" sizes="(max-width: 2120px) 100vw, 2120px" />	
                                     <div class="content-image__content">
                                        <div class="section-block__content text-left ">
                                           <ul>
@@ -966,6 +961,7 @@
                                              <li>Autoscaling</li>
                                              <li>Auto Healing</li>
                                              <li>Canaries</li>
+                                             <li>Incident reduction 12-13%</li>
                                           </ul>
                                        </div>
                                     </div>
@@ -1017,7 +1013,7 @@
                                  </div>
                                  <div class="cta__buttons">
                                     <div class="cta-row cta-row--horizontal cta-row--center">
-                                       <a class="ns-btn ns-btn--white " href="" target="">Get Started For Free</a>
+                                       <a class="ns-btn ns-btn--white " href="../schedule-a-demo/index.html" target="">Get Started For Free</a>
 									            <a class="ns-btn ns-btn--white-border " href="../schedule-a-demo/index.html" target="">Watch Demo</a>
                                     </div>
                                  </div>
@@ -1041,17 +1037,17 @@
             <div class="container">
                <div class="main-footer__widgets">
                   <div class="main-footer__widgets__column" style="display: flex; justify-content: space-between;">
-                     <section id="media_image-2" class="widget-odd widget-last widget-first widget-1 footer-widget widget_nav_menu">
+                     <section id="media_image-2" class="widget-odd widget-last widget-first widget-1 footer-widget widget_nav_menu" style="width: 220px;">
                         <div class="menu-resource-container">
                            <ul id="menu-resource" class="menu" style="margin-top: 0;">
                               <li id="menu-item-1843" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1843" style="align-content: center; margin-bottom: 10px; height: 45px !important;">
-                                 <a href="../index.html">
-                                    <img src="../assets/images/uniphy.svg" class="image wp-image-5578  attachment-medium size-medium" alt="Uniphy logo" loading="lazy" style="max-width: 100%; height: auto;" height="44.21" width="148.94" />
+                                 <a href="index.html">
+                                    <img src="../assets/images/uniphy.svg" class="image wp-image-5578  attachment-medium size-medium" alt="Uniphy logo" loading="lazy" style="max-width: 100%; height: auto;" height="44.21"/>
                                  </a>
                               </li>
-                              <li id="menu-item-3823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3823" style="align-content: center; height: 45px !important;">
-                                 <p><a href="mailto: support@uniphy.com"><strong>support@uniphy.com</strong></a></p>
-                              </li>
+                              <li id="menu-item-1843" class="social-footer__item social-footer__item--location menu-item menu-item-type-post_type menu-item-object-page menu-item-1843" style="display: flex; align-items: center; height: max-content !important; margin: 0 !important;"><a style="display: flex;"><p style="font-size: medium; padding-left: 10px;">5805 Callaghan Road, Suite #115, San Antonio, TX 78228, USA</p></a></li>
+                              <li id="menu-item-1843" class="social-footer__item social-footer__item--email menu-item menu-item-type-post_type menu-item-object-page menu-item-1843" style="display: flex; align-items: center; height: 45px !important; margin: 0 !important;"><a><span style="font-size: medium; padding-left: 10px; margin: 0 !important;">support@uniphy.com</span></a></li>
+                              <li id="menu-item-1843" class="social-footer__item social-footer__item--phone menu-item menu-item-type-post_type menu-item-object-page menu-item-1843" style="display: flex; align-items: center; height: 45px !important; margin: 0 !important;"><a><span style="font-size: medium; padding-left: 10px; margin: 0 !important;">+1 (210) 858-5280</span></a></li>
                            </ul>
                         </div>
                      </section>
@@ -1059,8 +1055,8 @@
                         <h4 class="footer-widget__title">Social Media</h4>
                         <div class="menu-resource-container">
                            <ul id="menu-resource" class="menu" style="margin-top: 0;">
-                              <li id="menu-item-1843" class="social-footer__item social-footer__item--linkedin menu-item menu-item-type-post_type menu-item-object-page menu-item-1843" style="display: flex; align-items: center; height: 45px !important;"><a href="" target="_blank" rel="noopener"><span style="font-size: medium; padding-left: 10px;">LinkedIn</span></a></li>
-                              <li id="menu-item-3823" class="social-footer__item social-footer__item--twitter menu-item menu-item-type-post_type menu-item-object-page menu-item-3823" style="display: flex; align-items: center; height: 45px !important;"><a href="" target="_blank" rel="noopener"><span style="font-size: medium; padding-left: 10px;">Twitter</span></a></li>
+                              <li id="menu-item-1843" class="social-footer__item social-footer__item--linkedin menu-item menu-item-type-post_type menu-item-object-page menu-item-1843" style="display: flex; align-items: center; height: 45px !important; margin: 0 !important;"><a target="_blank" rel="noopener"><span style="font-size: medium; padding-left: 10px;">LinkedIn</span></a></li>
+                              <li id="menu-item-3823" class="social-footer__item social-footer__item--twitter menu-item menu-item-type-post_type menu-item-object-page menu-item-3823" style="display: flex; align-items: center; height: 45px !important; margin: 0 !important;"><a target="_blank" rel="noopener"><span style="font-size: medium; padding-left: 10px;">Twitter</span></a></li>
                            </ul>
                         </div>
                      </section>
@@ -1077,15 +1073,15 @@
                         <h4 class="footer-widget__title">Resources</h4>
                         <div class="menu-resource-container">
                            <ul id="menu-resource" class="menu">
-                              <li id="menu-item-7254" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7254"><a href="">Documentation</a></li>
+                              <li id="menu-item-7254" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7254"><a>Documents</a></li>
                            </ul>
                         </div>
                      </section>
-                     <section id="nav_menu-3" class="widget-odd widget-last widget-first widget-1 footer-widget widget_nav_menu">
+                     <section id="nav_menu-4" class="widget-odd widget-last widget-first widget-1 footer-widget widget_nav_menu">
                         <h4 class="footer-widget__title">Contact Us</h4>
                         <div class="menu-resource-container">
                            <ul id="menu-resource" class="menu">
-                              <li id="menu-item-1843" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1843"><a href="#">About Us</a></li>
+                              <li id="menu-item-1843" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1843"><a>About Us</a></li>
                               <li id="menu-item-3823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3823"><a href="../schedule-a-demo/index.html">Schedule a demo</a></li>
                            </ul>
                         </div>
@@ -1114,7 +1110,7 @@
       <div id="ns-mobile-menu" class="ns-mobile-menu">
          <a id="mmenu-close-btn"></a>
          <ul id="menu-main-menu" class="">
-            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5281"><a href="index.html" aria-current="page">Platform</a></li>
+            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5281"><a href="index.html" aria-current="page">Features</a></li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6279"><a href="../pricing/index.html">Pricing</a></li>
             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1833">
                <a href="">Resources</a>
@@ -1213,10 +1209,6 @@
          //   app_id: "adquux25"
          // };
          document.getElementById("year").textContent = new Date().getFullYear();
-      </script>
-      <script>
-         // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/adquux25'
-         // (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/adquux25';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
       </script>
       <!--END: https://wordpress.org/plugins/tracking-code-manager IN FOOTER//--><script src='../wp-content/plugins/metronet-profile-picture/js/mpp-frontendd315.js?ver=2.6.0' id='mpp_gutenberg_tabs-js'></script>
       <script src='../wp-includes/js/dist/vendor/regenerator-runtime.minb36a.js?ver=0.13.7' id='regenerator-runtime-js'></script>
