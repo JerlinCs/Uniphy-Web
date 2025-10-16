@@ -11,11 +11,8 @@ header('Expires: ' . gmdate('r', 0));
 
 header('Content-type: application/json');
 
-// Step 1 - Enter your email address below.
-//$to = '';
-$email = "sales@digitalsoftwareinc.com";
 $replyTo = "";
-// Step 2 - Enable if the server requires SMTP authentication. (true/false)
+// Step 1 - Enable if the server requires SMTP authentication. (true/false)
 $enablePHPMailer = true;
 
 $subject = 'DSI Website Sales Enquiry';
@@ -91,14 +88,18 @@ if(isset($_POST['email'])) {
 		try {
 			$mail->IsSMTP();                                      // Set mailer to use SMTP
 	
-			// Step 3 - If you don't receive the email, try to configure the parameters below:
+			// Step 2 - If you don't receive the email, try to configure the parameters below:
 			
-			$mail->host = 'localhost';
-			$mail->smtpauth = false;
-			$mail->smtpautotls = false;
-			$mail->port = 25;
+			$mail->Host       = 'smtp.office365.com';
+			$mail->SMTPAuth   = true;
+			$mail->Username   = 'noreply.uniphy@digitalsoftwareinc.in';
+			$mail->Password   = 'UNEmail@2023';
+			$mail->SMTPSecure = 'tls';
+			$mail->Port       = 587;
+
+			// Sender info
+			$mail->setFrom('noreply.uniphy@digitalsoftwareinc.in', 'No Reply');
 			
-			$mail->From = $email;
 			$mail->FromName = $name;
 			//$mail->AddAddress('manojkumar.vijayakumar@digitalsoftwareinc.in', 'Manojkumar Vijayakumar');								  // Add a recipient
 			//$mail->AddAddress('rajkumar.k@digitalsoftwareinc.com', 'Rajkumar Krishnaraj');	
