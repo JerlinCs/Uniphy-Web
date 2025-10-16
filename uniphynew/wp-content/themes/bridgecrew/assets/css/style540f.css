@@ -1028,7 +1028,7 @@ form.hs-form .hs-error-msgs {
         .main-footer__copy__menu .menu li {
           display: inline-block;
           position: relative; }
-          .main-footer__copy__menu .menu li:after {
+          /* .main-footer__copy__menu .menu li:after {
             content: "";
             display: block;
             width: 1px;
@@ -1039,7 +1039,7 @@ form.hs-form .hs-error-msgs {
             right: 0px;
             bottom: 0px;
             left: auto;
-            margin: auto; }
+            margin: auto; } */
           .main-footer__copy__menu .menu li:last-child:after {
             display: none; }
           .main-footer__copy__menu .menu li a {
