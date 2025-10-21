@@ -1804,6 +1804,9 @@ form.hs-form .hs-error-msgs {
     background-repeat: no-repeat;
     background-position: 0px 0px;
     background-size: 100% auto; }
+  .section-bg-color-dark-blue {
+    background-color: #1d2087;
+  }
   .section-block--theme-light-blue-wave-reverse {
     background-color: #f6f9fe;
     background-image: url("../images/bg-white-wave-reverse.png");

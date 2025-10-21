@@ -11,56 +11,127 @@
       <link href="../assets/images/favicon.png" rel="shortcut icon" type="image/x-icon">
       <link href="../assets/images/favicon.png" rel="apple-touch-icon">
       <style type="text/css">			
-	  	 .heateorSssInstagramBackground {
-			background:radial-gradient(circle at 30% 107%,#fdf497 0,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)
-		 }
-         .heateor_sss_horizontal_sharing .heateorSssSharing,.heateor_sss_standard_follow_icons_container .heateorSssSharing{
-         color: #fff;
-         border-width: 0px;
-         border-style: solid;
-         border-color: transparent;
+         .heateorSssInstagramBackground {
+         	background: radial-gradient(circle at 30% 107%, #fdf497 0, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%)
          }
-         .heateor_sss_horizontal_sharing .heateorSssTCBackground{
-         color:#666;
+         
+         .heateor_sss_horizontal_sharing .heateorSssSharing,
+         .heateor_sss_standard_follow_icons_container .heateorSssSharing {
+         	color: #fff;
+         	border-width: 0px;
+         	border-style: solid;
+         	border-color: transparent;
          }
-         .heateor_sss_horizontal_sharing .heateorSssSharing:hover,.heateor_sss_standard_follow_icons_container .heateorSssSharing:hover{
-         border-color: transparent;
+         
+         .heateor_sss_horizontal_sharing .heateorSssTCBackground {
+         	color: #666;
          }
-         .heateor_sss_vertical_sharing .heateorSssSharing,.heateor_sss_floating_follow_icons_container .heateorSssSharing{
-         color: #fff;
-         border-width: 0px;
-         border-style: solid;
-         border-color: transparent;
+         
+         .heateor_sss_horizontal_sharing .heateorSssSharing:hover,
+         .heateor_sss_standard_follow_icons_container .heateorSssSharing:hover {
+         	border-color: transparent;
          }
-         .heateor_sss_vertical_sharing .heateorSssTCBackground{
-         color:#666;
+         
+         .heateor_sss_vertical_sharing .heateorSssSharing,
+         .heateor_sss_floating_follow_icons_container .heateorSssSharing {
+         	color: #fff;
+         	border-width: 0px;
+         	border-style: solid;
+         	border-color: transparent;
          }
-         .heateor_sss_vertical_sharing .heateorSssSharing:hover,.heateor_sss_floating_follow_icons_container .heateorSssSharing:hover{
-         border-color: transparent;
+         
+         .heateor_sss_vertical_sharing .heateorSssTCBackground {
+         	color: #666;
          }
+         
+         .heateor_sss_vertical_sharing .heateorSssSharing:hover,
+         .heateor_sss_floating_follow_icons_container .heateorSssSharing:hover {
+         	border-color: transparent;
+         }
+         
          footer .main-footer__widgets section a,
          footer .main-footer__widgets section p,
-         footer .main-footer__widgets section span 
-         {
-            font-size: 16px;
+         footer .main-footer__widgets section span {
+         	font-size: 16px;
          }
+         
          footer .main-footer__widgets section h4 {
-            font-size: 21.99px;
+         	font-size: 21.99px;
          }
-         @media screen and (max-width:783px) {.heateor_sss_vertical_sharing{display:none!important}}@media screen and (max-width:783px) {.heateor_sss_floating_follow_icons_container{display:none!important}}
-		 @media (max-width: 768px) {
-         .main-footer__widgets .main-footer__widgets__column {
-            display: block !important;
-            width: 100% !important;
-            justify-items: center;
-			}
-         .boxes__box-item__image img {
-            min-height: fit-content !important;
+         
+         footer .footer-main-div {
+         	display: flex;
+         	justify-content: space-between;
          }
-         .main-footer__widgets__column {
-            text-align: center;
+         
+         footer .footer-main-div .footer-section-1 {
+         	width: 220px;
          }
-		 }
+         
+         .margin-none {
+         	margin: 0px !important;
+         }
+         
+         .footer-logo {
+         	max-width: 100%;
+         	height: auto;
+         }
+         
+         .footer-logo-item {
+         	align-content: center;
+         	margin-bottom: 10px;
+         	height: 45px;
+         }
+         
+         .footer-location-item {
+         	display: flex;
+         	align-items: center;
+         	height: auto;
+         }
+         
+         #footer-email-item,
+         #footer-phone-item {
+         	display: flex;
+         	align-items: center;
+         	height: 45px !important;
+         }
+         
+         @media screen and (max-width:783px) {
+         	.heateor_sss_vertical_sharing {
+         		display: none !important
+         	}
+         }
+         
+         @media screen and (max-width:783px) {
+         	.heateor_sss_floating_follow_icons_container {
+         		display: none !important
+         	}
+         }
+         
+         @media (max-width: 768px) {
+         	.main-footer__widgets .main-footer__widgets__column {
+         		display: block !important;
+         		width: 100% !important;
+         		justify-items: center;
+         	}
+         
+         	.boxes__box-item__image img {
+         		min-height: fit-content !important;
+         	}
+         
+         	.main-footer__widgets__column {
+         		text-align: center;
+         	}
+         }
+         
+         .contact-form-section form {
+         	background: #f4f7fe;
+         	border-radius: 10px;
+         }
+         
+         .display-none {
+         	display: none;
+         }
       </style>
       <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
       <!-- This site is optimized with the Yoast SEO plugin v17.2 - https://yoast.com/wordpress/plugins/seo/ -->
@@ -260,23 +331,8 @@
              });
          }}();
       </script>
-      <script>
-         (function () {
-           var zi = document.createElement('script');
-           zi.type = 'text/javascript';
-           zi.async = true;
-           zi.src = 'https://ws.zoominfo.com/pixel/gUlfw6UVEvt5dRgDRKGv';
-           var s = document.getElementsByTagName('script')[0];
-           s.parentNode.insertBefore(zi, s);
-         })();
-      </script>
-      <noscript>
-         <img src="https://ws.zoominfo.com/pixel/gUlfw6UVEvt5dRgDRKGv" width="1" height="1" style="display: none;" />
-      </noscript>
-      <!--END: https://wordpress.org/plugins/tracking-code-manager IN HEAD//-->
       <link rel="icon" href="../assets/images/favicon.png" sizes="32x32" />
       <link rel="icon" href="../assets/images/favicon.png" sizes="192x192" />
-      <link rel="apple-touch-icon" href="../assets/images/favicon.png" />
       <meta name="msapplication-TileImage" content="../assets/images/favicon.png" />
       <style id="wp-custom-css">
          .page-id-460 .site-container--bg-blue{
@@ -301,13 +357,6 @@
          animation-name: activateLink;
          animation-duration: 3s;
          }
-         /*
-         a[href*="https://www.bridgecrew.cloud/login/signUp?__hstc="],
-         a[href*="https://www.bridgecrew.cloud/login/signIn?__hstc="]{
-         opacity: 1;
-         pointer-events: auto;
-         cursor: pointer;
-         }*/
          @keyframes activateLink {
          0%   {opacity: 0.5; pointer-events: none;}
          100% {opacity: 1; pointer-events: auto; cursor: pointer;}
@@ -315,324 +364,327 @@
       </style>
    </head>
    <body class="page-template page-template-page-blocks page-template-page-blocks-php page page-id-1363 body-5">
-      <div class="site-container site-container--bg-default">
-         <header class="main-header main-header--white" data-theme="main-header--white">
-            <div class="container">
-               <div class="main-header__container">
-                  <div class="main-header__logo">
-                     <a href="../index.html" rel="home">
-                     <img src="../assets/images/uniphy2.svg" alt="Uniphy Logo" class="main-header__logo__regular">
-                     <img src="../assets/images/uniphy.svg" alt="Uniphy Logo" class="main-header__logo__white">
-                     </a>
-                  </div>
-                  <div class="main-header__menu">
-                     <nav>
-                        <div class="menu-main-menu-container">
-                           <ul id="header-menu" class="menu">
-                              <li id="menu-item-5281" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5281"><a href="../platform/index.html">Platform</a></li>
-                              <li id="menu-item-6279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6279"><a href="../pricing/index.html">Pricing</a></li>
-                              <li id="menu-item-1833" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1833">
-                                 <a href="">Resources</a>
-                              </li>
-                           </ul>
-                        </div>
-                     </nav>
-                  </div>
-                  <div class="main-header__cta">
-                     <a href="https://uniphyops.com/" target="_blank" class="ns-btn ns-btn--text" rel="noopener noreferrer">Sign in</a>
-                     <a href="https://uniphyops.com/" target="_blank" class="ns-btn ns-btn--white" rel="noopener noreferrer">Sign up</a>
-                  </div>
-               </div>
-               <div class="main-header__menu-mobile">
-                  <a href="#ns-mobile-menu"  class="mburger mburger--squeeze">
-                  <b></b>
-                  <b></b>
-                  <b></b>
-                  </a>			
-               </div>
-               <div class="clearfix"></div>
+   <div class="site-container site-container--bg-default">
+   <header class="main-header main-header--white" data-theme="main-header--white">
+      <div class="container">
+         <div class="main-header__container">
+            <div class="main-header__logo">
+               <a href="../index.html" rel="home">
+               <img src="../assets/images/uniphy2.svg" alt="Uniphy Logo" class="main-header__logo__regular">
+               <img src="../assets/images/uniphy.svg" alt="Uniphy Logo" class="main-header__logo__white">
+               </a>
             </div>
-         </header>
-         <div id="primary" class="content-area">
-            <div id="main" class="site-main" role="main">
-               <article id="post-1363" class="post-1363 page type-page status-publish hentry">
-                  <div class="entry-content">
-                     <div class="page-blocks">
-                        <section class="section-block section-block--no-bottom-padding  section-block--container-small section-block--theme-big-purple-bg-square content-image content-image-1 ">
-                           <div class="container">
-                              <div class="content-image__inner content-image__inner--image-center content-image__inner--">
-                                 <div class="content-image__content content-image__content--full-width    content-image__content--smaller-title">
-                                    <div class="section-block__header text-center ">
-                                       <h1 class="section-block__title content-image__title section-block__title--with-subtitle content-image__title--with-subtitle">Schedule a Uniphy demo</h1>
-                                       <h4 class="section-block__subtitle content-image__subtitle"><br><br></h4>
-                                    </div>
-                                    <div class="section-block__image section-block__image--align-center">
-                                    </div>
-                                    <div class="section-block__content text-center ">
-                                    </div>
-                                 </div>
+            <div class="main-header__menu">
+               <nav>
+                  <div class="menu-main-menu-container">
+                     <ul id="header-menu" class="menu">
+                        <li id="menu-item-5281" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5281"><a href="../platform/index.html">Platform</a></li>
+                        <li id="menu-item-6279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6279"><a href="../pricing/index.html">Pricing</a></li>
+                        <li id="menu-item-1833" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1833">
+                           <a href="">Resources</a>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+            <div class="main-header__cta">
+               <a href="https://uniphyops.com/" target="_blank" class="ns-btn ns-btn--text" rel="noopener noreferrer">Sign in</a>
+               <a href="https://uniphyops.com/" target="_blank" class="ns-btn ns-btn--white" rel="noopener noreferrer">Sign up</a>
+            </div>
+         </div>
+         <div class="main-header__menu-mobile">
+            <a href="#ns-mobile-menu"  class="mburger mburger--squeeze">
+            <b></b>
+            <b></b>
+            <b></b>
+            </a>			
+         </div>
+         <div class="clearfix"></div>
+      </div>
+   </header>
+   <div id="primary" class="content-area">
+      <div id="main" class="site-main" role="main">
+         <article id="post-1363" class="post-1363 page type-page status-publish hentry">
+            <div class="entry-content">
+               <div class="page-blocks">
+                  <section class="section-block section-block--no-bottom-padding  section-block--container-small section-block--theme-big-purple-bg-square content-image content-image-1 ">
+                     <div class="container">
+                        <div class="content-image__inner content-image__inner--image-center content-image__inner--">
+                           <div class="content-image__content content-image__content--full-width    content-image__content--smaller-title">
+                              <div class="section-block__header text-center ">
+                                 <h1 class="section-block__title content-image__title section-block__title--with-subtitle content-image__title--with-subtitle">Schedule a Uniphy demo</h1>
+                                 <h4 class="section-block__subtitle content-image__subtitle"><br><br></h4>
+                              </div>
+                              <div class="section-block__image section-block__image--align-center">
+                              </div>
+                              <div class="section-block__content text-center ">
                               </div>
                            </div>
-                           <!-- .container -->
-                        </section>
-                        <!-- .section -->
-						<section class="section-block section-block--no-top-padding  section-block--container-small section-block--theme-default content-image content-image-2 ">
-						   <div class="container">
-						   <div class="content-image__inner content-image__inner--image-right content-image__inner--">
-						      <div class="content-image__content content-image__content--full-width    ">
-						         <div class="section-block__header text-center ">
-						            <h3 class="section-block__title content-image__title section-block__title--with-subtitle content-image__title--with-subtitle"><br><br>Want to learn more about our all-in-one solution?</h3>
-						            <h4 class="section-block__subtitle content-image__subtitle"><br>Fill out the form below to schedule a personalized demo with one of our cloud security experts.<br><br></h4>
-						         </div>
-						         <!-- Form -->
-						         <form class="js-validate card shadow-lg mb-4 contact-form"  action="javascript:submitform();" style="background: #f4f7fe; border-radius: 10px">
-						            <div class="card-body p-4 p-md-6">
-						               <div class="row">
-						                     <div class="col-sm-6">
-						                        <!-- Form Group -->
-						                        <div class="js-form-message form-group">
-						                           <label for="Fname" class="input-label">
-                                                <span>First name</span>
-                                                <span class="form-required">*</span>
-                                                </label>
-						                           <input type="text" class="form-control" name="Fname" id="Fname" placeholder="" aria-label="Nataly" required
-						                              data-msg="Please enter first your name">
-						                        </div>
-						                        <!-- End Form Group -->
-						                     </div>
-						                     <div class="col-sm-6">
-						                        <!-- Form Group -->
-						                        <div class="js-form-message form-group">
-						                           <label for="Lname" class="input-label">
-                                                <span>Last name</span>
-                                                <span class="form-required">*</span>
-                                             </label>
-						                           <input type="text" class="form-control" name="Lname" id="Lname" placeholder="" aria-label="Gaga" required
-						                              data-msg="Please enter last your name">
-						                        </div>
-						                        <!-- End Form Group -->
-						                     </div>
-						                     <div class="col-sm-12">
-						                        <!-- Form Group -->
-						                        <div class="js-form-message form-group">
-						                           <label for="email" class="input-label">
-                                                <span>Email address</span>
-                                                <span class="form-required">*</span>
-                                             </label>
-						                           <input type="email" class="form-control" name="email" id="emailAddress" placeholder="" aria-label="alex@pixeel.com" required
-						                              data-msg="Please enter a valid email address">
-						                        </div>
-						                        <!-- End Form Group -->
-						                     </div>
-						                     <div class="col-sm-6">
-						                        <!-- Form Group -->
-						                        <div class="js-form-message form-group">
-						                           <label for="org" class="input-label">
-                                                <span>Organisation</span>
-                                                <span class="form-required">*</span>                                                
-                                             </label>
-						                           <input type="text" class="form-control" name="org" id="org" placeholder=""  aria-label="DSI" required
-						                              data-msg="Please enter a organisation name">
-						                        </div>
-						                        <!-- End Form Group -->
-						                     </div>
-						                     <div class="col-sm-6">
-						                        <!-- Form Group -->
-						                        <div class="js-form-message form-group">
-						                           <label for="phone-no" class="input-label">
-                                                <span>Phone number</span>
-                                             </label>
-						                           <input type="tel" class="form-control" id="pno" name="phone-no" placeholder="" pattern="[0-9]" minlength="10" maxlength="12" title="Please enter only numbers and between 10 to 12 digits" oninput="this.value = this.value.replace(/[^0-9]/g, '')" 
-						                              >
-						                        </div>
-						                        <!-- End Form Group -->
-						                     </div>
-						                     <div class="col-sm-12">
-						                        <!-- Form Group -->
-						                        <div class="js-form-message form-group">
-						                           <label for="country" class="input-label">
-                                                <span>Country</span>
-                                                <span class="form-required">*</span>
-                                             </label>
-						                           <select class="form-control" name="country" id="country" required
-						                              data-msg="Please select your country">
-						                           </select>
-						                        </div>
-						                        <!-- End Form Group -->
-						                     </div>
-						                     <div class="col-sm-12">
-						                        <!-- Form Group -->
-						                        <div class="js-form-message form-group">
-						                           <label for="message" class="input-label">
-                                                <span>Message</span>
-                                                <span class="form-required">*</span>
-                                             </label>
-						                           <div class="input-group">
-						                              <textarea class="form-control" rows="4" name="message" id="message" placeholder="Hi there, I would like to ..." aria-label="Hi there, I would like to ..." required
-						                                 data-msg="Please enter a reason."></textarea>
-						                           </div>
-						                        </div>
-						                        <!-- End Form Group -->
-						                     </div>
-						                  <span id="mailstatus" class=""></span>
-						                  <button id="submitbtn" type="submit" class="btn btn-block btn-primary transition-3d-hover">Submit</button>
-						               </div>
-						         </form>
-						         <!-- End Form -->
-						         </div>
-						         <div class="content-image__image  content-image__image--image-default">
-						         </div>
-						      </div>
-						   </div>
-						   <!-- .container -->
-						</section>
-                        <!-- .section -->
-                     </div>
-                     <!-- /.page-blocks -->
-                  </div>
-                  <!-- .entry-content -->
-               </article>
-               <!-- #post-1363 -->
-            </div>
-            <!-- .site-main -->
-         </div>
-         <!-- .content-area -->
-         <footer class="main-footer">
-            <div class="container">
-               <div class="main-footer__widgets">
-                  <div class="main-footer__widgets__column" style="display: flex; justify-content: space-between;">
-                     <section id="media_image-2" class="widget-odd widget-last widget-first widget-1 footer-widget widget_nav_menu" style="width: 220px;">
-                        <div class="menu-resource-container">
-                           <ul id="menu-resource" class="menu" style="margin-top: 0;">
-                              <li id="menu-item-1843" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1843" style="align-content: center; margin-bottom: 10px; height: 45px !important;">
-                                 <a href="../index.html">
-                                    <img src="../assets/images/uniphy.svg" class="image wp-image-5578  attachment-medium size-medium" alt="Uniphy logo" loading="lazy" style="max-width: 100%; height: auto;" height="44.21"/>
-                                 </a>
-                              </li>
-                              <li id="menu-item-1843" class="social-footer__item social-footer__item--location menu-item menu-item-type-post_type menu-item-object-page menu-item-1843" style="display: flex; align-items: center; height: max-content !important; margin: 0 !important;"><a style="display: flex;"><p style="font-size: medium; padding-left: 10px;">5805 Callaghan Road, Suite #115, San Antonio, TX 78228, USA</p></a></li>
-                              <li id="menu-item-1843" class="social-footer__item social-footer__item--email menu-item menu-item-type-post_type menu-item-object-page menu-item-1843" style="display: flex; align-items: center; height: 45px !important; margin: 0 !important;"><a href="mailto:support@uniphy.com"><span style="font-size: medium; padding-left: 10px; margin: 0 !important;">support@uniphy.com</span></a></li>
-                              <li id="menu-item-1843" class="social-footer__item social-footer__item--phone menu-item menu-item-type-post_type menu-item-object-page menu-item-1843" style="display: flex; align-items: center; height: 45px !important; margin: 0 !important;"><a href="tel:+1 (210) 858-5280"><span style="font-size: medium; padding-left: 10px; margin: 0 !important;">+1 (210) 858-5280</span></a></li>
-                           </ul>
                         </div>
-                     </section>
-                     <section id="nav_menu-1" class="widget-odd widget-last widget-first widget-1 footer-widget widget_nav_menu">
-                           <h4 class="footer-widget__title">Platform</h4>
-                           <div class="menu-platform-container">
-                              <ul id="menu-platform" class="menu">
-                                 <li id="menu-item-5284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5284"><a href="../platform/index.html">Features</a></li>
-                                 <li id="menu-item-6280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6280"><a href="../pricing/index.html">Pricing</a></li>
-                              </ul>
+                     </div>
+                     <!-- .container -->
+                  </section>
+                  <!-- .section -->
+                  <section class="section-block section-block--no-top-padding  section-block--container-small section-block--theme-default content-image content-image-2 contact-form-section">
+                     <div class="container">
+                        <div class="content-image__inner content-image__inner--image-right content-image__inner--">
+                           <div class="content-image__content content-image__content--full-width    ">
+                              <div class="section-block__header text-center ">
+                                 <h3 class="section-block__title content-image__title section-block__title--with-subtitle content-image__title--with-subtitle"><br><br>Want to learn more about our all-in-one solution?</h3>
+                                 <h4 class="section-block__subtitle content-image__subtitle"><br>Fill out the form below to schedule a personalized demo with one of our cloud security experts.<br><br></h4>
+                              </div>
+                              <!-- Form -->
+                              <form class="js-validate card shadow-lg mb-4 contact-form"  action="javascript:submitform();">
+                                 <div class="card-body p-4 p-md-6">
+                                    <div class="row">
+                                       <div class="col-sm-6">
+                                          <!-- Form Group -->
+                                          <div class="js-form-message form-group">
+                                             <label for="Fname" class="input-label">
+                                             <span>First name</span>
+                                             <span class="form-required">*</span>
+                                             </label>
+                                             <input type="text" class="form-control" name="Fname" id="Fname" placeholder="" aria-label="Nataly" required
+                                                data-msg="Please enter first your name">
+                                          </div>
+                                          <!-- End Form Group -->
+                                       </div>
+                                       <div class="col-sm-6">
+                                          <!-- Form Group -->
+                                          <div class="js-form-message form-group">
+                                             <label for="Lname" class="input-label">
+                                             <span>Last name</span>
+                                             <span class="form-required">*</span>
+                                             </label>
+                                             <input type="text" class="form-control" name="Lname" id="Lname" placeholder="" aria-label="Gaga" required
+                                                data-msg="Please enter last your name">
+                                          </div>
+                                          <!-- End Form Group -->
+                                       </div>
+                                       <div class="col-sm-12">
+                                          <!-- Form Group -->
+                                          <div class="js-form-message form-group">
+                                             <label for="email" class="input-label">
+                                             <span>Email address</span>
+                                             <span class="form-required">*</span>
+                                             </label>
+                                             <input type="email" class="form-control" name="email" id="emailAddress" placeholder="" aria-label="alex@pixeel.com" required
+                                                data-msg="Please enter a valid email address">
+                                          </div>
+                                          <!-- End Form Group -->
+                                       </div>
+                                       <div class="col-sm-6">
+                                          <!-- Form Group -->
+                                          <div class="js-form-message form-group">
+                                             <label for="org" class="input-label">
+                                             <span>Organisation</span>
+                                             <span class="form-required">*</span>                                                
+                                             </label>
+                                             <input type="text" class="form-control" name="org" id="org" placeholder=""  aria-label="DSI" required
+                                                data-msg="Please enter a organisation name">
+                                          </div>
+                                          <!-- End Form Group -->
+                                       </div>
+                                       <div class="col-sm-6">
+                                          <!-- Form Group -->
+                                          <div class="js-form-message form-group">
+                                             <label for="phone-no" class="input-label">
+                                             <span>Phone number</span>
+                                             </label>
+                                             <input type="tel" class="form-control" id="pno" name="phone-no" placeholder="" pattern="[0-9]" minlength="10" maxlength="12" title="Please enter only numbers and between 10 to 12 digits" oninput="this.value = this.value.replace(/[^0-9]/g, '')" 
+                                                >
+                                          </div>
+                                          <!-- End Form Group -->
+                                       </div>
+                                       <div class="col-sm-12">
+                                          <!-- Form Group -->
+                                          <div class="js-form-message form-group">
+                                             <label for="country" class="input-label">
+                                             <span>Country</span>
+                                             <span class="form-required">*</span>
+                                             </label>
+                                             <select class="form-control" name="country" id="country" required
+                                                data-msg="Please select your country">
+                                             </select>
+                                          </div>
+                                          <!-- End Form Group -->
+                                       </div>
+                                       <div class="col-sm-12">
+                                          <!-- Form Group -->
+                                          <div class="js-form-message form-group">
+                                             <label for="message" class="input-label">
+                                             <span>Message</span>
+                                             <span class="form-required">*</span>
+                                             </label>
+                                             <div class="input-group">
+                                                <textarea class="form-control" rows="4" name="message" id="message" placeholder="Hi there, I would like to ..." aria-label="Hi there, I would like to ..." required
+                                                   data-msg="Please enter a reason."></textarea>
+                                             </div>
+                                          </div>
+                                          <!-- End Form Group -->
+                                       </div>
+                                       <span id="mailstatus" class=""></span>
+                                       <button id="submitbtn" type="submit" class="btn btn-block btn-primary transition-3d-hover">Submit</button>
+                                    </div>
+                              </form>
+                              <!-- End Form -->
+                              </div>
+                              <div class="content-image__image  content-image__image--image-default">
+                              </div>
                            </div>
-                     </section>
-                     <section id="nav_menu-3" class="widget-odd widget-last widget-first widget-1 footer-widget widget_nav_menu">
-                        <h4 class="footer-widget__title">Resources</h4>
-                        <div class="menu-resource-container">
-                           <ul id="menu-resource" class="menu">
-                              <li id="menu-item-7254" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7254"><a>Documents</a></li>
-                           </ul>
                         </div>
-                     </section>
-                     <section id="nav_menu-4" class="widget-odd widget-last widget-first widget-1 footer-widget widget_nav_menu">
-                        <h4 class="footer-widget__title">Contact Us</h4>
-                        <div class="menu-resource-container">
-                           <ul id="menu-resource" class="menu">
-                              <li id="menu-item-1843" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1843"><a href="../about/index.html">About Us</a></li>
-                              <li id="menu-item-3823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3823"><a href="../schedule-a-demo/index.html">Schedule a demo</a></li>
-                           </ul>
-                        </div>
-                     </section>
+                        <!-- .container -->
+                  </section>
+                  <!-- .section -->
                   </div>
+                  <!-- /.page-blocks -->
                </div>
-               <div class="clearfix"></div>
-               <div class="main-footer__copy">
-                  <div class="main-footer__copy__text">
-                     &copy; <span id="year"></span> Uniphy Inc. All Rights Reserved.
-                  </div>
-                  <div class="main-footer__copy__menu">
-                     <ul id="footer-menu" class="menu">
-                        <li id="menu-item-5779" class="social-footer__item social-footer__item--linkedin menu-item menu-item-type-custom menu-item-object-custom menu-item-5779" style="margin: 0;"><a href="https://www.linkedin.com/company/digital-software-inc/" target="_blank" rel="noopener noreferrer"></a></li>
-                        <li id="menu-item-5780" class="social-footer__item social-footer__item--twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-5780" style="margin: 0;"><a href="https://twitter.com/Digitalsoftwar6" target="_blank" rel="noopener noreferrer"></a></li>
-                     </ul>
+               <!-- .entry-content -->
+         </article>
+         <!-- #post-1363 -->
+         </div>
+         <!-- .site-main -->
+      </div>
+      <!-- .content-area -->
+      <footer class="main-footer">
+         <div class="container">
+            <div class="main-footer__widgets">
+               <div class="main-footer__widgets__column footer-main-div">
+                  <section id="media_image-2" class="widget-odd widget-last widget-first widget-1 footer-widget widget_nav_menu footer-section-1">
+                     <div class="menu-resource-container">
+                        <ul id="menu-resource" class="menu margin-none">
+                           <li id="menu-item-1843" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1843 footer-logo-item">
+                              <a href="../index.html">
+                              <img src="../assets/images/uniphy.svg" class="image wp-image-5578  attachment-medium size-medium footer-logo" alt="Uniphy logo" loading="lazy" height="44.21"/>
+                              </a>
+                           </li>
+                           <li id="menu-item-1843" class="social-footer__item social-footer__item--location menu-item menu-item-type-post_type menu-item-object-page menu-item-1843 margin-none footer-location-item">
+                              <a style="display: flex;">
+                                 <p style="font-size: medium; padding-left: 10px;">5805 Callaghan Road, Suite #115, San Antonio, TX 78228, USA</p>
+                              </a>
+                           </li>
+                           <li id="footer-email-item" class="social-footer__item social-footer__item--email menu-item menu-item-type-post_type menu-item-object-page menu-item-1843 margin-none"><a href="mailto:support@uniphy.com"><span class="margin-none" style="font-size: medium; padding-left: 10px;">support@uniphy.com</span></a></li>
+                           <li id="footer-phone-item" class="social-footer__item social-footer__item--phone menu-item menu-item-type-post_type menu-item-object-page menu-item-1843 margin-none"><a href="tel:+1 (210) 858-5280"><span class="margin-none" style="font-size: medium; padding-left: 10px;">+1 (210) 858-5280</span></a></li>
+                        </ul>
                      </div>
-                  <div class="clearfix"></div>
+                  </section>
+                  <section id="nav_menu-1" class="widget-odd widget-last widget-first widget-1 footer-widget widget_nav_menu">
+                     <h4 class="footer-widget__title">Platform</h4>
+                     <div class="menu-platform-container">
+                        <ul id="menu-platform" class="menu">
+                           <li id="menu-item-5284" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5284"><a href="../platform/index.html">Features</a></li>
+                           <li id="menu-item-6280" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6280"><a href="../pricing/index.html">Pricing</a></li>
+                        </ul>
+                     </div>
+                  </section>
+                  <section id="nav_menu-3" class="widget-odd widget-last widget-first widget-1 footer-widget widget_nav_menu">
+                     <h4 class="footer-widget__title">Resources</h4>
+                     <div class="menu-resource-container">
+                        <ul id="menu-resource" class="menu">
+                           <li id="menu-item-7254" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7254"><a>Documents</a></li>
+                        </ul>
+                     </div>
+                  </section>
+                  <section id="nav_menu-4" class="widget-odd widget-last widget-first widget-1 footer-widget widget_nav_menu">
+                     <h4 class="footer-widget__title">Contact Us</h4>
+                     <div class="menu-resource-container">
+                        <ul id="menu-resource" class="menu">
+                           <li id="menu-item-1843" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1843"><a href="../about/index.html">About Us</a></li>
+                           <li id="menu-item-3823" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3823"><a href="../schedule-a-demo/index.html">Schedule a demo</a></li>
+                        </ul>
+                     </div>
+                  </section>
                </div>
             </div>
             <div class="clearfix"></div>
-         </footer>
-      </div>
-      <!-- .site-container -->
-      <div id="ns-mobile-menu" class="ns-mobile-menu">
-         <a id="mmenu-close-btn"></a>
-         <ul id="menu-main-menu" class="">
-            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5281"><a href="../platform/index.html">Features</a></li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6279"><a href="../pricing/index.html">Pricing</a></li>
-            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1833">
-               <a href="">Resources</a>
-            </li>
-         </ul>
-         <div class="ns-mobile-menu__cta">
-            <a href="https://uniphyops.com/" target="_blank" class="ns-btn ns-btn--purple" rel="noopener noreferrer">Sign up</a><br>
-            <a href="https://uniphyops.com/" target="_blank" class="ns-btn ns-btn--underline" rel="noopener noreferrer">Sign in</a>
+            <div class="main-footer__copy">
+               <div class="main-footer__copy__text">
+                  &copy; <span id="year"></span> Uniphy Inc. All Rights Reserved.
+               </div>
+               <div class="main-footer__copy__menu">
+                  <ul id="footer-menu" class="menu">
+                     <li id="menu-item-5779" class="social-footer__item social-footer__item--linkedin menu-item menu-item-type-custom menu-item-object-custom menu-item-5779 margin-none"><a href="https://www.linkedin.com/company/digital-software-inc/" target="_blank" rel="noopener noreferrer"></a></li>
+                     <li id="menu-item-5780" class="social-footer__item social-footer__item--twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-5780 margin-none"><a href="https://twitter.com/Digitalsoftwar6" target="_blank" rel="noopener noreferrer"></a></li>
+                  </ul>
+               </div>
+               <div class="clearfix"></div>
+            </div>
          </div>
+         <div class="clearfix"></div>
+      </footer>
+   </div>
+   <!-- .site-container -->
+   <div id="ns-mobile-menu" class="ns-mobile-menu">
+      <a id="mmenu-close-btn"></a>
+      <ul id="menu-main-menu" class="">
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5281"><a href="../platform/index.html">Features</a></li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6279"><a href="../pricing/index.html">Pricing</a></li>
+         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1833">
+            <a href="">Resources</a>
+         </li>
+      </ul>
+      <div class="ns-mobile-menu__cta">
+         <a href="https://uniphyops.com/" target="_blank" class="ns-btn ns-btn--purple" rel="noopener noreferrer">Sign up</a><br>
+         <a href="https://uniphyops.com/" target="_blank" class="ns-btn ns-btn--underline" rel="noopener noreferrer">Sign in</a>
       </div>
-      <!--googleoff: all-->
-      <div id="cookie-law-info-bar" data-nosnippet="true"><span>This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt out if you wish. <a role='button' tabindex='0' class="cli_settings_button" style="margin:5px 20px 5px 20px;" >Cookie settings</a><a role='button' tabindex='0' data-cli_action="accept" id="cookie_action_close_header"  class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button" style="display:inline-block;  margin:5px; ">Accept</a></span></div>
-      <div id="cookie-law-info-again" style="display:none;" data-nosnippet="true"><span id="cookie_hdr_showagain">Privacy & Cookies Policy</span></div>
-      <div class="cli-modal" data-nosnippet="true" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
-         <div class="cli-modal-dialog" role="document">
-            <div class="cli-modal-content cli-bar-popup">
-               <button type="button" class="cli-modal-close" id="cliModalClose">
-                  <svg class="" viewBox="0 0 24 24">
-                     <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path>
-                     <path d="M0 0h24v24h-24z" fill="none"></path>
-                  </svg>
-                  <span class="wt-cli-sr-only">Close</span>
-               </button>
-               <div class="cli-modal-body">
-                  <div class="cli-container-fluid cli-tab-container">
-                     <div class="cli-row">
-                        <div class="cli-col-12 cli-align-items-stretch cli-px-0">
-                           <div class="cli-privacy-overview">
-                              <h4>Privacy Overview</h4>
-                              <div class="cli-privacy-content">
-                                 <div class="cli-privacy-content-text">This website uses cookies to improve your experience while you navigate through the website. Out of these cookies, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities of the website. We also use third-party cookies that help us analyze and understand how you use this website. These cookies will be stored in your browser only with your consent. You also have the option to opt-out of these cookies. But opting out of some of these cookies may have an effect on your browsing experience.</div>
+   </div>
+   <!--googleoff: all-->
+   <div id="cookie-law-info-bar" data-nosnippet="true"><span>This website uses cookies to improve your experience. We'll assume you're ok with this, but you can opt out if you wish. <a role='button' tabindex='0' class="cli_settings_button" style="margin:5px 20px 5px 20px;" >Cookie settings</a><a role='button' tabindex='0' data-cli_action="accept" id="cookie_action_close_header"  class="medium cli-plugin-button cli-plugin-main-button cookie_action_close_header cli_action_button" style="display:inline-block;  margin:5px; ">Accept</a></span></div>
+   <div id="cookie-law-info-again" class="display-none" data-nosnippet="true"><span id="cookie_hdr_showagain">Privacy & Cookies Policy</span></div>
+   <div class="cli-modal" data-nosnippet="true" id="cliSettingsPopup" tabindex="-1" role="dialog" aria-labelledby="cliSettingsPopup" aria-hidden="true">
+      <div class="cli-modal-dialog" role="document">
+         <div class="cli-modal-content cli-bar-popup">
+            <button type="button" class="cli-modal-close" id="cliModalClose">
+               <svg class="" viewBox="0 0 24 24">
+                  <path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"></path>
+                  <path d="M0 0h24v24h-24z" fill="none"></path>
+               </svg>
+               <span class="wt-cli-sr-only">Close</span>
+            </button>
+            <div class="cli-modal-body">
+               <div class="cli-container-fluid cli-tab-container">
+                  <div class="cli-row">
+                     <div class="cli-col-12 cli-align-items-stretch cli-px-0">
+                        <div class="cli-privacy-overview">
+                           <h4>Privacy Overview</h4>
+                           <div class="cli-privacy-content">
+                              <div class="cli-privacy-content-text">This website uses cookies to improve your experience while you navigate through the website. Out of these cookies, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities of the website. We also use third-party cookies that help us analyze and understand how you use this website. These cookies will be stored in your browser only with your consent. You also have the option to opt-out of these cookies. But opting out of some of these cookies may have an effect on your browsing experience.</div>
+                           </div>
+                           <a class="cli-privacy-readmore"  aria-label="Show more" tabindex="0" role="button" data-readmore-text="Show more" data-readless-text="Show less"></a>			
+                        </div>
+                     </div>
+                     <div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
+                        <div class="cli-tab-section">
+                           <div class="cli-tab-header">
+                              <a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab">
+                              Necessary							</a>
+                              <div class="wt-cli-necessary-checkbox">
+                                 <input type="checkbox" class="cli-user-preference-checkbox"  id="wt-cli-checkbox-necessary" data-id="checkbox-necessary" checked="checked"  />
+                                 <label class="form-check-label" for="wt-cli-checkbox-necessary">Necessary</label>
                               </div>
-                              <a class="cli-privacy-readmore"  aria-label="Show more" tabindex="0" role="button" data-readmore-text="Show more" data-readless-text="Show less"></a>			
+                              <span class="cli-necessary-caption">Always Enabled</span> 						
+                           </div>
+                           <div class="cli-tab-content">
+                              <div class="cli-tab-pane cli-fade" data-id="necessary">
+                                 <div class="wt-cli-cookie-description">
+                                    Necessary cookies are absolutely essential for the website to function properly. This category only includes cookies that ensures basic functionalities and security features of the website. These cookies do not store any personal information.								
+                                 </div>
+                              </div>
                            </div>
                         </div>
-                        <div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
-                           <div class="cli-tab-section">
-                              <div class="cli-tab-header">
-                                 <a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="necessary" data-toggle="cli-toggle-tab">
-                                 Necessary							</a>
-                                 <div class="wt-cli-necessary-checkbox">
-                                    <input type="checkbox" class="cli-user-preference-checkbox"  id="wt-cli-checkbox-necessary" data-id="checkbox-necessary" checked="checked"  />
-                                    <label class="form-check-label" for="wt-cli-checkbox-necessary">Necessary</label>
-                                 </div>
-                                 <span class="cli-necessary-caption">Always Enabled</span> 						
-                              </div>
-                              <div class="cli-tab-content">
-                                 <div class="cli-tab-pane cli-fade" data-id="necessary">
-                                    <div class="wt-cli-cookie-description">
-                                       Necessary cookies are absolutely essential for the website to function properly. This category only includes cookies that ensures basic functionalities and security features of the website. These cookies do not store any personal information.								
-                                    </div>
-                                 </div>
+                        <div class="cli-tab-section">
+                           <div class="cli-tab-header">
+                              <a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="non-necessary" data-toggle="cli-toggle-tab">
+                              Non-necessary							</a>
+                              <div class="cli-switch">
+                                 <input type="checkbox" id="wt-cli-checkbox-non-necessary" class="cli-user-preference-checkbox"  data-id="checkbox-non-necessary"  checked='checked' />
+                                 <label for="wt-cli-checkbox-non-necessary" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Non-necessary</span></label>
                               </div>
                            </div>
-                           <div class="cli-tab-section">
-                              <div class="cli-tab-header">
-                                 <a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="non-necessary" data-toggle="cli-toggle-tab">
-                                 Non-necessary							</a>
-                                 <div class="cli-switch">
-                                    <input type="checkbox" id="wt-cli-checkbox-non-necessary" class="cli-user-preference-checkbox"  data-id="checkbox-non-necessary"  checked='checked' />
-                                    <label for="wt-cli-checkbox-non-necessary" class="cli-slider" data-cli-enable="Enabled" data-cli-disable="Disabled"><span class="wt-cli-sr-only">Non-necessary</span></label>
-                                 </div>
-                              </div>
-                              <div class="cli-tab-content">
-                                 <div class="cli-tab-pane cli-fade" data-id="non-necessary">
-                                    <div class="wt-cli-cookie-description">
-                                       Any cookies that may not be particularly necessary for the website to function and is used specifically to collect user personal data via analytics, ads, other embedded contents are termed as non-necessary cookies. It is mandatory to procure user consent prior to running these cookies on your website.								
-                                    </div>
+                           <div class="cli-tab-content">
+                              <div class="cli-tab-pane cli-fade" data-id="non-necessary">
+                                 <div class="wt-cli-cookie-description">
+                                    Any cookies that may not be particularly necessary for the website to function and is used specifically to collect user personal data via analytics, ads, other embedded contents are termed as non-necessary cookies. It is mandatory to procure user consent prior to running these cookies on your website.								
                                  </div>
                               </div>
                            </div>
@@ -640,13 +692,13 @@
                      </div>
                   </div>
                </div>
-               <div class="cli-modal-footer">
-                  <div class="wt-cli-element cli-container-fluid cli-tab-container">
-                     <div class="cli-row">
-                        <div class="cli-col-12 cli-align-items-stretch cli-px-0">
-                           <div class="cli-tab-footer wt-cli-privacy-overview-actions">
-                              <a id="wt-cli-privacy-save-btn" role="button" tabindex="0" data-cli-action="accept" class="wt-cli-privacy-btn cli_setting_save_button wt-cli-privacy-accept-btn cli-btn">SAVE & ACCEPT</a>
-                           </div>
+            </div>
+            <div class="cli-modal-footer">
+               <div class="wt-cli-element cli-container-fluid cli-tab-container">
+                  <div class="cli-row">
+                     <div class="cli-col-12 cli-align-items-stretch cli-px-0">
+                        <div class="cli-tab-footer wt-cli-privacy-overview-actions">
+                           <a id="wt-cli-privacy-save-btn" role="button" tabindex="0" data-cli-action="accept" class="wt-cli-privacy-btn cli_setting_save_button wt-cli-privacy-accept-btn cli-btn">SAVE & ACCEPT</a>
                         </div>
                      </div>
                   </div>
@@ -654,103 +706,102 @@
             </div>
          </div>
       </div>
-      <div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
-      <div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
-      <!--googleon: all-->
-      <!--BEGIN: TRACKING CODE MANAGER BY INTELLYWP.COM IN FOOTER//-->
-      <script>
-         // window.intercomSettings = {
-         //   app_id: "adquux25"
-         // };
-         document.getElementById("year").textContent = new Date().getFullYear();
-      </script>
-      <!--END: https://wordpress.org/plugins/tracking-code-manager IN FOOTER//--><script src='../wp-content/plugins/metronet-profile-picture/js/mpp-frontendd315.js?ver=2.6.0' id='mpp_gutenberg_tabs-js'></script>
-      <script src='../wp-includes/js/dist/vendor/regenerator-runtime.minb36a.js?ver=0.13.7' id='regenerator-runtime-js'></script>
-      <script src='../wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js?ver=3.15.0' id='wp-polyfill-js'></script>
-      <script id='contact-form-7-js-extra'>
-         var wpcf7 = {"api":{"root":"","namespace":"contact-form-7\/v1"}};
-      </script>
-      <script src='../wp-content/plugins/contact-form-7/includes/js/index4245.js?ver=5.5.2' id='contact-form-7-js'></script>
-      <script id='heateor_sss_sharing_js-js-before'>
-         function heateorSssLoadEvent(e) {var t=window.onload;if (typeof window.onload!="function") {window.onload=e}else{window.onload=function() {t();e()}}};	var heateorSssSharingAjaxUrl = '../wp-admin/admin-ajax.html', heateorSssCloseIconPath = '../wp-content/plugins/sassy-social-share/images/close.png', heateorSssPluginIconPath = '../wp-content/plugins/sassy-social-share/images/logo.png', heateorSssHorizontalSharingCountEnable = 0, heateorSssVerticalSharingCountEnable = 0, heateorSssSharingOffset = -10; var heateorSssMobileStickySharingEnabled = 0;var heateorSssCopyLinkMessage = "Link copied.";var heateorSssUrlCountFetched = [], heateorSssSharesText = 'Shares', heateorSssShareText = 'Share';function heateorSssPopup(e) {window.open(e,"popUpWindow","height=400,width=600,left=400,top=100,resizable,scrollbars,toolbar=0,personalbar=0,menubar=no,location=no,directories=no,status")};var heateorSssWhatsappShareAPI = "web";
-      </script>
-      <script src='../wp-content/plugins/sassy-social-share/public/js/sassy-social-share-publice346.js?ver=3.3.24' id='heateor_sss_sharing_js-js'></script>
-      <script src='../wp-content/themes/bridgecrew/assets/js/vendor/slick.minf658.js?ver=5.8.1' id='slick-slider-js'></script>
-      <script src='../wp-content/themes/bridgecrew/assets/js/vendor/lottie.minf658.js?ver=5.8.1' id='lottie-js'></script>
-      <script src='../wp-content/themes/bridgecrew/assets/js/vendor/mmenuf658.js?ver=5.8.1' id='mmenu-js'></script>
-      <script src='../wp-content/themes/bridgecrew/assets/js/vendor/jquery.magnific-popup.minf658.js?ver=5.8.1' id='magnific-popup-js'></script>
-      <script src='../wp-content/themes/bridgecrew/assets/js/vendor/jquery.basictable.minf658.js?ver=5.8.1' id='basictable-js'></script>
-      <script type="text/javascript" src="../wp-content/themes/bridgecrew/build/main-minf658.js?ver=5.8.1" defer="defer"></script>
-  <!-- JS Plugins Init. -->
-  <script>
-    $(document).on('ready', function () {
-      const csvPath = '../assets/csv/countries.csv'; 
-      fetch(csvPath)
-        .then(response => {
-          if (!response.ok) throw new Error('Failed to load CSV file');
-          return response.text();
-        })
-        .then(csvText => {
-          const lines = csvText.split("\n").filter(line => line.trim() !== "");
-          const countrySelect = document.getElementById('country');
-          lines.slice(1).forEach(line => {
-            const cols = line.split(",");
-            if (cols.length >= 4) {
-              const option = document.createElement('option'); 
-              option.value = cols[3].replace(/"/g, '').trim();
-              option.text = cols[3].replace(/"/g, '').trim();
-              countrySelect.appendChild(option); 
-            }
-          });
-        })
-        .catch(error => console.error('Error fetching countries:', error));
-    });
-  </script>
-  <script>
-
-
-    function submitform() {
-        var f = document.getElementsByTagName('form')[0], e = $('#mailstatus'), s = $('#submitbtn');
-          e.text('');
-          s.attr('disabled','disabled');
-          fetch('../assets/php/contact-form.php', {
-          method: 'POST', 
-          body: new FormData(f)
+   </div>
+   <div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
+   <div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
+   <!--googleon: all-->
+   <!--BEGIN: TRACKING CODE MANAGER BY INTELLYWP.COM IN FOOTER//-->
+   <script>
+      // window.intercomSettings = {
+      //   app_id: "adquux25"
+      // };
+      document.getElementById("year").textContent = new Date().getFullYear();
+   </script>
+   <!--END: https://wordpress.org/plugins/tracking-code-manager IN FOOTER//--><script src='../wp-content/plugins/metronet-profile-picture/js/mpp-frontendd315.js?ver=2.6.0' id='mpp_gutenberg_tabs-js'></script>
+   <script src='../wp-includes/js/dist/vendor/regenerator-runtime.minb36a.js?ver=0.13.7' id='regenerator-runtime-js'></script>
+   <script src='../wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js?ver=3.15.0' id='wp-polyfill-js'></script>
+   <script id='contact-form-7-js-extra'>
+      var wpcf7 = {"api":{"root":"","namespace":"contact-form-7\/v1"}};
+   </script>
+   <script src='../wp-content/plugins/contact-form-7/includes/js/index4245.js?ver=5.5.2' id='contact-form-7-js'></script>
+   <script id='heateor_sss_sharing_js-js-before'>
+      function heateorSssLoadEvent(e) {var t=window.onload;if (typeof window.onload!="function") {window.onload=e}else{window.onload=function() {t();e()}}};	var heateorSssSharingAjaxUrl = '../wp-admin/admin-ajax.html', heateorSssCloseIconPath = '../wp-content/plugins/sassy-social-share/images/close.png', heateorSssPluginIconPath = '../wp-content/plugins/sassy-social-share/images/logo.png', heateorSssHorizontalSharingCountEnable = 0, heateorSssVerticalSharingCountEnable = 0, heateorSssSharingOffset = -10; var heateorSssMobileStickySharingEnabled = 0;var heateorSssCopyLinkMessage = "Link copied.";var heateorSssUrlCountFetched = [], heateorSssSharesText = 'Shares', heateorSssShareText = 'Share';function heateorSssPopup(e) {window.open(e,"popUpWindow","height=400,width=600,left=400,top=100,resizable,scrollbars,toolbar=0,personalbar=0,menubar=no,location=no,directories=no,status")};var heateorSssWhatsappShareAPI = "web";
+   </script>
+   <script src='../wp-content/plugins/sassy-social-share/public/js/sassy-social-share-publice346.js?ver=3.3.24' id='heateor_sss_sharing_js-js'></script>
+   <script src='../wp-content/themes/bridgecrew/assets/js/vendor/slick.minf658.js?ver=5.8.1' id='slick-slider-js'></script>
+   <script src='../wp-content/themes/bridgecrew/assets/js/vendor/lottie.minf658.js?ver=5.8.1' id='lottie-js'></script>
+   <script src='../wp-content/themes/bridgecrew/assets/js/vendor/mmenuf658.js?ver=5.8.1' id='mmenu-js'></script>
+   <script src='../wp-content/themes/bridgecrew/assets/js/vendor/jquery.magnific-popup.minf658.js?ver=5.8.1' id='magnific-popup-js'></script>
+   <script src='../wp-content/themes/bridgecrew/assets/js/vendor/jquery.basictable.minf658.js?ver=5.8.1' id='basictable-js'></script>
+   <script type="text/javascript" src="../wp-content/themes/bridgecrew/build/main-minf658.js?ver=5.8.1" defer="defer"></script>
+   <!-- JS Plugins Init. -->
+   <script>
+      $(document).on('ready', function () {
+        const csvPath = '../assets/csv/countries.csv'; 
+        fetch(csvPath)
+          .then(response => {
+            if (!response.ok) throw new Error('Failed to load CSV file');
+            return response.text();
           })
-          .then((rsp) => rsp.json())
-          .then((obj) =>     {
-            var m = obj['message'];
-            f.reset();
-            $(".form-control").each(function(){ 
-              $(this).removeClass('is-invalid').removeClass('is-valid')
+          .then(csvText => {
+            const lines = csvText.split("\n").filter(line => line.trim() !== "");
+            const countrySelect = document.getElementById('country');
+            lines.slice(1).forEach(line => {
+              const cols = line.split(",");
+              if (cols.length >= 4) {
+                const option = document.createElement('option'); 
+                option.value = cols[3].replace(/"/g, '').trim();
+                option.text = cols[3].replace(/"/g, '').trim();
+                countrySelect.appendChild(option); 
+              }
             });
-            s.removeAttr('disabled');
-            if(obj['success']){
-              //show mail sent message
-              e.addClass('text-success');
-			        e.text("We have received your request. We will get in touch with you soon.");
-            }
-            else{
-              //message sending failed
-              e.addClass('text-danger');
-			        e.text("Error sending email. Please drop us an email.");
-            }
-			      if (obj['debug']) {
-              console.log(obj['debug']); // Log debug output to the console
-            }
-            //e.text(m);
-           }).catch((err) => {
-            s.removeAttr('disabled');
-            e.addClass('text-warning');
-            e.text("Error sending email. Please drop us an email.");
-            console.error(err.stack);
           })
-    }
-</script>
-  <!-- IE Support -->
-  <script>
-    if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="assets/vendor/polifills.js"><\/script>');
-  </script>
+          .catch(error => console.error('Error fetching countries:', error));
+      });
+   </script>
+   <script>
+      function submitform() {
+          var f = document.getElementsByTagName('form')[0], e = $('#mailstatus'), s = $('#submitbtn');
+            e.text('');
+            s.attr('disabled','disabled');
+            fetch('../assets/php/contact-form.php', {
+            method: 'POST', 
+            body: new FormData(f)
+            })
+            .then((rsp) => rsp.json())
+            .then((obj) =>     {
+              var m = obj['message'];
+              f.reset();
+              $(".form-control").each(function(){ 
+                $(this).removeClass('is-invalid').removeClass('is-valid')
+              });
+              s.removeAttr('disabled');
+              if(obj['success']){
+                //show mail sent message
+                e.addClass('text-success');
+             e.text("We have received your request. We will get in touch with you soon.");
+              }
+              else{
+                //message sending failed
+                e.addClass('text-danger');
+             e.text("Error sending email. Please drop us an email.");
+              }
+           if (obj['debug']) {
+                console.log(obj['debug']); // Log debug output to the console
+              }
+              //e.text(m);
+             }).catch((err) => {
+              s.removeAttr('disabled');
+              e.addClass('text-warning');
+              e.text("Error sending email. Please drop us an email.");
+              console.error(err.stack);
+            })
+      }
+   </script>
+   <!-- IE Support -->
+   <script>
+      if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="assets/vendor/polifills.js"><\/script>');
+   </script>
    </body>
    <!-- Mirrored from bridgecrew.io/schedule-a-demo/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Nov 2021 09:39:06 GMT -->
 </html>
