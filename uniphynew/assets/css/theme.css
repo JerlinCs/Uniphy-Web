@@ -15036,10 +15036,10 @@ button:focus {
 }
 
 @media (min-width: 992px) {
-  [class*="navbar-expand"]:not(.navbar-expand-xl) {
+  /* [class*="navbar-expand"]:not(.navbar-expand-xl) {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-  }
+  } */
   .navbar-expand-lg-collapse-block .navbar-collapse {
     display: block !important;
   }

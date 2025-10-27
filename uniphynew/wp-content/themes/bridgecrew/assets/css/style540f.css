@@ -1747,6 +1747,8 @@ form.hs-form .hs-error-msgs {
 
 .section-block h2.section-block__title {
   color: #052882; }
+.section-block .title-default-color {
+  color: #052882; }
 
 .section-block__subtitle {
   margin-top: 15px;

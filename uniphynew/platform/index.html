@@ -104,23 +104,23 @@
          }
 
          .challenges__section .swiper-slide-card-1 {
-         	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/outage.png);
+         	background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/outage.png);
          }
 
          .challenges__section .swiper-slide-card-2 {
-         	background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/images/SlowTime.png);
+         	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/SlowTime.png);
          }
 
          .challenges__section .swiper-slide-card-3 {
-         	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/CloudCosts.png);
+         	background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/CloudCosts.png);
          }
 
          .challenges__section .swiper-slide-card-4 {
-         	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/LackOfAutomation.png);
+         	background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/LackOfAutomation.png);
          }
 
          .challenges__section .swiper-slide-card-5 {
-         	background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/images/Dependency.jpg);
+         	background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/images/Dependency.jpg);
          }
 
          .challenges__section .swiper3 .swiper-wrapper {
@@ -129,6 +129,7 @@
 
          .challenges__section .swiper3 .swiper-wrapper p {
          	font-weight: 500;
+            margin-bottom: 0;
          }
 
          footer .main-footer__widgets section a,
@@ -448,10 +449,6 @@
          	padding-bottom: 0 !important;
          }
 
-         .Intelligent-automation-section-1 .Intelligent-automation-div-1 {
-         	padding-top: 10px;
-         }
-
          .Intelligent-automation-section-2 {
          	padding-bottom: 0 !important;
          	padding-top: 0 !important;
@@ -460,29 +457,25 @@
 
          .Intelligent-automation-section-1 .content-image__image img,
          .Intelligent-automation-section-2 .content-image__image img {
-         	max-width: 45% !important
+         	max-width: 13% !important
          }
 
          .Intelligent-automation-section-1 .content-image__content,
          .Intelligent-automation-section-2 .content-image__content {
-         	width: 55% !important;
+         	width: 100% !important;
+         	min-height: 330px;
          }
 
          .Intelligent-automation-section-1 .Intelligent-automation-div,
          .Intelligent-automation-section-2 .Intelligent-automation-div {
          	display: flex;
-         	flex-direction: row;
-         	align-items: center;
+         	flex-direction: column;
+         	align-self: center;
          	padding-left: 0;
          }
 
-         /* .Intelligent-automation-section-header  */
          .evolution-section .evolution-section-header {
          	padding-bottom: 30px;
-         }
-
-         .Intelligent-automation-section-1 .Intelligent-automation-section-header {
-         	margin-bottom: 0px;
          }
 
          .features__container .features-container-card-1,
@@ -556,6 +549,46 @@
          	.main-footer__widgets__column {
          		text-align: center;
          	}
+         }
+
+         @media (max-width: 800px) {
+         	.Intelligent-automation-section-1 .Intelligent-automation-right-1,
+            .Intelligent-automation-section-1 .Intelligent-automation-right-2 {
+         		width: 100% !important;
+         	}
+            .Intelligent-automation-section-1 .Intelligent-automation-right-2 {
+               margin-top: 0 !important;
+            }
+         }
+
+         @media (min-width: 801px) and (max-width: 1332px) {
+         	.Intelligent-automation-section-1 .Intelligent-automation-right-1,
+            .Intelligent-automation-section-1 .Intelligent-automation-right-2 {
+         		width: 43% !important;
+         	}
+         }
+
+         @media (min-width: 1333px) and (max-width: 1599px) {
+         	.Intelligent-automation-section-1 .Intelligent-automation-right-1,
+            .Intelligent-automation-section-1 .Intelligent-automation-right-2 {
+         		width: 44% !important;
+         	}
+         }
+
+         @media (max-width: 1300px) {
+             .Intelligent-automation-section-1 .content-image__inner--image-left .content-image__image {
+                 text-align: center;
+                 margin-bottom: 20px;
+             }
+             .Intelligent-automation-section-1 .content-image__image {
+                 width: 100% !important;
+                 padding-left: 0px;
+                 text-align: center;
+             }
+             .Intelligent-automation-section-1 .content-image__inner--image-left 
+             .content-image__image--align-left {
+               justify-content: center;
+             }
          }
 
          @media (max-width: 1024px) {
@@ -1091,76 +1124,46 @@
                            </div>
                            <!-- .container -->
                         </section>
-                        <!-- .section -->
                         <section class="section-block section-block--container-default content-image content-image-5 Intelligent-automation-section-1">
                            <div class="container">
-                              <div class="section-block__header text-center boxes--columns-two">
-                                 <h1 class="section-block__title boxes__titlec animate__animated animate__fadeInUp Intelligent-automation-section-header">Intelligent Automation through Tools and Accelerators</h1>
-                              </div>
-                              <div class="content-image__inner content-image__inner--image-left content-image__inner-- Intelligent-automation-div-1">
-                                 <div class="content-image__image  content-image__image--align-center section-block--theme-light-purple Intelligent-automation-div">
-                                    <div class="content-image__content">
-                                       <div class="section-block__content text-left ">
-                                          <ul>
-                                             <li>Identify Recurring Data Issues</li>
-                                             <li>Monitoring and Metrics Runbook</li>
-                                             <li>Automation Deployment</li>
-                                             <li>Automation Predictive Operations</li>
-                                             <li>Incident reduction 6-8%</li>
-                                          </ul>
-                                       </div>
-                                    </div>
-                                    <img width="2120" height="1354" src="../assets/images/Manage_img.png" class="attachment-full size-full" alt="Manage" loading="lazy" sizes="(max-width: 2120px) 100vw, 2120px" />	
-                                 </div>
-                                 <div class="content-image__image  content-image__image--align-center Intelligent-automation-div">
-                                    <img width="2120" height="1354" src="../assets/images/Code_img.png" class="attachment-full size-full" alt="Manage" loading="lazy" sizes="(max-width: 2120px) 100vw, 2120px" />	
-                                    <div class="content-image__content">
-                                       <div class="section-block__content text-left ">
-                                          <ul>
-                                             <li>Source Code</li>
-                                             <li>Management Configuration / Construction</li>
-                                             <li>Build and Continuous Integration</li>
-                                             <li>Automated Testing Artifact/Asset Management</li>
-                                             <li>Incident reduction by 12-13%</li>
-                                          </ul>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                           <!-- .container -->
-                        </section>
-                        <section class="section-block section-block--container-default content-image content-image-5 Intelligent-automation-section-2">
-                           <div class="container">
                               <div class="content-image__inner content-image__inner--image-left content-image__inner--">
-                                 <div class="content-image__image  content-image__image--align-center Intelligent-automation-div">
-                                    <div class="content-image__content">
-                                       <div class="section-block__content text-left ">
-                                          <ul>
-                                             <li>Ops tooling Integration</li>
-                                             <li>Security Tooling Integration</li>
-                                             <li>TTM</li>
-                                             <li>Release Management</li>
-                                             <li>A/B Deployments</li>
-                                             <li>Release Testing</li>
-                                             <li>Incident reduction 6-8%</li>
-                                          </ul>
-                                       </div>
-                                    </div>
-                                    <img width="2120" height="1354" src="../assets/images/Deliver_img.png" class="attachment-full size-full" alt="Manage" loading="lazy" sizes="(max-width: 2120px) 100vw, 2120px" />	
+                                 <div class="content-image__image  content-image__image--align-left  Intelligent-automation-div">
+                                    <h1 class="title-default-color boxes__titlec animate__animated animate__fadeInUp Intelligent-automation-section-header">Intelligent Automation through Tools and Accelerators</h1>
+                                    <p>Intelligent Automation through Tools and Accelerators Intelligent Automation through Tools and Accelerators Intelligent Automation through Tools and Accelerators Intelligent Automation through Tools and Accelerators</p>
                                  </div>
-                                 <div class="content-image__image  content-image__image--align-center section-block--theme-light-purple Intelligent-automation-div">
-                                    <img width="2120" height="1354" src="../assets/images/Run_img.png" class="attachment-full size-full" alt="Manage" loading="lazy" sizes="(max-width: 2120px) 100vw, 2120px" />	
-                                    <div class="content-image__content">
-                                       <div class="section-block__content text-left ">
-                                          <ul>
-                                             <li>Hybrid Connectivity</li>
-                                             <li>Hybrid Security</li>
-                                             <li>Autoscaling</li>
-                                             <li>Auto Healing</li>
-                                             <li>Canaries</li>
-                                             <li>Incident reduction 12-13%</li>
-                                          </ul>
+                                 <div class="content-image__image  content-image__image--align-center Intelligent-automation-div">
+                                    <div class="d-flex navbar-expand" style="justify-content: space-around;">
+                                       <div class="d-flex Intelligent-automation-right-1" style="flex-wrap: wrap; flex-direction: column; width: 45%; margin: 18px;">
+                                          <div class="content-image__content" style="padding: 20px !important; box-shadow: 1px 12px 30px rgba(102, 46, 255, 0.24); border-radius: 20px; font-size: medium; margin: 0px 0px 30px 0px; border-top: solid 7px #e5742b;">
+                                             <div class="section-block__content text-justify ">
+                                                <img width="2120" height="1354" src="../assets/images/gear.png" class="attachment-full size-full" alt="Coding" loading="lazy" style="margin-bottom: 10px;"/>	
+                                                <h3>Manage</h3>
+                                                <p style="margin-bottom: 0px;">Leverages intelligent automation to identify and resolve recurring data issues through advanced monitoring and runbooks. Predictive operations and automated deployments ensure efficiency, reliability, and an incident reduction of 6–8%.</p>
+                                             </div>
+                                          </div>
+                                          <div class="content-image__content" style="padding: 20px !important; box-shadow: 1px 12px 30px rgba(102, 46, 255, 0.24); border-radius: 20px; font-size: medium; border-top: solid 7px #5359a6; background-color: #f6f9fe;">
+                                             <div class="section-block__content text-justify ">
+                                                <img width="2120" height="1354" src="../assets/images/coding.png" class="attachment-full size-full" alt="Coding" loading="lazy" style="margin-bottom: 10px;"/>	
+                                                <h3>Code</h3>  
+                                                <p style="margin-bottom: 0px;">Optimizes the development lifecycle through source code management, continuous integration, and automated testing. Streamlined build processes and effective asset management drive faster delivery and an incident reduction of 12–13%.</p>
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <div class="d-flex Intelligent-automation-right-2" style="flex-wrap: wrap; flex-direction: column; width: 45%; margin: 18px; margin-top: 150px;">
+                                          <div class="content-image__content" style="padding: 20px !important; box-shadow: 1px 12px 30px rgba(102, 46, 255, 0.24); border-radius: 20px; font-size: medium; margin: 0px 0px 30px 0px; border-top: solid 7px #165758; background-color: #f6f9fe;">
+                                             <div class="section-block__content text-justify ">
+                                                <img width="2120" height="1354" src="../assets/images/connectivity.png" class="attachment-full size-full" alt="Coding" loading="lazy" style="margin-bottom: 10px;"/>	
+                                                <h3>Run</h3>
+                                                <p style="margin-bottom: 0px;">Focuses on hybrid connectivity and hybrid security to enable seamless integration across environments. Intelligent features like autoscaling, auto healing, and canary deployments improve resilience and achieve an incident reduction of 12–13%.</p>
+                                             </div>
+                                          </div>
+                                          <div class="content-image__content" style="padding: 20px !important; box-shadow: 1px 12px 30px rgba(102, 46, 255, 0.24); border-radius: 20px; font-size: medium; border-top: solid 7px #5170ff;">
+                                             <div class="section-block__content text-justify ">
+                                                <img width="2120" height="1354" src="../assets/images/performance.png" class="attachment-full size-full" alt="Coding" loading="lazy" style="margin-bottom: 10px;"/>	
+                                                <h3>Deliver</h3>
+                                                <p style="margin-bottom: 0px;">Enhances operational performance through Ops and security tooling integration, release management, and A/B testing. These automation practices accelerate delivery, strengthen quality, and result in an incident reduction of 6–8%.</p>
+                                             </div>
+                                          </div>
                                        </div>
                                     </div>
                                  </div>
