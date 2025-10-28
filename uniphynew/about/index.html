@@ -10,6 +10,8 @@
       <link rel="profile" href="https://gmpg.org/xfn/11">
       <link href="../assets/images/favicon.png" rel="shortcut icon" type="image/x-icon">
       <link href="../assets/images/webclip.png" rel="apple-touch-icon">
+      <!-- CSS  -->
+      <link rel="stylesheet" href="../assets/css/theme.css">
       <style type="text/css">
          .heateorSssInstagramBackground {
          	background: radial-gradient(circle at 30% 107%, #fdf497 0, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%)
@@ -53,37 +55,62 @@
          	display: flex;
          	justify-content: space-between;
          }
-         
+
          footer .footer-main-div .footer-section-1 {
          	width: 220px;
          }
-         
+
          .margin-none {
          	margin: 0px !important;
          }
-         
+
          .footer-logo {
          	max-width: 100%;
          	height: auto;
          }
-         
+
          .footer-logo-item {
          	align-content: center;
          	margin-bottom: 10px;
          	height: 45px;
          }
-         
+
          .footer-location-item {
          	display: flex;
          	align-items: center;
          	height: auto;
          }
-         
+
          #footer-email-item,
          #footer-phone-item {
          	display: flex;
          	align-items: center;
          	height: 45px !important;
+         }
+
+         .section-block {
+         	padding: 75px 0px !important;
+         }
+
+         .section-block-header {
+         	padding: 150px 0px !important;
+         }
+
+         /* Mobile styles */
+         @media (max-width: 768px) {
+         	.main-footer__widgets .main-footer__widgets__column {
+         		display: block !important;
+         		width: 100% !important;
+         		justify-items: center;
+         	}
+         
+         	.boxes__box-item__image img {
+         		min-height: fit-content !important;
+         	}
+         
+         	.main-footer__widgets__column {
+         		text-align: center;
+         	}
          }
          
          .display-none {
@@ -295,7 +322,7 @@
          }
 
          .section-block--theme-big-purple-bg-square {
-         	background: url(../assets/images/about_bg.jpg);
+         	background: url(../assets/images/about_bg.png);
          	background-position: 50% 50%;
          	background-size: cover;
          	background-repeat: no-repeat;
@@ -303,26 +330,6 @@
 
          .section-block--theme-big-purple-bg-square .section-block__content p {
          	color: white !important;
-         }
-
-         .half-blur {
-         	position: relative;
-         	display: inline;
-         	overflow: hidden;
-         }
-
-         /* Create blurred overlay on one half */
-         .half-blur::after {
-         	content: "";
-         	position: absolute;
-         	top: 0;
-         	right: 0;
-         	/* or left: 0; to blur left side */
-         	width: 50%;
-         	height: 100%;
-         	background: inherit;
-         	backdrop-filter: blur(8px);
-         	-webkit-backdrop-filter: blur(8px);
          }
 
          @keyframes activateLink {
@@ -346,15 +353,15 @@
             <div class="main-header__container">
                <div class="main-header__logo">
                   <a href="../index.html" rel="home">
-                  <img src="../assets/images/uniphy2.svg" alt="Uniphy-Logo" class="main-header__logo__regular">
-                  <img src="../assets/images/uniphy.svg" alt="Uniphy-Logo" class="main-header__logo__white">
+                  <img alt="uniphy-fevicon" src="../assets/images/uniphy2.svg" class="main-header__logo__regular">
+                  <img alt="uniphy-fevicon" src="../assets/images/uniphy.svg" class="main-header__logo__white">
                   </a>
                </div>
                <div class="main-header__menu">
                   <nav>
                      <div class="menu-main-menu-container">
                         <ul id="header-menu" class="menu">
-                           <li id="menu-item-5281" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5281"><a href="../platform/index.html">Features</a></li>
+                           <li id="menu-item-5281" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4691 current_page_item menu-item-5281"><a href="index.html" aria-current="page">Features</a></li>
                            <li id="menu-item-6279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6279"><a href="../pricing/index.html">Pricing</a></li>
                            <li id="menu-item-1833" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1833">
                               <a href="">Resources</a>
@@ -383,41 +390,58 @@
             <article id="post-16" class="post-16 page type-page status-publish hentry">
                <div class="entry-content">
                   <div class="page-blocks">
-                     <div class="half-blur">
-                        <section class="section-block  section-block--container-default section-block--theme-big-purple-bg-square content-image content-image-1 ">
-                           <div class="container">
-                              <div class="content-image__inner content-image__inner--image-left content-image__inner--reverse">
-                                 <div class="content-image__content     ">
-                                    <div class="section-block__header text-left ">
-                                       <h1 class="section-block__title content-image__title ">Who We Are?</h1>
-                                    </div>
-                                    <div class="section-block__content text-left ">
-                                       <p>Founded in 2011 and headquartered in San Antonio, Texas, Digital Software Inc. (DSI) is a trusted thought leader in the technology industry. We specialize in delivering innovative digital solutions tailored to the unique needs of our clients, addressing the ever-evolving challenges businesses face in a fast-paced digital landscape.</p>
-                                       <p>With deep expertise across our core services, we help businesses across industries drive digital transformation and achieve sustainable growth. <a href="https://digitalsoftwareinc.com/services.html" target="_blank" rel="noopener noreferrer" style="color: wheat; font-weight: 400;">Learn more about our core services</a> and discover how we can help you stay ahead in today’s competitive market.
-                                       </p>
-                                    </div>
-                                 </div>
-                                 <div class="content-image__image  content-image__image--image-default">
-                                    <!-- <div class="svg-animation lottie" data-bm-autoplay="1" data-bm-renderer="svg" data-bm-loop="1" data-animation-path="https://bridgecrew.io/wp-content/themes/bridgecrew/assets/js/animations/secure-dome.json" data-name="secure-dome"></div> -->
-                                 </div>
+                     <section class="section-block section-block--container-default section-block--theme-big-purple-bg-square section-block-header">
+                        <div class="container">
+                           <div class="d-flex" style="flex-direction: row; flex-wrap: wrap;">
+                              <div class="d-flex">
+                                 <h1 style="font-size: 4.50em !important; margin: 0 !important;">About Us</h1>
                               </div>
-                           </div>
-                           <!-- .container -->
-                        </section>
-                     </div>
-                     <!-- .section -->
-                     <section class="section-block  section-block--container-default section-block--theme-light-purple content-image content-image-2 ">
-                        <div class="container ">
-                           <div class="section-block__header text-left boxes--columns-two">
-                              <h1 class="section-block__title boxes__title">Vision</h1>
-                              <p>To pioneer software solutions that empower businesses through innovation and agility, helping them overcome today’s challenges and unlock future opportunities for growth and excellence.</p>
-                              <h1 class="section-block__title boxes__title">Mission</h1>
-                              <p style="margin: 0;">To help businesses thrive in the digital era by offering bespoke solutions. We leverage cuttiing-edge technologies and follow industry best practices to drive digital transformation, delivering sustainable value for our clients.</p>
                            </div>
                         </div>
                         <!-- .container -->
                      </section>
-                     <!-- .section -->
+                     <section class="section-block section-block--container-default content-image content-image-5 Intelligent-automation-section-1 section-block--theme-light-purple">
+                        <div class="container">
+                           <div class="content-image__inner content-image__inner--image-left content-image__inner--">
+                              <div class="content-image__image  content-image__image--align-left  Intelligent-automation-div" style="padding: 0 !important;">
+                                 <h1 class="title-default-color boxes__titlec animate__animated animate__fadeInUp Intelligent-automation-section-header">Mission</h1>
+                                 <p>To deliver measurable business outcomes by leveraging AI-powered DevOps, intelligent automation, and unified transformation frameworks—driving 100% release acceleration, incident elimination, and productivity gains across enterprise ecosystems.</p>
+                              </div>
+                              <div class="content-image__image  content-image__image--align-center Intelligent-automation-div">
+                                 <!-- <img width="2120" height="1354" src="../assets/images/test.jpg" class="attachment-full size-full" alt="Mission" loading="lazy" style="margin-bottom: 10px;"/> -->
+                              </div>
+                           </div>
+                        </div>
+                        <!-- .container -->
+                     </section>
+                     <section class="section-block section-block--container-default content-image content-image-5 Intelligent-automation-section-1">
+                        <div class="container">
+                           <div class="content-image__inner content-image__inner--image-left content-image__inner--">
+                              <div class="content-image__image  content-image__image--align-center Intelligent-automation-div" style="padding: 0 !important;">
+
+                              </div>
+                              <div class="content-image__image  content-image__image--align-left  Intelligent-automation-div">
+                                 <h1 class="title-default-color boxes__titlec animate__animated animate__fadeInUp Intelligent-automation-section-header">What is Lorem Ipsum?</h1>
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- .container -->
+                     </section>
+                     <section class="section-block section-block--container-default content-image content-image-5 Intelligent-automation-section-1 section-block--theme-light-purple">
+                        <div class="container">
+                           <div class="content-image__inner content-image__inner--image-left content-image__inner--">
+                              <div class="content-image__image  content-image__image--align-left  Intelligent-automation-div" style="padding: 0 !important;">
+                                 <h1 class="title-default-color boxes__titlec animate__animated animate__fadeInUp Intelligent-automation-section-header">What is Lorem Ipsum?</h1>
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                              </div>
+                              <div class="content-image__image  content-image__image--align-center Intelligent-automation-div">
+
+                              </div>
+                           </div>
+                        </div>
+                        <!-- .container -->
+                     </section>
                   </div>
                   <!-- /.page-blocks -->
                </div>
