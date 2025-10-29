@@ -74,11 +74,12 @@
          .card i {
          	position: absolute;
          	top: 40px;
-         	left: -15px;
+         	left: 0px;
          	width: 280px;
          	height: 50px;
          	border-radius: 30px;
          	border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
          }
 
          .card i span {
@@ -91,26 +92,6 @@
          	display: flex;
          	align-items: center;
          	justify-content: center;
-         }
-
-         .card i::before {
-         	content: '';
-         	position: absolute;
-         	top: 50px;
-         	width: 15px;
-         	height: 30px;
-         	border-top-left-radius: 20px;
-         	border-bottom-left-radius: 20px;
-         	z-index: 2;
-         }
-
-         .card i::after {
-         	content: '';
-         	position: absolute;
-         	top: 50px;
-         	width: 15px;
-         	height: 15px;
-         	z-index: 1;
          }
 
          .pricing-box__price span,
@@ -272,6 +253,13 @@
          		text-align: center;
          	}
          }
+
+         @media (max-width: 1440px) {
+            .standard-card .pricing-box__terms {
+               padding-bottom: 13px
+            }
+         }
+
       </style>
       <meta name='robots' content='noindex, nofollow' />
       <!-- This site is optimized with the Yoast SEO plugin v17.2 - https://yoast.com/wordpress/plugins/seo/ -->

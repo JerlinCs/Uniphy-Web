@@ -112,7 +112,19 @@
          		text-align: center;
          	}
          }
-         
+
+         .section-spacing-top {
+         	padding: 75px 0 0 0 !important;
+         }
+
+         .section-spacing-bottom {
+         	padding: 0 0 75px 0 !important;
+         }
+
+         .section-spacing-top-bottom {
+         	padding: 75px 0px !important;
+         }
+
          .display-none {
          	display: none;
          }
@@ -121,7 +133,17 @@
          	.heateor_sss_vertical_sharing {
          		display: none !important
          	}
+            .mission-section .quote-box {
+               width: 100% !important;
+            }
          }
+
+         @media screen and (max-width:600px) {
+            .mission-section p {
+               font-size: 20px !important;
+            }
+         }
+         
          
          @media screen and (max-width:783px) {
          	.heateor_sss_floating_follow_icons_container {
@@ -361,7 +383,7 @@
                   <nav>
                      <div class="menu-main-menu-container">
                         <ul id="header-menu" class="menu">
-                           <li id="menu-item-5281" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4691 current_page_item menu-item-5281"><a href="index.html" aria-current="page">Features</a></li>
+                           <li id="menu-item-5281" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4691 current_page_item menu-item-5281"><a href="../platform/index.html" aria-current="page">Features</a></li>
                            <li id="menu-item-6279" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6279"><a href="../pricing/index.html">Pricing</a></li>
                            <li id="menu-item-1833" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1833">
                               <a href="">Resources</a>
@@ -400,43 +422,56 @@
                         </div>
                         <!-- .container -->
                      </section>
-                     <section class="section-block section-block--container-default content-image content-image-5 Intelligent-automation-section-1 section-block--theme-light-purple">
+                     <section class="section-spacing-top-bottom section-block section-block--container-default content-image content-image-5 mission-section">
+                        <div class="container">
+                           <div class="d-flex text-center" style="justify-content: center;">
+                             <div class="quote-box d-flex flex-column" 
+                                  style="width: 80%; background-color: white; border-radius: 15px; padding: 20px; position: relative;">
+                                 <img src="../assets/images/quote-top.svg" 
+                                      alt="quote top" 
+                                      class="quote-top" 
+                                      style="position: absolute; top: 15px; left: 15px; width: 40px;">
+                                 <p style="font-size: 30px; margin: 60px 20px; line-height: normal;">
+                                   To deliver measurable business outcomes by leveraging AI-powered DevOps, intelligent automation, 
+                                   and unified transformation frameworks—driving 100% release acceleration, incident elimination, 
+                                   and productivity gains across enterprise ecosystems.
+                                 </p>
+                                 <img src="../assets/images/quote-bottom.svg" 
+                                      alt="quote bottom" 
+                                      class="quote-bottom" 
+                                      style="position: absolute; bottom: 15px; right: 15px; width: 40px;">
+                             </div>
+                           </div>
+                        </div>
+                        <!-- .container -->
+                     </section>
+                     <section class="section-block section-block--container-default content-image content-image-5 section-block--theme-light-purple">
                         <div class="container">
                            <div class="content-image__inner content-image__inner--image-left content-image__inner--">
-                              <div class="content-image__image  content-image__image--align-left  Intelligent-automation-div" style="padding: 0 !important;">
-                                 <h1 class="title-default-color boxes__titlec animate__animated animate__fadeInUp Intelligent-automation-section-header">Mission</h1>
-                                 <p>To deliver measurable business outcomes by leveraging AI-powered DevOps, intelligent automation, and unified transformation frameworks—driving 100% release acceleration, incident elimination, and productivity gains across enterprise ecosystems.</p>
+                              <div class="content-image__image  content-image__image--align-left" style="padding: 0 !important;">
+                                 <h1 class="title-default-color boxes__titlec animate__animated animate__fadeInUp">What is Lorem Ipsum?</h1>
+                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                               </div>
-                              <div class="content-image__image  content-image__image--align-center Intelligent-automation-div">
-                                 <!-- <img width="2120" height="1354" src="../assets/images/test.jpg" class="attachment-full size-full" alt="Mission" loading="lazy" style="margin-bottom: 10px;"/> -->
+                              <div class="content-image__image  content-image__image--align-center" style="align-self: center;">
+                                 <img src="../assets/images/story-motivation.png" 
+                                      alt="Motivation" 
+                                      class="motivation"/>
                               </div>
                            </div>
                         </div>
                         <!-- .container -->
                      </section>
-                     <section class="section-block section-block--container-default content-image content-image-5 Intelligent-automation-section-1">
+                     <section class="section-spacing-top-bottom section-block section-block--container-default content-image content-image-5">
                         <div class="container">
                            <div class="content-image__inner content-image__inner--image-left content-image__inner--">
-                              <div class="content-image__image  content-image__image--align-center Intelligent-automation-div" style="padding: 0 !important;">
-
+                              <div class="content-image__image  content-image__image--align-center" style="padding: 0 !important; align-self: center;">
+                                 <img src="../assets/images/uniqueofuniphy.png" 
+                                      alt="Uniqueness" 
+                                      class="Uniqueness"/>
                               </div>
-                              <div class="content-image__image  content-image__image--align-left  Intelligent-automation-div">
-                                 <h1 class="title-default-color boxes__titlec animate__animated animate__fadeInUp Intelligent-automation-section-header">What is Lorem Ipsum?</h1>
+                              <div class="content-image__image  content-image__image--align-left">
+                                 <h1 class="title-default-color boxes__titlec animate__animated animate__fadeInUp">What is Lorem Ipsum?</h1>
                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <!-- .container -->
-                     </section>
-                     <section class="section-block section-block--container-default content-image content-image-5 Intelligent-automation-section-1 section-block--theme-light-purple">
-                        <div class="container">
-                           <div class="content-image__inner content-image__inner--image-left content-image__inner--">
-                              <div class="content-image__image  content-image__image--align-left  Intelligent-automation-div" style="padding: 0 !important;">
-                                 <h1 class="title-default-color boxes__titlec animate__animated animate__fadeInUp Intelligent-automation-section-header">What is Lorem Ipsum?</h1>
-                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                              </div>
-                              <div class="content-image__image  content-image__image--align-center Intelligent-automation-div">
-
                               </div>
                            </div>
                         </div>
