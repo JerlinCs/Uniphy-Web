@@ -30,19 +30,19 @@ if(isset($_POST['email'])) {
 			'text' => 'Email address',
 			'val' => $_POST['email']
 		),
-		3 => array(
+		2 => array(
 			'text' => 'Organisation',
 			'val' => $_POST['org']
 		),
-		4 => array(
+		3 => array(
 			'text' => 'Phone number',
 			'val' => $_POST['phone-no']
 		),
-		5 => array(
+		4 => array(
 			'text' => 'Country',
 			'val' => $_POST['country']
 		),
-		6 => array(
+		5 => array(
 			'text' => 'Message',
 			'val' => $_POST['message']
 		)
