@@ -26,44 +26,6 @@
       <link rel="stylesheet" href="../assets/css/theme.css">
 
       <style type="text/css">			
-         .heateorSssInstagramBackground {
-         	background: radial-gradient(circle at 30% 107%, #fdf497 0, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%)
-         }
-
-         .heateor_sss_horizontal_sharing .heateorSssSharing,
-         .heateor_sss_standard_follow_icons_container .heateorSssSharing {
-         	color: #fff;
-         	border-width: 0px;
-         	border-style: solid;
-         	border-color: transparent;
-         }
-
-         .heateor_sss_horizontal_sharing .heateorSssTCBackground {
-         	color: #666;
-         }
-
-         .heateor_sss_horizontal_sharing .heateorSssSharing:hover,
-         .heateor_sss_standard_follow_icons_container .heateorSssSharing:hover {
-         	border-color: transparent;
-         }
-
-         .heateor_sss_vertical_sharing .heateorSssSharing,
-         .heateor_sss_floating_follow_icons_container .heateorSssSharing {
-         	color: #fff;
-         	border-width: 0px;
-         	border-style: solid;
-         	border-color: transparent;
-         }
-
-         .heateor_sss_vertical_sharing .heateorSssTCBackground {
-         	color: #666;
-         }
-
-         .heateor_sss_vertical_sharing .heateorSssSharing:hover,
-         .heateor_sss_floating_follow_icons_container .heateorSssSharing:hover {
-         	border-color: transparent;
-         }
-
          .challenges__section {
          	width: 1440px;
          	max-width: 90%;
@@ -140,18 +102,6 @@
 
          footer .main-footer__widgets section h4 {
          	font-size: 21.99px;
-         }
-
-         @media screen and (max-width:783px) {
-         	.heateor_sss_vertical_sharing {
-         		display: none !important
-         	}
-         }
-
-         @media screen and (max-width:783px) {
-         	.heateor_sss_floating_follow_icons_container {
-         		display: none !important
-         	}
          }
 
          .platform--header {
@@ -481,6 +431,60 @@
          	padding-left: 0;
          }
 
+         /* Base Card Styles */
+         .Intelligent-automation-section-1 .Intelligent-automation-div .Intelligent-automation-flex-bar [class*="card-"] {
+           padding: 20px !important;
+           box-shadow: 1px 12px 30px rgba(102, 46, 255, 0.24);
+           border-radius: 20px;
+           font-size: medium;
+         }
+
+         .Intelligent-automation-section-1 .Intelligent-automation-div .Intelligent-automation-flex-bar [class*="card-"] img {
+           margin-bottom: 10px !important;
+         }
+
+         .Intelligent-automation-section-1 .Intelligent-automation-div .Intelligent-automation-flex-bar [class*="card-"] p {
+           margin-bottom: 0 !important;
+         }
+
+         /* Individual Card Colors & Margins */
+         .card-manage {
+           margin-bottom: 30px;
+           border-top: 7px solid #e5742b;
+         }
+
+         .card-code {
+           border-top: 7px solid #5359a6;
+           background-color: #f6f9fe;
+         }
+
+         .card-run {
+           margin-bottom: 30px;
+           border-top: 7px solid #165758;
+           background-color: #f6f9fe;
+         }
+
+         .card-deliver {
+           border-top: 7px solid #5170ff;
+         }
+
+         /* Column Layouts */
+         .Intelligent-automation-right-1,
+         .Intelligent-automation-right-2 {
+           flex-wrap: wrap;
+           flex-direction: column;
+           width: 45%;
+           margin: 18px;
+         }
+
+         .Intelligent-automation-right-2 {
+           margin-top: 150px;
+         }
+
+         .Intelligent-automation-flex-bar {
+           justify-content: space-around;
+         }
+
          .evolution-section .evolution-section-header {
          	padding-bottom: 30px;
          }
@@ -599,6 +603,9 @@
              .content-border-top {
                display: none;
              }
+             .Intelligent-automation-section-1 .Intelligent-automation-div .Intelligent-automation-flex-bar .Intelligent-automation-right-2 {
+               margin-top: 18px;
+             }
          }
 
          @media (max-width: 1024px) {
@@ -696,123 +703,22 @@
          		--col-gap: 38px;
          	}
          }
+
+          @media (min-width: 1300px) and (max-width: 1440px) {
+            .Intelligent-automation-section-1 .Intelligent-automation-div-left h1 {
+               line-height: 1.25em;
+               font-size: 3.33em;
+            }
+
+            .Intelligent-automation-section-1 .Intelligent-automation-div-left p {
+               line-height: 2.22em;
+               font-size: 18px;
+            }
+         }
       </style>
       <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
       <!-- This site is optimized with the Yoast SEO plugin v17.2 - https://yoast.com/wordpress/plugins/seo/ -->
       <title>Uniphy</title>
-      <meta name="description" content="" />
-      <link rel="canonical" href="index.html" />
-      <meta property="og:locale" content="en_US" />
-      <meta property="og:type" content="article" />
-      <meta property="og:title" content="Platform" />
-      <meta property="og:description" content="" />
-      <meta property="og:url" content="" />
-      <meta property="og:site_name" content="Uniphy" />
-      <meta property="article:modified_time" content="2021-08-31T11:59:16+00:00" />
-      <meta property="og:image" content="" />
-      <meta property="og:image:width" content="2024" />
-      <meta property="og:image:height" content="1012" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:image" content="" />
-      <script type="application/ld+json" class="yoast-schema-graph">
-      {
-        "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "@id": "",
-            "name": "Uniphy",
-            "url": "",
-            "sameAs": [],
-            "logo": {
-              "@type": "ImageObject",
-              "@id": "",
-              "inLanguage": "en-US",
-              "url": "",
-              "contentUrl": "",
-              "width": 1200,
-              "height": 600,
-              "caption": "Uniphy"
-            },
-            "image": {
-              "@id": ""
-            }
-          },
-          {
-            "@type": "WebSite",
-            "@id": "",
-            "url": "",
-            "name": "Uniphy",
-            "description": "Codified Cloud Security",
-            "publisher": {
-              "@id": ""
-            },
-            "potentialAction": [
-              {
-                "@type": "SearchAction",
-                "target": {
-                  "@type": "EntryPoint",
-                  "urlTemplate": ""
-                },
-                "query-input": "required name=search_term_string"
-              }
-            ],
-            "inLanguage": "en-US"
-          },
-          {
-            "@type": "ImageObject",
-            "@id": "",
-            "inLanguage": "en-US",
-            "url": "",
-            "contentUrl": "",
-            "width": 2024,
-            "height": 1012,
-            "caption": ""
-          },
-          {
-            "@type": "WebPage",
-            "@id": "",
-            "url": "",
-            "name": "",
-            "isPartOf": {
-              "@id": ""
-            },
-            "datePublished": "2021-01-19T02:10:08+00:00",
-            "dateModified": "2021-08-31T11:59:16+00:00",
-            "description": "",
-            "breadcrumb": {
-              "@id": ""
-            },
-            "inLanguage": "en-US",
-            "potentialAction": [
-              {
-                "@type": "ReadAction",
-                "target": [
-                  ""
-                ]
-              }
-            ]
-          },
-          {
-            "@type": "BreadcrumbList",
-            "@id": "",
-            "itemListElement": [
-              {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": ""
-              },
-              {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Platform"
-              }
-            ]
-          }
-        ]
-      }
-      </script>
 
       <!-- / Yoast SEO plugin. -->
       <link rel='dns-prefetch' href='http://use.fontawesome.com/' />
@@ -884,10 +790,6 @@
          var log_object = {"ajax_url":""};
       </script>
       <script src='../wp-content/plugins/cookie-law-info/public/js/cookie-law-info-publicc1b4.js?ver=2.0.5' id='cookie-law-info-js'></script>
-      <script id='icwp-wpsf-shield-notbot-js-extra'>
-         var shield_vars_notbotjs = {"ajax":{"not_bot":"action=icwp-wpsf&exec=not_bot&exec_nonce=0186765d50&mod_slug=icwp-wpsf-ips"},"hrefs":{"ajax":""},"flags":{"run":true}};
-      </script>
-      <!-- <script src='../wp-content/plugins/wp-simple-firewall/resources/js/shield/notbot0a6f.js?ver=12.0.13&amp;mtime=1634112619' id='icwp-wpsf-shield-notbot-js'></script> -->
       <link rel="EditURI" type="application/rsd+xml" title="RSD" href="../xmlrpc0db0.html?rsd" />
       <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../wp-includes/wlwmanifest.xml" />
       <meta name="generator" content="WordPress 5.8.1" />
@@ -895,17 +797,6 @@
       <link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed2b09.json?url=" />
       <link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embedc761?url=;format=xml" />
       <!--BEGIN: TRACKING CODE MANAGER BY INTELLYWP.COM IN HEAD//-->
-      <script>
-         !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var t=analytics.methods[e];analytics[t]=analytics.factory(t)}analytics.load=function(e,t){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+e+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=t};analytics.SNIPPET_VERSION="4.1.0";
-             analytics.load("UmMGeTYvALYzId7LpDNmgnTNJekbubxU");
-             analytics.page();
-             analytics.ready(function () {
-                 console.log("we got here segment")
-               //   ga('require', 'linker');
-               //   ga('linker:autoLink', ['bridgecrew.cloud']);
-             });
-         }}();
-      </script>
       <link rel="icon" href="../assets/images/favicon.png" sizes="32x32" />
       <link rel="icon" href="../assets/images/favicon.png" sizes="192x192" />
       <meta name="msapplication-TileImage" content="../assets/images/favicon.png" />
@@ -977,7 +868,9 @@
                <article id="post-4691" class="post-4691 page type-page status-publish hentry">
                   <div class="entry-content">
                      <div class="page-blocks">
+                        <!-- .section -->
                         <section class="section-block section-block-header  section-block--container-medium section-block--theme-big-purple-bg-square content-image content-image-1 platform--header">
+                           <!-- .container -->
                            <div class="container">
                               <div class="content-image__inner content-image__inner--image-center content-image__inner--">
                                  <div class="content-image__content content-image__content--full-width    ">
@@ -999,6 +892,7 @@
                         </section>
                         <!-- .section -->
                         <section class="section-block  section-block--container-default section-block--theme-light-purple content-image content-image-2 ">
+                           <!-- .container -->
                            <div class="container evolution-section">
 							         <div class="section-block__header text-left boxes--columns-two evolution-section-header">
                                  <h1 class="section-block__title boxes__title animate__animated animate__fadeInUp">Evolution Landscape</h1>
@@ -1010,6 +904,7 @@
                         </section>
                         <!-- .section -->
                         <section class=" section-block--container-default content-image content-image-3 section-spacing-top challenges-section-header">
+                           <!-- .container -->
                            <div class="container challenges__section">
                               <div class="section-block__header text-right boxes--columns-two">
                                  <h1 class="section-block__title boxes__title animate__animated animate__fadeInUp">Challenges We Solve</h1>
@@ -1098,9 +993,11 @@
                                  </div>
                               </div>
                            </div>
+                           <!-- .container -->
                         </section>
                         <!-- .section -->
                         <section class="section-block section-block--theme-default content-image content-image-4 section-block--theme-light-purple-wave section-bg-color-dark-blue">
+                           <!-- .container -->
                            <div class="container  key__highlight">
                               <div class="section-block__header text-left">
                                  <h1 class="section-block__title content-image__title animate__animated animate__fadeInUp key-highlight-header">Key Highlights</h1>
@@ -1134,46 +1031,47 @@
                            </div>
                            <!-- .container -->
                         </section>
+                        <!-- .section -->
                         <section class="section-block section-block--container-default content-image content-image-5 Intelligent-automation-section-1">
+                           <!-- .container -->
                            <div class="container">
                               <div class="content-image__inner content-image__inner--image-left content-image__inner--">
-                                 <div class="content-image__image  content-image__image--align-left  Intelligent-automation-div">
+                                 <div class="content-image__image  content-image__image--align-left Intelligent-automation-div-left Intelligent-automation-div ">
                                     <h1 class="title-default-color boxes__titlec animate__animated animate__fadeInUp Intelligent-automation-section-header">Intelligent Automation through Tools and Accelerators</h1>
                                     <div class="content-border-top"></div>
                                     <p>Empowering enterprises with end-to-end automation through seamless tool and accelerator integration across the IT lifecycle. From intelligent monitoring to optimized development and resilient operations, we accelerate delivery pipelines for greater efficiency, reliability, and measurable incident reduct.</p>
-                                    <div class="content-border-bottom"></div>
                                  </div>
                                  <div class="content-image__image  content-image__image--align-center Intelligent-automation-div">
-                                    <div class="d-flex navbar-expand" style="justify-content: space-around;">
-                                       <div class="d-flex Intelligent-automation-right-1" style="flex-wrap: wrap; flex-direction: column; width: 45%; margin: 18px;">
-                                          <div class="content-image__content" style="padding: 20px !important; box-shadow: 1px 12px 30px rgba(102, 46, 255, 0.24); border-radius: 20px; font-size: medium; margin: 0px 0px 30px 0px; border-top: solid 7px #e5742b;">
+                                    <div class="d-flex navbar-expand Intelligent-automation-flex-bar">
+                                       <div class="d-flex Intelligent-automation-right-1">
+                                          <div class="content-image__content card-manage">
                                              <div class="section-block__content text-justify ">
-                                                <img width="2120" height="1354" src="../assets/images/gear.png" class="attachment-full size-full" alt="Coding" loading="lazy" style="margin-bottom: 10px;"/>	
+                                                <img width="2120" height="1354" src="../assets/images/gear.png" class="attachment-full size-full" alt="Manage" loading="lazy"/>	
                                                 <h3>Manage</h3>
-                                                <p style="margin-bottom: 0px;">Leverages intelligent automation to identify and resolve recurring data issues through advanced monitoring and runbooks. Predictive operations and automated deployments ensure efficiency, reliability, and an incident reduction of 6–8%.</p>
+                                                <p>Leverages intelligent automation to identify and resolve recurring data issues through advanced monitoring and runbooks. Predictive operations and automated deployments ensure efficiency, reliability, and an incident reduction of 6–8%.</p>
                                              </div>
                                           </div>
-                                          <div class="content-image__content" style="padding: 20px !important; box-shadow: 1px 12px 30px rgba(102, 46, 255, 0.24); border-radius: 20px; font-size: medium; border-top: solid 7px #5359a6; background-color: #f6f9fe;">
+                                          <div class="content-image__content card-code">
                                              <div class="section-block__content text-justify ">
-                                                <img width="2120" height="1354" src="../assets/images/coding.png" class="attachment-full size-full" alt="Coding" loading="lazy" style="margin-bottom: 10px;"/>	
+                                                <img width="2120" height="1354" src="../assets/images/coding.png" class="attachment-full size-full" alt="Coding" loading="lazy"/>	
                                                 <h3>Code</h3>  
-                                                <p style="margin-bottom: 0px;">Optimizes the development lifecycle through source code management, continuous integration, and automated testing. Streamlined build processes and effective asset management drive faster delivery and an incident reduction of 12–13%.</p>
+                                                <p >Optimizes the development lifecycle through source code management, continuous integration, and automated testing. Streamlined build processes and effective asset management drive faster delivery and an incident reduction of 12–13%.</p>
                                              </div>
                                           </div>
                                        </div>
-                                       <div class="d-flex Intelligent-automation-right-2" style="flex-wrap: wrap; flex-direction: column; width: 45%; margin: 18px; margin-top: 150px;">
-                                          <div class="content-image__content" style="padding: 20px !important; box-shadow: 1px 12px 30px rgba(102, 46, 255, 0.24); border-radius: 20px; font-size: medium; margin: 0px 0px 30px 0px; border-top: solid 7px #165758; background-color: #f6f9fe;">
+                                       <div class="d-flex Intelligent-automation-right-2">
+                                          <div class="content-image__content card-run">
                                              <div class="section-block__content text-justify ">
-                                                <img width="2120" height="1354" src="../assets/images/connectivity.png" class="attachment-full size-full" alt="Coding" loading="lazy" style="margin-bottom: 10px;"/>	
+                                                <img width="2120" height="1354" src="../assets/images/connectivity.png" class="attachment-full size-full" alt="Run" loading="lazy"/>	
                                                 <h3>Run</h3>
-                                                <p style="margin-bottom: 0px;">Focuses on hybrid connectivity and hybrid security to enable seamless integration across environments. Intelligent features like autoscaling, auto healing, and canary deployments improve resilience and achieve an incident reduction of 12–13%.</p>
+                                                <p >Focuses on hybrid connectivity and hybrid security to enable seamless integration across environments. Intelligent features like autoscaling, auto healing, and canary deployments improve resilience and achieve an incident reduction of 12–13%.</p>
                                              </div>
                                           </div>
-                                          <div class="content-image__content" style="padding: 20px !important; box-shadow: 1px 12px 30px rgba(102, 46, 255, 0.24); border-radius: 20px; font-size: medium; border-top: solid 7px #5170ff;">
+                                          <div class="content-image__content card-deliver">
                                              <div class="section-block__content text-justify ">
-                                                <img width="2120" height="1354" src="../assets/images/performance.png" class="attachment-full size-full" alt="Coding" loading="lazy" style="margin-bottom: 10px;"/>	
+                                                <img width="2120" height="1354" src="../assets/images/performance.png" class="attachment-full size-full" alt="Deliver" loading="lazy"/>	
                                                 <h3>Deliver</h3>
-                                                <p style="margin-bottom: 0px;">Enhances operational performance through Ops and security tooling integration, release management, and A/B testing. These automation practices accelerate delivery, strengthen quality, and result in an incident reduction of 6–8%.</p>
+                                                <p>Enhances operational performance through Ops and security tooling integration, release management, and A/B testing. These automation practices accelerate delivery, strengthen quality, and result in an incident reduction of 6–8%.</p>
                                              </div>
                                           </div>
                                        </div>
@@ -1183,7 +1081,9 @@
                            </div>
                            <!-- .container -->
                         </section>
+                        <!-- .section -->
                         <section class="section-block section-block--container-default section-block--theme-default section-block--theme-light-purple-wave boxes boxes-2 ">
+                           <!-- .container -->
                            <div class="container features__container">
                               <div class="section-block__header text-center boxes--columns-two">
                                  <h1 class="section-block__title boxes__title animate__animated animate__fadeInUp">Uniphy is one application for the entire DevOps lifecycle</h1>
@@ -1217,7 +1117,9 @@
                            </div>
                            <!-- .container -->
                         </section>
+                        <!-- .section -->
                         <section class="section-block section-spacing section-block--container-default cta cta-1 uniphy-ad-banner">
+                           <!-- .container -->
                            <div class="container">
                               <div class="cta__inner cta__inner--default">
                                  <div class="cta__content">
@@ -1234,7 +1136,6 @@
                            </div>
                            <!-- .container -->
                         </section>
-                        <!-- .section -->
                         <!-- .section -->
                      </div>
                      <!-- /.page-blocks -->
@@ -1406,36 +1307,24 @@
       <div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
       <div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
       <!--googleon: all-->
-      <!--BEGIN: TRACKING CODE MANAGER BY INTELLYWP.COM IN FOOTER//-->
       <script>
-         // window.intercomSettings = {
-         //   app_id: "adquux25"
-         // };
          document.getElementById("year").textContent = new Date().getFullYear();
       </script>
-      <!--END: https://wordpress.org/plugins/tracking-code-manager IN FOOTER//--><script src='../wp-content/plugins/metronet-profile-picture/js/mpp-frontendd315.js?ver=2.6.0' id='mpp_gutenberg_tabs-js'></script>
+      <script src='../wp-content/plugins/metronet-profile-picture/js/mpp-frontendd315.js?ver=2.6.0' id='mpp_gutenberg_tabs-js'></script>
       <script src='../wp-includes/js/dist/vendor/regenerator-runtime.minb36a.js?ver=0.13.7' id='regenerator-runtime-js'></script>
       <script src='../wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js?ver=3.15.0' id='wp-polyfill-js'></script>
       <script id='contact-form-7-js-extra'>
          var wpcf7 = {"api":{"root":"https:\/\/bridgecrew.io\/wp-json\/","namespace":"contact-form-7\/v1"}};
       </script>
       <script src='../wp-content/plugins/contact-form-7/includes/js/index4245.js?ver=5.5.2' id='contact-form-7-js'></script>
-      <script id='heateor_sss_sharing_js-js-before'>
-         function heateorSssLoadEvent(e) {var t=window.onload;if (typeof window.onload!="function") {window.onload=e}else{window.onload=function() {t();e()}}};	var heateorSssSharingAjaxUrl = '../wp-admin/admin-ajax.html', heateorSssCloseIconPath = '../wp-content/plugins/sassy-social-share/images/close.png', heateorSssPluginIconPath = '../wp-content/plugins/sassy-social-share/images/logo.png', heateorSssHorizontalSharingCountEnable = 0, heateorSssVerticalSharingCountEnable = 0, heateorSssSharingOffset = -10; var heateorSssMobileStickySharingEnabled = 0;var heateorSssCopyLinkMessage = "Link copied.";var heateorSssUrlCountFetched = [], heateorSssSharesText = 'Shares', heateorSssShareText = 'Share';function heateorSssPopup(e) {window.open(e,"popUpWindow","height=400,width=600,left=400,top=100,resizable,scrollbars,toolbar=0,personalbar=0,menubar=no,location=no,directories=no,status")};var heateorSssWhatsappShareAPI = "web";
-      </script>
-      <script src='../wp-content/plugins/sassy-social-share/public/js/sassy-social-share-publice346.js?ver=3.3.24' id='heateor_sss_sharing_js-js'></script>
       <script src='../wp-content/themes/bridgecrew/assets/js/vendor/slick.minf658.js?ver=5.8.1' id='slick-slider-js'></script>
       <script src='../wp-content/themes/bridgecrew/assets/js/vendor/lottie.minf658.js?ver=5.8.1' id='lottie-js'></script>
       <script src='../wp-content/themes/bridgecrew/assets/js/vendor/mmenuf658.js?ver=5.8.1' id='mmenu-js'></script>
       <script src='../wp-content/themes/bridgecrew/assets/js/vendor/jquery.magnific-popup.minf658.js?ver=5.8.1' id='magnific-popup-js'></script>
       <script src='../wp-content/themes/bridgecrew/assets/js/vendor/jquery.basictable.minf658.js?ver=5.8.1' id='basictable-js'></script>
       <script type="text/javascript" src="../wp-content/themes/bridgecrew/build/main-minf658.js?ver=5.8.1" defer="defer"></script>
-      <!-- <script src='https://bridgecrew.io/wp-includes/js/wp-embed.min.js?ver=5.8.1' id='wp-embed-js'></script> -->
-    
       <!-- JS Front -->
       <script src="../assets/js/hs.core.js"></script>
-      <!-- <script src="../assets/js/hs.slick-carousel.js"></script> -->
-      <!-- <script src="../assets/js/hs.validation.js"></script> -->
       <script src="../assets/js/activity.js"></script>
 
    </body>

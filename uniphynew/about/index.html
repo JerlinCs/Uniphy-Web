@@ -14,44 +14,69 @@
       <!-- CSS  -->
       <link rel="stylesheet" href="../assets/css/theme.css">
       <style type="text/css">
-         .heateorSssInstagramBackground {
-         	background: radial-gradient(circle at 30% 107%, #fdf497 0, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%)
+         .about-us-header .header-div-1 {
+            flex-direction: row; 
+            flex-wrap: wrap;
          }
-         
-         .heateor_sss_horizontal_sharing .heateorSssSharing,
-         .heateor_sss_standard_follow_icons_container .heateorSssSharing {
-         	color: #fff;
-         	border-width: 0px;
-         	border-style: solid;
-         	border-color: transparent;
+
+         .about-us-header .header-div-1 h1{
+            font-size: 4.50em !important; 
+            margin: 0 !important;
          }
-         
-         .heateor_sss_horizontal_sharing .heateorSssTCBackground {
-         	color: #666;
+
+         .about-us-header.section-block--theme-big-purple-bg-square {
+         	background: url(../assets/images/about_bg.png);
+         	background-position: 50% 50%;
+         	background-size: cover;
+         	background-repeat: no-repeat;
          }
-         
-         .heateor_sss_horizontal_sharing .heateorSssSharing:hover,
-         .heateor_sss_standard_follow_icons_container .heateorSssSharing:hover {
-         	border-color: transparent;
+
+         .about-us-header.section-block--theme-big-purple-bg-square .section-block__content p {
+         	color: white !important;
          }
-         
-         .heateor_sss_vertical_sharing .heateorSssSharing,
-         .heateor_sss_floating_follow_icons_container .heateorSssSharing {
-         	color: #fff;
-         	border-width: 0px;
-         	border-style: solid;
-         	border-color: transparent;
+
+         .mission-section .mission-main-div {
+            justify-content: center;
          }
-         
-         .heateor_sss_vertical_sharing .heateorSssTCBackground {
-         	color: #666;
+
+         .mission-section .mission-main-div .quote-box {
+            width: 80%; 
+            background-color: white; 
+            border-radius: 15px; 
+            padding: 20px; 
+            position: relative;
          }
-         
-         .heateor_sss_vertical_sharing .heateorSssSharing:hover,
-         .heateor_sss_floating_follow_icons_container .heateorSssSharing:hover {
-         	border-color: transparent;
+
+         .mission-section .mission-main-div .quote-box .quote-top {
+            position: absolute; 
+            top: 15px; 
+            left: 15px; 
+            width: 40px;
          }
-         
+
+         .mission-section .mission-main-div .quote-box .quote-bottom {
+            position: absolute; 
+            bottom: 15px; 
+            right: 15px; 
+            width: 40px;
+         }
+
+         .mission-section .mission-main-div .quote-box p {
+            font-size: 30px; 
+            margin: 60px 20px; 
+            line-height: normal;
+         }
+
+         .motivation-section .content-image__image.content-image__image--align-left,
+         .uniqueness-of-uniphy .content-image__image.content-image__image--align-center {
+            padding: 0 !important;
+         }
+
+         .motivation-section .content-image__image.content-image__image--align-center,
+         .uniqueness-of-uniphy .content-image__image.content-image__image--align-center {
+            align-self: center !important;
+         }
+
          footer .footer-main-div {
          	display: flex;
          	justify-content: space-between;
@@ -97,21 +122,11 @@
          	padding: 150px 0px !important;
          }
 
-         /* Mobile styles */
-         @media (max-width: 768px) {
-         	.main-footer__widgets .main-footer__widgets__column {
-         		display: block !important;
-         		width: 100% !important;
-         		justify-items: center;
-         	}
-         
-         	.boxes__box-item__image img {
-         		min-height: fit-content !important;
-         	}
-         
-         	.main-footer__widgets__column {
-         		text-align: center;
-         	}
+         .content-border-top {
+            width: 200px;
+            border-radius: 3px;
+            border-top: 5px solid #ff6600;
+            display: block;
          }
 
          .section-spacing-top {
@@ -129,11 +144,31 @@
          .display-none {
          	display: none;
          }
+
+         /* Mobile styles */
+         @media (max-width: 768px) {
+         	.main-footer__widgets .main-footer__widgets__column {
+         		display: block !important;
+         		width: 100% !important;
+         		justify-items: center;
+         	}
+         
+         	.boxes__box-item__image img {
+         		min-height: fit-content !important;
+         	}
+         
+         	.main-footer__widgets__column {
+         		text-align: center;
+         	}
+         }
+
+         @media (max-width: 1300px) {
+            .content-border-top {
+              display: none;
+            }
+         }
          
          @media screen and (max-width:783px) {
-         	.heateor_sss_vertical_sharing {
-         		display: none !important
-         	}
             .mission-section .quote-box {
                width: 100% !important;
             }
@@ -144,109 +179,13 @@
                font-size: 20px !important;
             }
          }
-         
-         
-         @media screen and (max-width:783px) {
-         	.heateor_sss_floating_follow_icons_container {
-         		display: none !important
-         	}
-         }
       </style>
       <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
       <!-- This site is optimized with the Yoast SEO plugin v17.2 - https://yoast.com/wordpress/plugins/seo/ -->
       <title>Uniphy</title>
-      <meta name="description" content="" />
-      <link rel="canonical" href="index.html" />
-      <meta property="og:locale" content="en_US" />
-      <meta property="og:type" content="article" />
-      <meta property="og:title" content="Uniphy" />
-      <meta property="og:description" content="" />
-      <meta property="og:url" content="Uniphy" />
-      <meta property="og:site_name" content="Uniphy" />
-      <meta property="article:modified_time" content="2021-04-22T00:15:09+00:00" />
-      <meta property="og:image" content="" />
-      <meta property="og:image:width" content="2120" />
-      <meta property="og:image:height" content="2120" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <script type="application/ld+json" class="yoast-schema-graph">
-		{
-		   "@context": "https://schema.org",
-		   "@graph": [{
-		      "@type": "Organization",
-		      "@id": "",
-		      "name": "Uniphy",
-		      "url": "",
-		      "sameAs": [],
-		      "logo": {
-		         "@type": "ImageObject",
-		         "@id": "",
-		         "inLanguage": "en-US",
-		         "url": "",
-		         "contentUrl": "",
-		         "width": 1200,
-		         "height": 600,
-		         "caption": "Uniphy"
-		      },
-		      "image": {
-		         "@id": ""
-		      }
-		   }, {
-		      "@type": "WebSite",
-		      "@id": "",
-		      "url": "",
-		      "name": "Uniphy",
-		      "description": "Codified Cloud Security",
-		      "publisher": {
-		         "@id": ""
-		      },
-		      "potentialAction": [{
-		         "@type": "SearchAction",
-		         "target": {
-		            "@type": "EntryPoint",
-		            "urlTemplate": ""
-		         },
-		         "query-input": "required name=search_term_string"
-		      }],
-		      "inLanguage": "en-US"
-		   }, {
-		      "@type": "WebPage",
-		      "@id": "",
-		      "url": "",
-		      "name": "",
-		      "isPartOf": {
-		         "@id": ""
-		      },
-		      "datePublished": "2019-11-17T17:34:17+00:00",
-		      "dateModified": "2021-04-22T00:15:09+00:00",
-		      "description": "",
-		      "breadcrumb": {
-		         "@id": ""
-		      },
-		      "inLanguage": "en-US",
-		      "potentialAction": [{
-		         "@type": "ReadAction",
-		         "target": [""]
-		      }]
-		   }, {
-		      "@type": "BreadcrumbList",
-		      "@id": "",
-		      "itemListElement": [{
-		         "@type": "ListItem",
-		         "position": 1,
-		         "name": "Home",
-		         "item": ""
-		      }, {
-		         "@type": "ListItem",
-		         "position": 2,
-		         "name": "About"
-		      }]
-		   }]
-		}
-	  </script>
       <!-- / Yoast SEO plugin. -->
       <link rel='dns-prefetch' href='http://use.fontawesome.com/' />
       <link rel='dns-prefetch' href='http://s.w.org/' />
-      <link rel="alternate" type="application/rss+xml" title="Uniphy &raquo; Feed" href="../feed/index.html" />
       <link rel='preload stylesheet' as='style' id='contact-form-7-css'  href='../wp-content/plugins/contact-form-7/includes/css/styles4245.css?ver=5.5.2' media='all' />
       <link rel='preload stylesheet' as='style' id='cookie-law-info-css'  href='../wp-content/plugins/cookie-law-info/public/css/cookie-law-info-publicc1b4.css?ver=2.0.5' media='all' />
       <link rel='preload stylesheet' as='style' id='cookie-law-info-gdpr-css'  href='../wp-content/plugins/cookie-law-info/public/css/cookie-law-info-gdprc1b4.css?ver=2.0.5' media='all' />
@@ -304,70 +243,10 @@
       <link rel='shortlink' href='../index0e62.html?p=16' />
       <link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed610f.json?url=" />
       <link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embed8844?url=;format=xml" />
-      <!--BEGIN: TRACKING CODE MANAGER BY INTELLYWP.COM IN HEAD//-->
-      <script>
-         !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var t=analytics.methods[e];analytics[t]=analytics.factory(t)}analytics.load=function(e,t){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+e+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=t};analytics.SNIPPET_VERSION="4.1.0";
-             analytics.load("UmMGeTYvALYzId7LpDNmgnTNJekbubxU");
-             analytics.page();
-             analytics.ready(function () {
-                 console.log("we got here segment")
-                //  ga('require', 'linker');
-                //  ga('linker:autoLink', ['bridgecrew.cloud']);
-             });
-         }}();
-      </script>
       <link rel="icon" href="../assets/images/favicon.png" sizes="32x32" />
       <link rel="icon" href=".../assets/images/favicon.png" sizes="192x192" />
       <link rel="apple-touch-icon" href="../assets/images/favicon.png" />
       <meta name="msapplication-TileImage" content="../assets/images/favicon.png" />
-      <style id="wp-custom-css">
-         .page-id-460 .site-container--bg-blue {
-         	background-size: 100% 1200px;
-         }
-
-         @media (max-width: 1440px) {
-         	.page-id-460 .site-container--bg-blue {
-         		background-size: 100% 1050px;
-         	}
-         }
-
-         @media (max-width: 600px) {
-         	.page-id-460 .site-container--bg-blue {
-         		background-size: 100% 2400px;
-         	}
-         }
-
-         .lazy-hidden,
-         .entry img.lazy-hidden,
-         img.thumbnail.lazy-hidden {
-         	background-color: transparent !important;
-         	background-image: none !important;
-         }
-
-         .section-block--theme-big-purple-bg-square {
-         	background: url(../assets/images/about_bg.png);
-         	background-position: 50% 50%;
-         	background-size: cover;
-         	background-repeat: no-repeat;
-         }
-
-         .section-block--theme-big-purple-bg-square .section-block__content p {
-         	color: white !important;
-         }
-
-         @keyframes activateLink {
-         	0% {
-         		opacity: 0.5;
-         		pointer-events: none;
-         	}
-         
-         	100% {
-         		opacity: 1;
-         		pointer-events: auto;
-         		cursor: pointer;
-         	}
-         }
-      </style>
    </head>
    <body class="page-template page-template-page-blocks page-template-page-blocks-php page page-id-16 body-5">
    <div class="site-container site-container--bg-default">
@@ -413,47 +292,51 @@
             <article id="post-16" class="post-16 page type-page status-publish hentry">
                <div class="entry-content">
                   <div class="page-blocks">
-                     <section class="section-block section-block--container-default section-block--theme-big-purple-bg-square section-block-header">
+                     <!-- .section -->
+                     <section class="section-block section-block--container-default section-block--theme-big-purple-bg-square section-block-header about-us-header">
+                        <!-- .container -->
                         <div class="container">
-                           <div class="d-flex" style="flex-direction: row; flex-wrap: wrap;">
+                           <div class="d-flex header-div-1">
                               <div class="d-flex animate__animated animate__fadeInUp">
-                                 <h1 style="font-size: 4.50em !important; margin: 0 !important;">About Us</h1>
+                                 <h1>About Us</h1>
                               </div>
                            </div>
                         </div>
                         <!-- .container -->
                      </section>
+                     <!-- .section -->
                      <section class="section-spacing-top-bottom section-block section-block--container-default content-image content-image-5 mission-section">
+                        <!-- .container -->
                         <div class="container">
-                           <div class="d-flex text-center" style="justify-content: center;">
-                             <div class="quote-box d-flex flex-column" 
-                                  style="width: 80%; background-color: white; border-radius: 15px; padding: 20px; position: relative;">
+                           <div class="d-flex text-center mission-main-div">
+                              <div class="quote-box d-flex flex-column">
                                  <img src="../assets/images/quote-top.svg" 
                                       alt="quote top" 
-                                      class="quote-top animate__animated animate__fadeInUp" 
-                                      style="position: absolute; top: 15px; left: 15px; width: 40px;">
-                                 <p style="font-size: 30px; margin: 60px 20px; line-height: normal;" class="animate__animated animate__fadeInUp">
+                                      class="quote-top animate__animated animate__fadeInUp">
+                                 <p class="animate__animated animate__fadeInUp">
                                    To deliver measurable business outcomes by leveraging AI-powered DevOps, intelligent automation, 
                                    and unified transformation frameworks—driving 100% release acceleration, incident elimination, 
                                    and productivity gains across enterprise ecosystems.
                                  </p>
                                  <img src="../assets/images/quote-bottom.svg" 
                                       alt="quote bottom" 
-                                      class="quote-bottom animate__animated animate__fadeInUp" 
-                                      style="position: absolute; bottom: 15px; right: 15px; width: 40px;">
-                             </div>
+                                      class="quote-bottom animate__animated animate__fadeInUp">
+                               </div>
                            </div>
                         </div>
                         <!-- .container -->
                      </section>
-                     <section class="section-block section-block--container-default content-image content-image-5 section-block--theme-light-purple">
+                     <!-- .section -->
+                     <section class="section-block section-block--container-default content-image content-image-5 section-block--theme-light-purple motivation-section">
+                        <!-- .container -->
                         <div class="container">
                            <div class="content-image__inner content-image__inner--image-left content-image__inner--">
-                              <div class="content-image__image  content-image__image--align-left" style="padding: 0 !important;">
+                              <div class="content-image__image  content-image__image--align-left">
                                  <h1 class="title-default-color boxes__titlec animate__animated animate__fadeInUp">What is Lorem Ipsum?</h1>
+                                 <div class="content-border-top"></div>
                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                               </div>
-                              <div class="content-image__image  content-image__image--align-center" style="align-self: center;">
+                              <div class="content-image__image  content-image__image--align-center">
                                  <img src="../assets/images/story-motivation.png" 
                                       alt="Motivation" 
                                       class="motivation"/>
@@ -462,28 +345,32 @@
                         </div>
                         <!-- .container -->
                      </section>
-                     <section class="section-spacing-top-bottom section-block section-block--container-default content-image content-image-5">
+                     <!-- .section -->
+                     <section class="section-spacing-top-bottom section-block section-block--container-default content-image content-image-5 uniqueness-of-uniphy">
+                        <!-- .container -->
                         <div class="container">
                            <div class="content-image__inner content-image__inner--image-left content-image__inner--">
-                              <div class="content-image__image  content-image__image--align-center" style="padding: 0 !important; align-self: center;">
+                              <div class="content-image__image  content-image__image--align-center">
                                  <img src="../assets/images/uniqueofuniphy.png" 
                                       alt="Uniqueness" 
                                       class="Uniqueness"/>
                               </div>
                               <div class="content-image__image  content-image__image--align-left">
                                  <h1 class="title-default-color boxes__titlec animate__animated animate__fadeInUp">What is Lorem Ipsum?</h1>
+                                 <div class="content-border-top"></div>
                                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                               </div>
                            </div>
                         </div>
                         <!-- .container -->
                      </section>
+                     <!-- .section -->
                   </div>
-                  <!-- /.page-blocks -->
+                  <!-- .page-blocks -->
                </div>
                <!-- .entry-content -->
             </article>
-            <!-- #post-16 -->
+            <!-- id=post-16 -->
          </div>
          <!-- .site-main -->
       </div>
@@ -652,27 +539,16 @@
    <div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
    <div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
    <!--googleon: all-->
-   <!--BEGIN: TRACKING CODE MANAGER BY INTELLYWP.COM IN FOOTER//-->
-   <!-- <script>
-      window.intercomSettings = {
-        app_id: "adquux25"
-      };
-      </script> -->
-   <!-- <script>
-      We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/adquux25'
-      (function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/adquux25';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);};if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-      </script> -->
-   <!--END: https://wordpress.org/plugins/tracking-code-manager IN FOOTER//--><script src='../wp-content/plugins/metronet-profile-picture/js/mpp-frontendd315.js?ver=2.6.0' id='mpp_gutenberg_tabs-js'></script>
+   <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+   </script>
+   <script src='../wp-content/plugins/metronet-profile-picture/js/mpp-frontendd315.js?ver=2.6.0' id='mpp_gutenberg_tabs-js'></script>
    <script src='../wp-includes/js/dist/vendor/regenerator-runtime.minb36a.js?ver=0.13.7' id='regenerator-runtime-js'></script>
    <script src='../wp-includes/js/dist/vendor/wp-polyfill.min2c7c.js?ver=3.15.0' id='wp-polyfill-js'></script>
    <script id='contact-form-7-js-extra'>
       var wpcf7 = {"api":{"root":"","namespace":"contact-form-7\/v1"}};
    </script>
    <script src='../wp-content/plugins/contact-form-7/includes/js/index4245.js?ver=5.5.2' id='contact-form-7-js'></script>
-   <!-- <script id='heateor_sss_sharing_js-js-before'>
-      function heateorSssLoadEvent(e) {var t=window.onload;if (typeof window.onload!="function") {window.onload=e}else{window.onload=function() {t();e()}}};	var heateorSssSharingAjaxUrl = '../wp-admin/admin-ajax.html', heateorSssCloseIconPath = '../wp-content/plugins/sassy-social-share/images/close.png', heateorSssPluginIconPath = '../wp-content/plugins/sassy-social-share/images/logo.png', heateorSssHorizontalSharingCountEnable = 0, heateorSssVerticalSharingCountEnable = 0, heateorSssSharingOffset = -10; var heateorSssMobileStickySharingEnabled = 0;var heateorSssCopyLinkMessage = "Link copied.";var heateorSssUrlCountFetched = [], heateorSssSharesText = 'Shares', heateorSssShareText = 'Share';function heateorSssPopup(e) {window.open(e,"popUpWindow","height=400,width=600,left=400,top=100,resizable,scrollbars,toolbar=0,personalbar=0,menubar=no,location=no,directories=no,status")};var heateorSssWhatsappShareAPI = "web";
-      </script> -->
-   <!-- <script src='../wp-content/plugins/sassy-social-share/public/js/sassy-social-share-publice346.js?ver=3.3.24' id='heateor_sss_sharing_js-js'></script> -->
    <script src='../wp-content/themes/bridgecrew/assets/js/vendor/slick.minf658.js?ver=5.8.1' id='slick-slider-js'></script>
    <script src='../wp-content/themes/bridgecrew/assets/js/vendor/lottie.minf658.js?ver=5.8.1' id='lottie-js'></script>
    <script src='../wp-content/themes/bridgecrew/assets/js/vendor/mmenuf658.js?ver=5.8.1' id='mmenu-js'></script>
