@@ -25,7 +25,7 @@
          	position: absolute;
          	top: 40px;
          	left: 0px;
-         	width: 280px;
+         	width: 80%;
          	height: 50px;
          	border-radius: 30px;
          	border-bottom-left-radius: 0;
@@ -185,6 +185,20 @@
 
          .display-none {
          	display: none !important;
+         }
+
+         .pricing-box__price-dynamic,
+         .pricing-box__terms,
+         .pricing-box__price {
+            color: #3c3c3f !important;
+         }
+
+         .premium-card .pricing-box__price {
+            font-family: fantasy;
+         }
+
+         .premium-card .pricing-box__terms {
+            padding-bottom: 10px !important;
          }
 
          /* Mobile styles */
@@ -364,7 +378,7 @@
                                  <div class="item">
                                     <i><span>Free</span></i>
                                  </div>
-                                 <p class="pricing-box__price" style="color:#3c3c3f!important;"><span>$0</span>/month</p>
+                                 <p class="pricing-box__price"><span>$0</span>/month</p>
                                  <p class="pricing-box__terms">For up to 10 resources</p>
                                  <a href="https://uniphyops.com/" target="_blank" class="ns-btn dp-btn-0 animate__animated animate__fadeInUp" rel="noopener noreferrer">Start for free</a>
                                  <ul class="pricing-box__features list--check-green">
@@ -383,7 +397,7 @@
                                     <i><span>Standard</span></i>
                                  </div>
                                  <div class="pricing-box__dynamic" data-points='["150:99","160:158","180:276","200:394","220:512","240:630","260:748","280:866","300:984"]' data-color="#662EFF">
-                                    <p class="pricing-box__price-dynamic" style="color:#3c3c3f!important;"><span>$<span class="dynamic-price" data-index="9">99</span></span>/month</p>
+                                    <p class="pricing-box__price-dynamic"><span>$<span class="dynamic-price" data-index="9">99</span></span>/month</p>
                                     <form class="pricing-box__dynamic-range">
                                        <input type="range" id="price-range-9" class="dynamic-range-slider" data-index="9" aria-labelledby="price-terms-9" step="11.111111111111">
                                        <p class="pricing-box__terms" id="price-terms-9" data-index="9">For <span class="dynamic-terms" data-index="9">150</span> resources</p>
@@ -405,8 +419,8 @@
                                  <div class="item">
                                     <i><span>Premium</span></i>
                                  </div>
-                                 <p class="pricing-box__price pricing-box__terms" style="color:#3c3c3f!important; margin-bottom: 1.25em;"><span></span>Your perfect plan starts with a chat!!!</p>
-                                 <!-- <p class="pricing-box__terms">Custom resources</p> -->
+                                 <p class="pricing-box__price"><span></span>Your perfect plan starts with a chat!</p>
+                                 <p class="pricing-box__terms">Custom resources</p>
                                  <a href="../schedule-a-demo/index.html" target="" class="ns-btn dp-btn-2 animate__animated animate__fadeInUp">Schedule a demo</a>
                                  <ul class="pricing-box__features list--check-green">
                                     <li>Full platform customization & policies</li>
