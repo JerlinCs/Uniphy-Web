@@ -50,17 +50,17 @@
          	font-size: 50px;
          }
 
-         .free-card i {
+         .basic-card i {
          	text-align: left;
          	background: linear-gradient(to right, rgb(0 225 162 / 90%), rgb(78 158 215 / 80%));
          }
 
-         .free-card i::after {
+         .basic-card i::after {
          	text-align: left;
          	background: linear-gradient(to left, rgb(0 225 162 / 90%));
          }
 
-         .free-card i::before {
+         .basic-card i::before {
          	background: #1e7a65;
          }
 
@@ -165,7 +165,7 @@
          	background: white !important;
          }
 
-         .pricing-plan-section .free-card,
+         .pricing-plan-section .basic-card,
          .pricing-plan-section .premium-card,
          .pricing-plan-section .standard-card {
          	border-radius: 20px;
@@ -191,14 +191,6 @@
          .pricing-box__terms,
          .pricing-box__price {
             color: #3c3c3f !important;
-         }
-
-         .premium-card .pricing-box__price {
-            font-family: fantasy;
-         }
-
-         .premium-card .pricing-box__terms {
-            padding-bottom: 10px !important;
          }
 
          /* Mobile styles */
@@ -374,13 +366,13 @@
                            </div>
                            <!-- .container -->
                            <div class="pricing__boxes">
-                              <div class="pricing-box static card free-card">
+                              <div class="pricing-box static card basic-card">
                                  <div class="item">
-                                    <i><span>Free</span></i>
+                                    <i><span>Basic</span></i>
                                  </div>
-                                 <p class="pricing-box__price"><span>$0</span>/month</p>
-                                 <p class="pricing-box__terms">For up to 10 resources</p>
-                                 <a href="https://uniphyops.com/" target="_blank" class="ns-btn dp-btn-0 animate__animated animate__fadeInUp" rel="noopener noreferrer">Start for free</a>
+                                 <p class="pricing-box__price"><span>$0.05</span>/month</p>
+                                 <p class="pricing-box__terms">per month per resource</p>
+                                 <a href="https://uniphyops.com/" target="_blank" class="ns-btn dp-btn-0 animate__animated animate__fadeInUp" rel="noopener noreferrer">Start free trial</a>
                                  <ul class="pricing-box__features list--check-green">
                                     <li>Provision & Monitor</li>
                                     <li>Provision cloud instances & containers</li>
@@ -392,17 +384,12 @@
                               <style>
                                  #price-range-0::-webkit-slider-thumb{background-color:#52be96}#price-range-0::-moz-range-thumb{background-color:#52be96}
                               </style>
-                              <div class="pricing-box dynamic card standard-card">
+                              <div class="pricing-box static card standard-card">
                                  <div class="item">
                                     <i><span>Standard</span></i>
                                  </div>
-                                 <div class="pricing-box__dynamic" data-points='["150:99","160:158","180:276","200:394","220:512","240:630","260:748","280:866","300:984"]' data-color="#662EFF">
-                                    <p class="pricing-box__price-dynamic"><span>$<span class="dynamic-price" data-index="9">99</span></span>/month</p>
-                                    <form class="pricing-box__dynamic-range">
-                                       <input type="range" id="price-range-9" class="dynamic-range-slider" data-index="9" aria-labelledby="price-terms-9" step="11.111111111111">
-                                       <p class="pricing-box__terms" id="price-terms-9" data-index="9">For <span class="dynamic-terms" data-index="9">150</span> resources</p>
-                                    </form>
-                                 </div>
+                                 <p class="pricing-box__price"><span>$0.35</span>/month</p>
+                                 <p class="pricing-box__terms">per month per resource</p>
                                  <a href="https://uniphyops.com/" target="_blank" class="ns-btn dp-btn-1 animate__animated animate__fadeInUp" rel="noopener noreferrer">Start free trial</a>
                                  <ul class="pricing-box__features list--check-green">
                                     <li>Automate. Fix. Deploy.</li>
@@ -419,9 +406,9 @@
                                  <div class="item">
                                     <i><span>Premium</span></i>
                                  </div>
-                                 <p class="pricing-box__price"><span></span>Your perfect plan starts with a chat!</p>
-                                 <p class="pricing-box__terms">Custom resources</p>
-                                 <a href="../schedule-a-demo/index.html" target="" class="ns-btn dp-btn-2 animate__animated animate__fadeInUp">Schedule a demo</a>
+                                 <p class="pricing-box__price"><span>$0.75</span>/month</p>
+                                 <p class="pricing-box__terms">per month per resource</p>
+                                 <a href="https://uniphyops.com/" target="_blank" class="ns-btn dp-btn-1 animate__animated animate__fadeInUp" rel="noopener noreferrer">Start free trial</a>
                                  <ul class="pricing-box__features list--check-green">
                                     <li>Full platform customization & policies</li>
                                     <li>AI-driven provisioning, monitoring, scaling, and predictive insights</li>

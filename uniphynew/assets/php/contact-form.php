@@ -101,8 +101,7 @@ if(isset($_POST['email'])) {
 			$mail->setFrom('noreply.uniphy@digitalsoftwareinc.in', 'No Reply');
 			
 			$mail->FromName = $name;
-			$mail->AddAddress('manojkumar.vijayakumar@digitalsoftwareinc.in', 'Manojkumar Vijayakumar');								  // Add a recipient
-			$mail->AddAddress('rajkumar.k@digitalsoftwareinc.com', 'Rajkumar Krishnaraj');	
+			$mail->AddAddress('rajkumar.k@digitalsoftwareinc.com', 'Rajkumar Krishnaraj');								  // Add a recipient								  
 			$mail->AddAddress('vasu@digitalsoftwareinc.com', 'Vasu Mathialagan');
 			$mail->AddReplyTo($replyTo, $name);
 	

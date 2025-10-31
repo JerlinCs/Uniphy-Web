@@ -2888,7 +2888,7 @@ form.hs-form .hs-error-msgs {
     padding-right: 16px;
     box-sizing: border-box; }
   .pricing-box.static .pricing-box__terms {
-    padding-bottom: 39px; }
+    padding-bottom: 10px; }
   .pricing-box.dynamic input[type=range] {
     width: 100%;
     -webkit-appearance: none;
