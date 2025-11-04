@@ -1005,7 +1005,7 @@ form.hs-form .hs-error-msgs {
     .main-footer__copy__text {
       float: left;
       width: 30%; }
-      @media (max-width: 1024px) {
+      @media (max-width: 768px) {
         .main-footer__copy__text {
           width: 100%;
           text-align: left; } }
@@ -1016,7 +1016,7 @@ form.hs-form .hs-error-msgs {
     .main-footer__copy__menu {
       float: right;
       width: 70%; }
-      @media (max-width: 1024px) {
+      @media (max-width: 768px) {
         .main-footer__copy__menu {
           width: 100%; } }
       .main-footer__copy__menu .menu {
@@ -1024,7 +1024,7 @@ form.hs-form .hs-error-msgs {
         margin: 0px;
         padding: 0px;
         list-style: none; }
-        @media (max-width: 1024px) {
+        @media (max-width: 768px) {
           .main-footer__copy__menu .menu {
             width: 100%;
             text-align: center; } }
