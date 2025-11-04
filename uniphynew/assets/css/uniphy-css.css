@@ -1,5 +1,119 @@
 @charset "UTF-8";
 /* ====================================== Home Page CSS ====================================== */
+/* == Home Section == */
+.home-section.section-block:first-child {
+    padding-top: 200px !important;
+}
+/* == Uniphy Video Section == */
+.uniphy-video-section {
+    background: linear-gradient(45deg, #1d2087 0%, rgba(57, 120, 237, 0.5) 100%);
+}
+
+/* == AI Powered Uniphy Section == */
+.ai-powered-uniphy-section .ai-powered-uniphy-container {
+    padding-top: 25px;
+}
+
+.ai-powered-uniphy-section .ai-powered-uniphy-container .slide_carousel h3 {
+    font-weight: 600;
+    color: #fff;
+}
+
+.ai-powered-uniphy-section .ai-powered-uniphy-container .slide_carousel ul {
+    line-height: normal;
+    color: #fff;
+    text-align: left;
+    font-weight: 500;
+    font-family: sofia-pro-soft, sans-serif;
+}
+
+.ai-powered-uniphy-section .swiper5 .swiper-wrapper .swiper-slide li {
+    list-style-type: disclosure-closed;
+}
+
+.ai-powered-uniphy-section li::marker {
+    color: #FFA353;
+}
+
+.ai-powered-uniphy-section .swiper-slide-active.card1 {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)) center center, url(../images/Learn.jpg) center center / cover no-repeat !important;
+}
+
+.ai-powered-uniphy-section .swiper-slide-active.card2 {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)) center center, url(../images/Think.jpg) center center / cover no-repeat !important;
+}
+
+.ai-powered-uniphy-section .swiper-slide-active.card3 {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)) center center, url(../images/Monitor.png) center center / cover no-repeat !important;
+}
+
+.ai-powered-uniphy-section .swiper-slide-active.card4 {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)) center center, url(../images/Run.png) center center / cover no-repeat !important;
+}
+
+.ai-powered-uniphy-section .swiper-slide-active.card5 {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)) center center, url(../images/Deploy.jpg) center center / cover no-repeat !important;
+}
+
+.ai-powered-uniphy-section .swiper-slide-active.card6 {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)) center center, url(../images/Code.png) center center / cover no-repeat !important;
+}
+
+.ai-powered-uniphy-section .swiper-slide.card1,
+.ai-powered-uniphy-section .swiper-slide.card2,
+.ai-powered-uniphy-section .swiper-slide.card3,
+.ai-powered-uniphy-section .swiper-slide.card4,
+.ai-powered-uniphy-section .swiper-slide.card5,
+.ai-powered-uniphy-section .swiper-slide.card6 {
+    background-position: center;
+    color: white;
+    text-align: center
+}
+
+.ai-powered-uniphy-section .swiper-slide.card1 {
+    background: linear-gradient(to right, rgba(29, 32, 135, 0.9), rgba(156, 58, 138, 0.8)) center center, linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../images/Learn.jpg);
+}
+
+.ai-powered-uniphy-section .swiper-slide.card2 {
+    background: linear-gradient(to right, rgba(29, 32, 135, 0.9), rgba(156, 58, 138, 0.8)) center center, linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../images/Think.jpg);
+}
+
+.ai-powered-uniphy-section .swiper-slide.card3 {
+    background: linear-gradient(to right, rgba(29, 32, 135, 0.9), rgba(156, 58, 138, 0.8)) center center, linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../images/Monitor.png);
+}
+
+.ai-powered-uniphy-section .swiper-slide.card4 {
+    background: linear-gradient(to right, rgba(29, 32, 135, 0.9), rgba(156, 58, 138, 0.8)) center center, linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../images/Run.png);
+}
+
+.ai-powered-uniphy-section .swiper-slide.card5 {
+    background: linear-gradient(to right, rgba(29, 32, 135, 0.9), rgba(156, 58, 138, 0.8)) center center, linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../images/Deploy.jpg);
+}
+
+.ai-powered-uniphy-section .swiper-slide.card6 {
+    background: linear-gradient(to right, rgba(29, 32, 135, 0.9), rgba(156, 58, 138, 0.8)) center center, linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(../images/Code.png);
+}
+
+/* == Unipied Operation Section == */
+.unipied-operation-section .unipied-operation-details {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    filter: brightness(99%);
+}
+
+.unipied-operation-section .unipied-operation-details h4 {
+    position: absolute;
+}
+
+.unipied-operation-section .unipied-operation-details span {
+    text-transform: none;
+    color: white;
+    position: absolute;
+    background-color: #1d2087;
+}
+
+.unipied-operation-section .boxes__box-item__image {
+    height: 180px !important;
+}
 
 /* ====================================== Platform Page CSS ====================================== */
 /* == Platform Section CSS == */
@@ -7,11 +121,12 @@
     background-image: url(../images/devops.jpg) !important;
     background-position: center !important;
 }
-      
+
 /* == Challenges Section CSS == */
 .challenges-section {
     margin-bottom: 30px;
 }
+
 .challenges-container {
     width: 1440px !important;
     max-width: 90%;
@@ -407,7 +522,7 @@ footer .footer-main-div .footer-section-1 {
     justify-content: space-around;
 }
 
-/* Uniphy AD Banner Section */
+/* == Uniphy AD Banner Section == */
 .uniphy-ad-banner-section .cta__inner--default {
     background: linear-gradient(to right, #2c339b, #dd4196, #4c327b);
 }
@@ -431,6 +546,10 @@ footer .footer-main-div .footer-section-1 {
 
 .section-spacing-top {
     padding: 75px 0 0 0 !important;
+}
+
+.section-spacing-bottom {
+    padding: 0 0 75px 0 !important;
 }
 
 .section-block-header {
@@ -475,18 +594,33 @@ footer .footer-main-div .footer-section-1 {
         justify-items: center;
     }
 
-    .boxes__box-item__image img {
-        min-height: fit-content !important;
-    }
-
     .main-footer__widgets__column {
         text-align: center;
     }
+
+    /* Platform Page */
+    .devops-lifecycle-section .boxes__box-item__image img {
+        min-height: fit-content !important;
+    }
+
+    /* Home Page */
     .features-container .boxes__wrapper--columns-four .boxes__box-item {
         width: 100% !important;
         max-width: none !important;
         margin: 15px 15px 25px 15px !important;
         text-align: center;
+    }
+
+    .unipied-operation-section .boxes__box-item__image img {
+        min-height: 180px !important;
+    }
+
+    .unipied-operation-section {
+        background-position: 100% 3.1% !important;
+    }
+    
+    .unipied-operation-section .section-block__header {
+        background-color: white !important;
     }
 }
 
@@ -564,12 +698,6 @@ footer .footer-main-div .footer-section-1 {
     }
 }
 
-@media (max-width: 425px) {
-    .features-container .boxes__box-item {
-        min-height: 325px;
-    }
-}
-
 @media (max-width: 1072px) {
     .features-container .boxes__wrapper--columns-four .boxes__box-item {
         margin: 0px 15px 25px 15px !important;
@@ -577,6 +705,10 @@ footer .footer-main-div .footer-section-1 {
 }
 
 @media (max-width: 425px) {
+    /* Platform Page */
+    .features-container .boxes__box-item {
+        min-height: 325px;
+    }
 
     .evolution-container .section-block__header,
     .challenges-container .section-block__header,
@@ -587,6 +719,15 @@ footer .footer-main-div .footer-section-1 {
     .key-highlight-container ul {
         justify-content: center !important;
         margin-left: 0 !important;
+    }
+
+    /* Home Page */
+    .unipied-operation-section {
+        background-position: 100% 5.3% !important;
+    }
+    
+    .unipied-operation-section .section-block__header {
+        background-color: white !important;
     }
 }
 
