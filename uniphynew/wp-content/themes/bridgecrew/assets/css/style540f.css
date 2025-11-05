@@ -750,6 +750,13 @@ form.hs-form .hs-error-msgs {
     padding-left: 27px;
     background-position: 0px 0.6em; }
 
+.section-block__aboutus ul li {
+    background-image: url("../images/icon-check-dark-blue.png");
+    background-repeat: no-repeat;
+    background-size: 30px 22px;
+    padding-left: 40px;
+    background-position: 0px 0.5em; }
+
 .text-center, .boxes__box-item--align-center {
   text-align: center; }
 

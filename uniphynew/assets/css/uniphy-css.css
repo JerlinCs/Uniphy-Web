@@ -445,6 +445,7 @@ footer .footer-main-div .footer-section-1 {
     width: 200px;
     border-radius: 3px;
     border-top: 5px solid #ff6600;
+    margin-bottom: 1em;
     display: block;
 }
 
@@ -554,6 +555,10 @@ footer .footer-main-div .footer-section-1 {
 
 .section-block-header {
     padding: 150px 0px !important;
+}
+
+.section-spacing-top-bottom {
+    padding: 150px 0 75px 0 !important;
 }
 
 .fade-in-element {
@@ -801,4 +806,101 @@ footer .footer-main-div .footer-section-1 {
   }
 }
 
+/* ====================================== Schedule Page CSS ====================================== */
+/* == Schedule Header Section CSS == */
+.schedule-page-section {
+    /* background: url(/wp-content/themes/bridgecrew/assets/images/bg-purple-middle.jpg) !important; */
+    background: url(/uniphynew/wp-content/themes/bridgecrew/assets/images/bg-purple-middle.jpg) !important;
+    background-position: 50% 50% !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
 
+.schedule-page-section.section-block:first-child {
+    padding-top: 150px !important;
+}
+
+.schedule-page-section h1 {
+    color: white !important;
+}
+
+/* ====================================== Pricing Page CSS ====================================== */
+/* == Pricing Plan Section CSS == */
+.pricing-plan-section .item {
+    height: 39px;
+    margin-bottom: 22.5px;
+    padding-bottom: 39px;
+}
+
+.pricing-plan-section .pricing__boxes .card i {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    width: 80%;
+    height: 50px;
+    border-radius: 30px;
+    border-bottom-left-radius: 0;
+   border-top-left-radius: 0;
+}
+
+.pricing-plan-section .pricing__boxes .card i span {
+    height: 50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-plan-section .pricing-box__price span {
+    font-family: fantasy;
+    font-size: 50px;
+}
+
+.pricing-plan-section .basic-card i {
+    text-align: left;
+    background: linear-gradient(to right, rgb(0 225 162 / 90%), rgb(78 158 215 / 80%));
+}
+
+.pricing-plan-section .premium-card i {
+    text-align: left;
+    background: linear-gradient(to right, rgb(113 17 201 / 90%), rgb(199 8 175 / 80%));
+}
+
+.pricing-plan-section .standard-card i {
+    text-align: left;
+    background: linear-gradient(to right, rgb(60 178 223 / 90%), rgb(113 17 201 / 80%));
+}
+
+.pricing-plan-section {
+    background: white !important;
+}
+
+.pricing-plan-section .basic-card,
+.pricing-plan-section .premium-card,
+.pricing-plan-section .standard-card {
+    border-radius: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 6px 15px 0px;
+}
+
+.pricing-plan-section .item span {
+    font-family: sans-serif;
+    font-size: x-large;
+}
+
+.pricing-plan-section .pricing-box__terms,
+.pricing-plan-section .pricing-box__price {
+   color: #3c3c3f !important;
+}
+
+.pricing-plan-section .dp-btn-0 { background: linear-gradient(to right, #2c339b, #d13389); } .dp-btn-0:hover { background: transparent; color: #1d2087 }
+.pricing-plan-section .dp-btn-1 { background: linear-gradient(to right, #2c339b, #d13389); } .dp-btn-1:hover { background: transparent; color: #1d2087 }
+.pricing-plan-section .dp-btn-2 { background: linear-gradient(to right, #2c339b, #d13389); } .dp-btn-2:hover { background: transparent; color: #1d2087 }
+
+/* == Pricing Plan Section CSS == */
+.pricing-questions-section .questions-side-heading {
+    font-weight: 500;
+}
