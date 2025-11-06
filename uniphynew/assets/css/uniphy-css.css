@@ -683,6 +683,8 @@ footer .footer-main-div .footer-section-1 {
     .content-image__image--align-left {
       justify-content: center;
     }
+    .motivation-section .content-border-top,
+    .uniqueness-of-uniphy-section .content-border-top,
     .Intelligent-automation-section .content-border-top {
       display: none;
     }
@@ -903,4 +905,97 @@ footer .footer-main-div .footer-section-1 {
 /* == Pricing Plan Section CSS == */
 .pricing-questions-section .questions-side-heading {
     font-weight: 500;
+}
+
+/* ====================================== About Us Page CSS ====================================== */
+/* == About Us Section CSS == */
+.about-us-section .header-div {
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+
+.about-us-section .header-div h2 {
+    margin-top: 33px !important;
+}
+
+.about-us-section.section-block--theme-big-purple-bg-square {
+    background: url(../images/about_bg.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-us-section.section-block--theme-big-purple-bg-square .section-block__content p {
+    color: white !important;
+}
+
+/* == Mission Section CSS == */
+.mission-section .mission-main-div {
+    justify-content: center;
+}
+
+.mission-section .mission-main-div .quote-box {
+    width: 80%; 
+    background-color: white; 
+    border-radius: 15px; 
+    padding: 20px; 
+    position: relative;
+}
+
+.mission-section .mission-main-div .quote-box .quote-top {
+    position: absolute; 
+    top: 15px; 
+    left: 15px; 
+    width: 40px;
+}
+
+.mission-section .mission-main-div .quote-box .quote-bottom {
+    position: absolute; 
+    bottom: 15px; 
+    right: 15px; 
+    width: 40px;
+}
+
+.mission-section .mission-main-div .quote-box p {
+    font-size: 23px; 
+    margin: 60px 20px; 
+    line-height: normal;
+}
+
+/* == Motivation Section CSS == */
+.motivation-section .content-image__image.content-image__image--align-left,
+.uniqueness-of-uniphy-section .content-image__image.content-image__image--align-center {
+    padding: 0 !important;
+}
+
+.motivation-section .content-image__image.content-image__image--align-center,
+.uniqueness-of-uniphy-section .content-image__image.content-image__image--align-center {
+    align-self: center !important;
+}
+
+.motivation-section .content-image__image img,
+.uniqueness-of-uniphy-section .content-image__image img {
+    border-radius: 10px;
+}
+
+/* == Uniqueness of Uniphy Section CSS == */
+.uniqueness-of-uniphy-section .content-image__image ul {
+    margin-left: 0;
+}
+
+.uniqueness-of-uniphy-section .content-image__image ul li span {
+    font-weight: 500;
+}
+
+/* == Media Query == */
+@media screen and (max-width:783px) {
+    .mission-section .quote-box {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .mission-section p {
+        font-size: 20px !important;
+    }
 }
