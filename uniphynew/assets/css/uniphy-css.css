@@ -811,8 +811,7 @@ footer .footer-main-div .footer-section-1 {
 /* ====================================== Schedule Page CSS ====================================== */
 /* == Schedule Header Section CSS == */
 .schedule-page-section {
-    /* background: url(/wp-content/themes/bridgecrew/assets/images/bg-purple-middle.jpg) !important; */
-    background: url(/uniphynew/wp-content/themes/bridgecrew/assets/images/bg-purple-middle.jpg) !important;
+    background: url(../images/bg-purple-middle.jpg) !important;
     background-position: 50% 50% !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
