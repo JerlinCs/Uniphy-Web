@@ -441,6 +441,8 @@ footer .footer-main-div .footer-section-1 {
 }
 
 /* == Intelligent Automation Section CSS == */
+.motivation-section .content-border-top,
+.uniqueness-of-uniphy-section .content-border-top,
 .Intelligent-automation-section .content-border-top {
     width: 200px;
     border-radius: 3px;
