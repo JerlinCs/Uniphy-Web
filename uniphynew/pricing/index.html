@@ -82,8 +82,8 @@
                      </nav>
                   </div>
                   <div class="main-header__cta">
-                     <a href="https://portal.uniphyops.com" target="_blank" class="ns-btn ns-btn--text" rel="noopener noreferrer">Sign in</a>
-                     <a href="https://portal.uniphyops.com" target="_blank" class="ns-btn ns-btn--white" rel="noopener noreferrer">Sign up</a>
+                     <a onclick="goToLogin()" class="ns-btn ns-btn--text" rel="noopener noreferrer">Sign in</a>
+                     <a onclick="goToLogin()" class="ns-btn ns-btn--white" rel="noopener noreferrer">Sign up</a>
                   </div>
                </div>
                <div class="main-header__menu-mobile">
@@ -119,7 +119,7 @@
                                  </div>
                                  <p class="pricing-box__price"><span>$0.05</span></p>
                                  <p class="pricing-box__terms">per month per resource</p>
-                                 <a href="https://portal.uniphyops.com" target="_blank" class="ns-btn dp-btn-0 animate__animated animate__fadeInUp" rel="noopener noreferrer">Start free trial</a>
+                                 <a onclick="goToLogin()" class="ns-btn dp-btn-0 animate__animated animate__fadeInUp" rel="noopener noreferrer">Start free trial</a>
                                  <ul class="pricing-box__features list--check-green">
                                     <li>Provision & Monitor</li>
                                     <li>Provision cloud instances & containers</li>
@@ -134,7 +134,7 @@
                                  </div>
                                  <p class="pricing-box__price"><span>$0.35</span></p>
                                  <p class="pricing-box__terms">per month per resource</p>
-                                 <a href="https://portal.uniphyops.com" target="_blank" class="ns-btn dp-btn-1 animate__animated animate__fadeInUp" rel="noopener noreferrer">Start free trial</a>
+                                 <a onclick="goToLogin()" class="ns-btn dp-btn-1 animate__animated animate__fadeInUp" rel="noopener noreferrer">Start free trial</a>
                                  <ul class="pricing-box__features list--check-green">
                                     <li>Automate. Fix. Deploy.</li>
                                     <li>Automated infrastructure fixes</li>
@@ -149,7 +149,7 @@
                                  </div>
                                  <p class="pricing-box__price"><span>$0.75</span></p>
                                  <p class="pricing-box__terms">per month per resource</p>
-                                 <a href="https://portal.uniphyops.com" target="_blank" class="ns-btn dp-btn-1 animate__animated animate__fadeInUp" rel="noopener noreferrer">Start free trial</a>
+                                 <a onclick="goToLogin()" class="ns-btn dp-btn-1 animate__animated animate__fadeInUp" rel="noopener noreferrer">Start free trial</a>
                                  <ul class="pricing-box__features list--check-green">
                                     <li>Full platform customization & policies</li>
                                     <li>AI-driven provisioning, monitoring, scaling, and predictive insights</li>
@@ -221,7 +221,7 @@
                               </div>
                               <div class="cta__buttons">
                                  <div class="cta-row cta-row--horizontal cta-row--center">
-                                    <a class="ns-btn ns-btn--white " href="https://portal.uniphyops.com" target="_blank" rel="noopener noreferrer">Get Started For Free</a>
+                                    <a class="ns-btn ns-btn--white " onclick="goToLogin()" rel="noopener noreferrer">Get Started For Free</a>
 					 			            <a class="ns-btn ns-btn--white-border " href="../schedule-a-demo/index.html" target="">Schedule A Demo</a>
                                  </div>
                               </div>
@@ -308,8 +308,8 @@
             </li>
          </ul>
          <div class="ns-mobile-menu__cta">
-            <a href="https://portal.uniphyops.com" target="_blank" class="ns-btn ns-btn--purple" rel="noopener noreferrer">Sign up</a><br>
-            <a href="https://portal.uniphyops.com" target="_blank" class="ns-btn ns-btn--underline" rel="noopener noreferrer">Sign in</a>
+            <a onclick="goToLogin()" class="ns-btn ns-btn--purple" rel="noopener noreferrer">Sign up</a><br>
+            <a onclick="goToLogin()" class="ns-btn ns-btn--underline" rel="noopener noreferrer">Sign in</a>
          </div>
       </div>
       <!--googleoff: all-->
@@ -394,8 +394,14 @@
       <div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
       <div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
       <!--googleon: all-->
+      <script src="../uniphy-config/config.js"></script>
       <script>
          document.getElementById("year").textContent = new Date().getFullYear();
+
+         // Get Login URL
+         function goToLogin(){
+            window.open(CONFIG.LOGIN_URL, "_blank");
+         }
       </script>
       <!-- JS Mobile Menu Setup -->
       <script src='../wp-content/themes/uniphy/assets/js/vendor/mmenuf658.js?ver=5.8.1' id='mmenu-js'></script>

@@ -175,10 +175,10 @@ a:hover {
   text-decoration: none;
 }
 
-a:not([href]) {
+/* a:not([href]) {
   color: inherit;
   text-decoration: none;
-}
+} */
 
 a:not([href]):hover {
   color: inherit;
