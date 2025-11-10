@@ -48,7 +48,7 @@ if(isset($_POST['email'])) {
 		)
 	);
 
-	$message = "Hi, <br>\n We have received an Enquiry from Website. Please find the details below. <br>\n<br>\n";
+	$message = "Hi, <br>\n We have received an Enquiry for Uniphy. Please find the details below. <br>\n<br>\n";
 
 	foreach($fields as $field) {
 		$message .= "<b>".$field['text'].":</b> " . htmlspecialchars($field['val'], ENT_QUOTES) . "<br>\n";
