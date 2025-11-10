@@ -416,8 +416,6 @@ footer .footer-main-div .footer-section-1 {
 
 .features-container .boxes__box-item__image img {
     max-width: 100%;
-    height: max-content;
-    max-height: 100%;
     position: relative;
     width: auto;
     margin: auto;
@@ -606,10 +604,6 @@ footer .footer-main-div .footer-section-1 {
     }
 
     /* Platform Page */
-    .devops-lifecycle-section .boxes__box-item__image img {
-        min-height: fit-content !important;
-    }
-
     /* Home Page */
     .features-container .boxes__wrapper--columns-four .boxes__box-item {
         width: 100% !important;
