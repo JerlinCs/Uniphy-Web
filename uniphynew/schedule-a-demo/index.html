@@ -102,8 +102,8 @@
                </nav>
             </div>
             <div class="main-header__cta">
-               <a onclick="goToLogin()" class="ns-btn ns-btn--text" rel="noopener noreferrer">Sign in</a>
-               <a onclick="goToLogin()" class="ns-btn ns-btn--white" rel="noopener noreferrer">Sign up</a>
+               <a href="https://portal.uniphyops.com" target="_blank" class="ns-btn ns-btn--text" rel="noopener noreferrer">Sign in</a>
+               <a href="https://portal.uniphyops.com" target="_blank" class="ns-btn ns-btn--white" rel="noopener noreferrer">Sign up</a>
             </div>
          </div>
          <div class="main-header__menu-mobile">
@@ -340,8 +340,8 @@
          </li>
       </ul>
       <div class="ns-mobile-menu__cta">
-         <a onclick="goToLogin()" class="ns-btn ns-btn--purple" rel="noopener noreferrer">Sign up</a><br>
-         <a onclick="goToLogin()" class="ns-btn ns-btn--underline" rel="noopener noreferrer">Sign in</a>
+         <a href="https://portal.uniphyops.com" target="_blank" class="ns-btn ns-btn--purple" rel="noopener noreferrer">Sign up</a><br>
+         <a href="https://portal.uniphyops.com" target="_blank" class="ns-btn ns-btn--underline" rel="noopener noreferrer">Sign in</a>
       </div>
    </div>
    <!--googleoff: all-->
@@ -425,14 +425,8 @@
    </div>
    <div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
    <div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
-   <script src="../uniphy-config/config.js"></script>
    <script>
       document.getElementById("year").textContent = new Date().getFullYear();
-      
-      // Get Login URL
-      function goToLogin(){
-         window.open(CONFIG.LOGIN_URL, "_blank");
-      }
    </script>
 
    <!-- JS Mobile Menu Setup -->

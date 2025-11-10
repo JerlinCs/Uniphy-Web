@@ -83,8 +83,8 @@
                      </nav>
                   </div>
                   <div class="main-header__cta">
-                     <a onclick="goToLogin()" class="ns-btn ns-btn--text" rel="noopener noreferrer">Sign in</a>
-                     <a onclick="goToLogin()" class="ns-btn ns-btn--white" rel="noopener noreferrer">Sign up</a>
+                     <a href="https://portal.uniphyops.com" target="_blank" class="ns-btn ns-btn--text" rel="noopener noreferrer">Sign in</a>
+                     <a href="https://portal.uniphyops.com" target="_blank" class="ns-btn ns-btn--white" rel="noopener noreferrer">Sign up</a>
                   </div>
                </div>
                <!-- Mobile view menu -->
@@ -113,7 +113,7 @@
                                        <h1 class="section-block__title content-image__title section-block__title--with-subtitle content-image__title--with-subtitle platform-header-name animate__animated animate__fadeInUp">A better way to Create, collaborate and orchestrate digital components on the go</h1>
                                     </div>
                                     <div class="cta-row cta-row--horizontal cta-row--center">
-                                       <a class="ns-btn ns-btn--purple " onclick="goToLogin()" rel="noopener noreferrer">Sign up for free</a>						
+                                       <a class="ns-btn ns-btn--purple " href="https://portal.uniphyops.com" target="_blank" rel="noopener noreferrer">Sign up for free</a>						
 									            <a class="ns-btn ns-btn--white " href="../schedule-a-demo/index.html" target="">See a live demo</a>			
                                     </div>
                                  </div>
@@ -359,7 +359,7 @@
                                  </div>
                                  <div class="cta__buttons">
                                     <div class="cta-row cta-row--horizontal cta-row--center">
-                                       <a class="ns-btn ns-btn--white " onclick="goToLogin()" rel="noopener noreferrer">Get Started For Free</a>
+                                       <a class="ns-btn ns-btn--white " href="https://portal.uniphyops.com" target="_blank" rel="noopener noreferrer">Get Started For Free</a>
 									            <a class="ns-btn ns-btn--white-border " href="../schedule-a-demo/index.html" target="">Schedule A Demo</a>
                                     </div>
                                  </div>
@@ -453,8 +453,8 @@
             </li>
          </ul>
          <div class="ns-mobile-menu__cta">
-            <a onclick="goToLogin()" class="ns-btn ns-btn--purple" rel="noopener noreferrer">Sign up</a><br>
-            <a onclick="goToLogin()" class="ns-btn ns-btn--underline" rel="noopener noreferrer">Sign in</a>
+            <a href="https://portal.uniphyops.com" target="_blank" class="ns-btn ns-btn--purple" rel="noopener noreferrer">Sign up</a><br>
+            <a href="https://portal.uniphyops.com" target="_blank" class="ns-btn ns-btn--underline" rel="noopener noreferrer">Sign in</a>
          </div>
       </div>
       <!--googleoff: all-->
@@ -539,14 +539,8 @@
       <div class="cli-modal-backdrop cli-fade cli-settings-overlay"></div>
       <div class="cli-modal-backdrop cli-fade cli-popupbar-overlay"></div>
       <!--googleon: all-->
-      <script src="../uniphy-config/config.js"></script>
       <script>
          document.getElementById("year").textContent = new Date().getFullYear();
-
-         // Get Login URL
-         function goToLogin(){
-            window.open(CONFIG.LOGIN_URL, "_blank");
-         }
       </script>
 
       <!-- JS Mobile Menu Setup -->
