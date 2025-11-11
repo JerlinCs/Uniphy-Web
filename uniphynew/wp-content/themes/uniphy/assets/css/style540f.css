@@ -1010,7 +1010,7 @@ form.hs-form .hs-error-msgs {
         padding-top: 40px; } }
     .main-footer__copy__text {
       float: left;
-      width: 30%; }
+      width: 40%; }
       @media (max-width: 768px) {
         .main-footer__copy__text {
           width: 100%;
@@ -1021,7 +1021,7 @@ form.hs-form .hs-error-msgs {
           text-align: center; } }
     .main-footer__copy__menu {
       float: right;
-      width: 70%; }
+      width: 60%; }
       @media (max-width: 768px) {
         .main-footer__copy__menu {
           width: 100%; } }

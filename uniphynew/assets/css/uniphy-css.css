@@ -592,11 +592,31 @@ footer .footer-main-div .footer-section-1 {
     }
 }
 
+@media screen and (max-width: 375px) {
+    .challenges-container .content-image__content .content-item {
+        min-height: 402px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
+    .challenges-container .content-image__content .content-item {
+        min-height: 352px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .challenges-container .content-image__content .content-item {
+        min-height: 225px;
+    }
+}
+
 @media screen and  (max-width: 768px) {
     .main-footer__widgets .main-footer__widgets__column {
-        display: block !important;
         width: 100% !important;
-        justify-items: center;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .main-footer__widgets__column {
