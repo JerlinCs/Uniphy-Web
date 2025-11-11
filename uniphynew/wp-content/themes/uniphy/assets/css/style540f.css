@@ -803,8 +803,7 @@ form.hs-form .hs-error-msgs {
   .main-header__logo {
     display: inline-block;
     float: left;
-    max-width: 182px;
-    padding-top: 7px; }
+    max-width: 182px; }
     @media (max-width: 1024px) {
       .main-header__logo {
         padding-top: 12.5px; } }
@@ -829,7 +828,7 @@ form.hs-form .hs-error-msgs {
       .main-header__menu .menu > li {
         display: inline-block;
         position: relative;
-        margin-top: -20px;
+        margin-top: -18px;
         margin-bottom: -20px; }
         .main-header__menu .menu > li a {
           font-size: 16px;
