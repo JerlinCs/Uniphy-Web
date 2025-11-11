@@ -414,6 +414,14 @@ footer .footer-main-div .footer-section-1 {
     margin: 0;
 }
 
+.features-container .feature-card-1,
+.features-container .feature-card-2,
+.features-container .feature-card-3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .features-container .boxes__box-item__image img {
     max-width: 100%;
     position: relative;

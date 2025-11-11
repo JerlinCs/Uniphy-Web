@@ -133,7 +133,7 @@
                         <section class="section-block section-spacing section-block--container-default section-block--theme-big-purple-bg-square content-image content-image-2 text-center uniphy-video-section">
                            <!-- .container -->
                            <div class="container">
-                              <video class="attachment-full size-full" autoplay muted loop>
+                              <video id="heroVideo" class="attachment-full size-full" playsinline autoplay muted loop>
                                  <source src="assets/videos/uniphy.mp4" type="video/mp4">
                                  Your browser does not support the video tag.
                               </video>
@@ -507,6 +507,16 @@
       <!--googleon: all-->
       <script>
          document.getElementById("year").textContent = new Date().getFullYear();
+         
+         const video = document.getElementById("heroVideo");
+
+         video.addEventListener("click", () => {
+            if(video.muted == false)
+              video.muted = true;
+            else
+              video.muted = false;
+            video.play();
+         });
       </script>
       <!-- JS Mobile Menu Setup -->
       <script src='./wp-content/themes/uniphy/assets/js/vendor/mmenuf658.js?ver=5.8.1' id='mmenu-js'></script>
