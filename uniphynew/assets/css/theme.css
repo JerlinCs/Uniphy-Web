@@ -25150,7 +25150,7 @@ font-weight: bold;
 
     }
     .row{
-      display: block;
+      display: flex;
       margin-right: 0;
       margin-left: 0;
     }
