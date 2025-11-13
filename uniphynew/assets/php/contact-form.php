@@ -15,7 +15,9 @@ $replyTo = "";
 // Step 1 - Enable if the server requires SMTP authentication. (true/false)
 $enablePHPMailer = true;
 
-$subject = 'Request for Uniphy Demo';
+$subject = isset($_POST['subject']) && !empty($_POST['subject']) 
+    ? $_POST['subject'] 
+    : 'Uniphy Website Sales Enquiry';
 
 if(isset($_POST['email'])) {
 

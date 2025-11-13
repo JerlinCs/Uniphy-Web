@@ -463,11 +463,13 @@
    <script>
       function submitform() {
           var f = document.getElementsByTagName('form')[0], e = $('#mailstatus'), s = $('#submitbtn');
+            var formData = new FormData(f);
+            formData.append('Uniphy Website Sales Enquiry', subject);
             e.text('');
             s.attr('disabled','disabled');
             fetch('../assets/php/contact-form.php', {
             method: 'POST', 
-            body: new FormData(f)
+            body: formData
             })
             .then((rsp) => rsp.json())
             .then((obj) =>     {
