@@ -272,6 +272,7 @@ if(indexHeroSection){
   });
 
   // Initialize with the first active slide’s content
+  // JS to show the content of Challenges we soleved on platform page
   let firstSlide = document.querySelector(".swiper-slide-active");
   if (firstSlide) {
     let contentId = firstSlide.getAttribute("data-content");

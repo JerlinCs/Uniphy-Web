@@ -464,7 +464,7 @@
       function submitform() {
           var f = document.getElementsByTagName('form')[0], e = $('#mailstatus'), s = $('#submitbtn');
             var formData = new FormData(f);
-            formData.append('Request for Uniphy Demo', subject);
+            formData.append('subject', 'Request for Uniphy Demo');
             e.text('');
             s.attr('disabled','disabled');
             fetch('../assets/php/contact-form.php', {
